@@ -6,6 +6,20 @@ rdiscount:
 exclude: [ Gemfile, Gemfile.lock, gems, _assets, bower_components ]
 title : BANG SANG HUN
 production_url : http://pwer21c.github.io
+comments :
+  provider : disqus
+  disqus :
+    short_name : jekyllbootstrap
+  livefyre :
+    site_id : 123
+  intensedebate :
+    account : 123abc
+  facebook :
+    appid : 123
+    num_posts: 5
+    width: 580
+    colorscheme: light
+
 description: "BANG sang hun."
 disqus_shortname: bangsanghunblog
 author :
