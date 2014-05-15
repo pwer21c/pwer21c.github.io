@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Personnaliser l'outil Statistics"
+comment: true
 category: posts
 ---
 
