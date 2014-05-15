@@ -1,0 +1,15 @@
+markdown: rdiscount
+pygments: true
+permalink: /posts/:title
+rdiscount:
+  extensions: [smart]
+exclude: [ Gemfile, Gemfile.lock, gems, _assets, bower_components ]
+title : BANG SANG HUN
+production_url : http://pwer21c.github.io
+description: "BANG sang hun."
+disqus_shortname: bangsanghunblog
+author :
+  name : BANG SANG HUN
+  github : pwer21c
+  twitter : pwer21c
+  email: pwer21c@gmail.com
