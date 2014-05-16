@@ -105,69 +105,6 @@ task :page do
   end
 end # task :page
 
-# Usage: rake post title="A Title" [date="2012-02-09"]
-desc "Begin a new post thesis in #{CONFIG['posts']}"
-task :thesis do
-  abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.
-    directory?(CONFIG['posts'])
-  title = ENV["title"] || "new-post"
-  slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-  begin
-    date = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d')
-  rescue Exception => e
-    puts "Error - date format must be YYYY-MM-DD, please check you typed it correctly!"
-    exit -1
-  end
-  filename = File.join(CONFIG['posts'], "#{date}-#{slug}.md")
-  if File.exist?(filename)
-    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?",
-      ['y', 'n']) == 'n'
-  end
-
-  puts "Creating new post: #{filename}"
-  open(filename, 'w') do |post|
-    post.puts "---"
-    post.puts "layout: post"
-    post.puts "title: \"#{title.gsub(/-/,' ')}\""
-    post.puts "category: posts"
-    post.puts "group: thesis"
-    post.puts "---"
-  end
-end # task :thesis
-
-# Usage: rake post title="A Title" [date="2012-02-09"]
-desc "Begin a new post dsi in #{CONFIG['posts']}"
-task :dsi do
-  abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.
-    directory?(CONFIG['posts'])
-  title = ENV["title"] || "new-post"
-  slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-  begin
-    date = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d')
-  rescue Exception => e
-    puts "Error - date format must be YYYY-MM-DD, please check you typed it correctly!"
-    exit -1
-  end
-  filename = File.join(CONFIG['posts'], "#{date}-#{slug}.md")
-  if File.exist?(filename)
-    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?",
-      ['y', 'n']) == 'n'
-  end
-
-  puts "Creating new post: #{filename}"
-  open(filename, 'w') do |post|
-    post.puts "---"
-    post.puts "layout: post"
-    post.puts "title: \"#{title.gsub(/-/,' ')}\""
-    post.puts "category: posts"
-    post.puts "group: dsi"
-    post.puts "---"
-  end
-end # task :thesis
-
-
-
-
 desc "Update icons based on your gravatar (define author email in _config.yml)!"
 task :icons do
   puts "Getting author email from _config.yml..."
