@@ -1,13 +1,15 @@
 ---
-layout: layout
-title: "Posts"
+layout: page
+title: "Thèse"
+description: ""
 ---
+    {% include JB/pages_list %}
 
 <section class="content">
-  <h1 class="thin">POSTS</h1>
+  <h1 class="thin">Mes études</h1>
   <ul class="listing">
     {% for post in site.posts %}
-    {% if post.group == null || post.group != 'thesis' %}
+    {% if post.group == 'thesis' %}
 
     <li>
       <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
@@ -16,3 +18,4 @@ title: "Posts"
     {% endfor %}
   </ul>
 </section>
+
