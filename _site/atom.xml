@@ -4,12 +4,30 @@
  <title>BANG SANG HUN</title>
  <link href="http://pwer21c.github.io/atom.xml" rel="self"/>
  <link href="http://pwer21c.github.io/"/>
- <updated>2014-05-16T12:23:24+02:00</updated>
+ <updated>2014-05-16T12:26:59+02:00</updated>
  <id>http://pwer21c.github.io</id>
  <author>
    <name>BANG SANG HUN</name>
  </author>
 
+ 
+ <entry>
+   <title>test2</title>
+   <link href="http://pwer21c.github.io/posts/test2"/>
+   <updated>2014-05-16T00:00:00+02:00</updated>
+   <id>http://pwer21c.github.io/posts/test2</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>pdf</title>
+   <link href="http://pwer21c.github.io/posts/pdf"/>
+   <updated>2014-05-16T00:00:00+02:00</updated>
+   <id>http://pwer21c.github.io/posts/pdf</id>
+   <content type="html">
+</content>
+ </entry>
  
  <entry>
    <title>test</title>
