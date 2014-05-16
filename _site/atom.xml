@@ -4,7 +4,7 @@
  <title>BANG SANG HUN</title>
  <link href="http://pwer21c.github.io/atom.xml" rel="self"/>
  <link href="http://pwer21c.github.io/"/>
- <updated>2014-05-16T12:26:59+02:00</updated>
+ <updated>2014-05-16T13:08:05+02:00</updated>
  <id>http://pwer21c.github.io</id>
  <author>
    <name>BANG SANG HUN</name>
@@ -12,28 +12,10 @@
 
  
  <entry>
-   <title>test2</title>
-   <link href="http://pwer21c.github.io/posts/test2"/>
+   <title>Evaluation des formations</title>
+   <link href="http://pwer21c.github.io/posts/evaluation-des-formations"/>
    <updated>2014-05-16T00:00:00+02:00</updated>
-   <id>http://pwer21c.github.io/posts/test2</id>
-   <content type="html">
-</content>
- </entry>
- 
- <entry>
-   <title>pdf</title>
-   <link href="http://pwer21c.github.io/posts/pdf"/>
-   <updated>2014-05-16T00:00:00+02:00</updated>
-   <id>http://pwer21c.github.io/posts/pdf</id>
-   <content type="html">
-</content>
- </entry>
- 
- <entry>
-   <title>test</title>
-   <link href="http://pwer21c.github.io/posts/test"/>
-   <updated>2014-05-15T00:00:00+02:00</updated>
-   <id>http://pwer21c.github.io/posts/test</id>
+   <id>http://pwer21c.github.io/posts/evaluation-des-formations</id>
    <content type="html">
 </content>
  </entry>
