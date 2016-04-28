@@ -4,12 +4,1420 @@
  <title>BANG SANG HUN</title>
  <link href="http://pwer21c.github.io/atom.xml" rel="self"/>
  <link href="http://pwer21c.github.io/"/>
- <updated>2014-05-16T11:23:30+02:00</updated>
+ <updated>2016-04-28T18:10:35+02:00</updated>
  <id>http://pwer21c.github.io</id>
  <author>
    <name>BANG SANG HUN</name>
  </author>
 
+ 
+ <entry>
+   <title>Reinforcement Learing</title>
+   <link href="http://pwer21c.github.io/posts/reinforcement-learing"/>
+   <updated>2016-04-28T00:00:00+02:00</updated>
+   <id>http://pwer21c.github.io/posts/reinforcement-learing</id>
+   <content type="html">&lt;h2&gt;
+&lt;a id=&quot;table-of-contents&quot; class=&quot;anchor&quot; href=&quot;#table-of-contents&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Table of Contents&lt;/h2&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#codes&quot;&gt;Codes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;#theory&quot;&gt;Theory&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#lectures&quot;&gt;Lectures&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#books&quot;&gt;Books&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#surveys&quot;&gt;Surveys&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#papers--thesis&quot;&gt;Papers / Thesis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;#applications&quot;&gt;Applications&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#game-playing&quot;&gt;Game Playing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#robotics&quot;&gt;Robotics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#control&quot;&gt;Control&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#operations-research&quot;&gt;Operations Research&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#human-computer-interaction&quot;&gt;Human Computer Interaction&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#tutorials--websites&quot;&gt;Tutorials / Websites&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#online-demos&quot;&gt;Online Demos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h2&gt;
+&lt;a id=&quot;codes&quot; class=&quot;anchor&quot; href=&quot;#codes&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Codes&lt;/h2&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Codes for examples and exercises in Richard Sutton and Andrew Barto&#39;s Reinforcement Learning: An Introduction
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://waxworksmath.com/Authors/N_Z/Sutton/sutton.html&quot;&gt;MATLAB Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://webdocs.cs.ualberta.ca/%7Esutton/book/code/code.html&quot;&gt;C/Lisp Code&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://webdocs.cs.ualberta.ca/%7Esutton/book/ebook/the-book.html&quot;&gt;Book&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Simulation code for Reinforcement Learning Control Problems
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://pages.cs.wisc.edu/%7Efinton/poledriver.html&quot;&gt;Pole-Cart Problem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://pages.cs.wisc.edu/%7Efinton/qcontroller.html&quot;&gt;Q-learning Controller&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cs.colostate.edu/%7Eanderson/res/rl/matlabpaper/rl.html&quot;&gt;MATLAB Environment and GUI for Reinforcement Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www-anw.cs.umass.edu/rlr/&quot;&gt;Reinforcement Learning Repository - University of Massachusetts, Amherst&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://burlap.cs.brown.edu/&quot;&gt;Brown-UMBC Reinforcement Learning and Planning Library (Java)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://www.statsblogs.com/2014/01/07/reinforcement-learning-in-r-markov-decision-process-mdp-and-value-iteration/&quot;&gt;Reinforcement Learning in R (MDP, Value Iteration)&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jamh-web.appspot.com/download.htm&quot;&gt;Reinforcement Learning Environment in Python and MATLAB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://glue.rl-community.org/wiki/Main_Page&quot;&gt;RL-Glue&lt;/a&gt; (standard interface for RL) and &lt;a href=&quot;http://library.rl-community.org/wiki/Main_Page&quot;&gt;RL-Glue Library&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://www.pybrain.org/&quot;&gt;PyBrain Library&lt;/a&gt; - Python-Based Reinforcement learning, Artificial intelligence, and Neural network&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://mmlf.sourceforge.net/&quot;&gt;Maja&lt;/a&gt; - Machine learning framework for problems in Reinforcement Learning in python&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://servicerobotik.hs-weingarten.de/en/teachingbox.php&quot;&gt;TeachingBox&lt;/a&gt; - Java based Reinforcement Learning framework&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://webdocs.cs.ualberta.ca/%7Evanhasse/code.html&quot;&gt;Implementation of RL algorithms in Python/C++&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ias.informatik.tu-darmstadt.de/Research/PolicyGradientToolbox&quot;&gt;Policy Gradient Reinforcement Learning Toolbox for MATLAB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://sourceforge.net/projects/piqle/&quot;&gt;PIQLE&lt;/a&gt; - Platform Implementing Q-LEarning and other RL algorithms&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://code.google.com/p/beliefbox/&quot;&gt;BeliefBox&lt;/a&gt; - Bayesian reinforcement learning library and toolkit&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/nivwusquorum/tensorflow-deepq&quot;&gt;Deep Q-Learning with Tensor Flow&lt;/a&gt; - A deep Q learning demonstration using Google Tensorflow&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h2&gt;
+&lt;a id=&quot;theory&quot; class=&quot;anchor&quot; href=&quot;#theory&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Theory&lt;/h2&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;lectures&quot; class=&quot;anchor&quot; href=&quot;#lectures&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Lectures&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;[UCL] &lt;a href=&quot;http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html&quot;&gt;COMPM050/COMPGI13 Reinforcement Learning&lt;/a&gt; by David Silver&lt;/li&gt;
+&lt;li&gt;[UC Berkeley] CS188 Artificial Intelligence by Pieter Abbeel
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=i0o-ui1N35U&quot;&gt;Lecture 8: Markov Decision Processes 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Csiiv6WGzKM&quot;&gt;Lecture 9: Markov Decision Processes 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=ifma8G7LegE&quot;&gt;Lecture 10: Reinforcement Learning 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Si1_YTw960c&quot;&gt;Lecture 11: Reinforcement Learning 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;[Udacity (Georgia Tech.)] &lt;a href=&quot;https://www.udacity.com/course/machine-learning-reinforcement-learning--ud820&quot;&gt;Machine Learning 3: Reinforcement Learning (CS7641)&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;[Stanford] &lt;a href=&quot;https://www.youtube.com/watch?v=RtxI449ZjSc&amp;amp;feature=relmfu&quot;&gt;CS229 Machine Learning - Lecture 16: Reinforcement Learning&lt;/a&gt; by Andrew Ng&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;books&quot; class=&quot;anchor&quot; href=&quot;#books&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Books&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Richard Sutton and Andrew Barto, Reinforcement Learning: An Introduction &lt;a href=&quot;http://webdocs.cs.ualberta.ca/%7Esutton/book/ebook/the-book.html&quot;&gt;[Book]&lt;/a&gt; &lt;a href=&quot;https://webdocs.cs.ualberta.ca/%7Esutton/book/code/code.html&quot;&gt;[Code]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Csaba Szepesvari, Algorithms for Reinforcement Learning &lt;a href=&quot;http://www.ualberta.ca/%7Eszepesva/papers/RLAlgsInMDPs.pdf&quot;&gt;[Book]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;David Poole and Alan Mackworth, Artificial Intelligence: Foundations of Computational Agents &lt;a href=&quot;http://artint.info/html/ArtInt_262.html&quot;&gt;[Book Chapter]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Dimitri P. Bertsekas and John N. Tsitsiklis, Neuro-Dynamic Programming &lt;a href=&quot;http://www.amazon.com/Neuro-Dynamic-Programming-Optimization-Neural-Computation/dp/1886529108/ref=sr_1_3?s=books&amp;amp;ie=UTF8&amp;amp;qid=1442461075&amp;amp;sr=1-3&amp;amp;refinements=p_27%3AJohn+N.+Tsitsiklis+Dimitri+P.+Bertsekas&quot;&gt;[Book (Amazon)]&lt;/a&gt; &lt;a href=&quot;http://www.mit.edu/%7Edimitrib/NDP_Encycl.pdf&quot;&gt;[Summary]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Mykel J. Kochenderfer, Decision Making Under Uncertainty: Theory and Application &lt;a href=&quot;http://www.amazon.com/Decision-Making-Under-Uncertainty-Application/dp/0262029251/ref=sr_1_1?ie=UTF8&amp;amp;qid=1441126550&amp;amp;sr=8-1&amp;amp;keywords=kochenderfer&amp;amp;pebp=1441126551594&amp;amp;perid=1Y6RG2EGRD26659CJHH9&quot;&gt;[Book (Amazon)]&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;surveys&quot; class=&quot;anchor&quot; href=&quot;#surveys&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Surveys&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Leslie Pack Kaelbling, Michael L. Littman, Andrew W. Moore, Reinforcement Learning: A Survey, JAIR, 1996. &lt;a href=&quot;https://www.jair.org/media/301/live-301-1562-jair.pdf&quot;&gt;[Paper]&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;S. S. Keerthi and B. Ravindran, A Tutorial Survey of Reinforcement Learning, Sadhana, 1994. &lt;a href=&quot;http://www.cse.iitm.ac.in/%7Eravi/papers/keerthi.rl-survey.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Jens Kober, J. Andrew Bagnell, Jan Peters, Reinforcement Learning in Robotics, A Survey, IJRR, 2013. &lt;a href=&quot;http://www.ias.tu-darmstadt.de/uploads/Publications/Kober_IJRR_2013.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Littman, Michael L. &quot;Reinforcement learning improves behaviour from evaluative feedback.&quot; Nature 521.7553 (2015): 445-451. &lt;a href=&quot;http://www.nature.com/nature/journal/v521/n7553/full/nature14540.html&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Marc P. Deisenroth, Gerhard Neumann, Jan Peter, A Survey on Policy Search for Robotics, Foundations and Trends in Robotics, 2014. &lt;a href=&quot;https://spiral.imperial.ac.uk:8443/bitstream/10044/1/12051/7/fnt_corrected_2014-8-22.pdf&quot;&gt;[Book]&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;papers--thesis&quot; class=&quot;anchor&quot; href=&quot;#papers--thesis&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Papers / Thesis&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Foundational Papers&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Marvin Minsky, Steps toward Artificial Intelligence, Proceedings of the IRE, 1961. &lt;a href=&quot;http://staffweb.worc.ac.uk/DrC/Courses%202010-11/Comp%203104/Tutor%20Inputs/Session%209%20Prep/Reading%20material/Minsky60steps.pdf&quot;&gt;[Paper]&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;discusses issues in RL such as the &quot;credit assignment problem&quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Ian H. Witten, An Adaptive Optimal Controller for Discrete-Time Markov Environments, Information and Control, 1977. &lt;a href=&quot;http://www.cs.waikato.ac.nz/%7Eihw/papers/77-IHW-AdaptiveController.pdf&quot;&gt;[Paper]&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;earliest publication on temporal-difference (TD) learning rule. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Methods&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Dynamic Programming (DP):
+
+&lt;ul&gt;
+&lt;li&gt;Christopher J. C. H. Watkins, Learning from Delayed Rewards, Ph.D. Thesis, Cambridge University, 1989. &lt;a href=&quot;https://www.cs.rhul.ac.uk/home/chrisw/new_thesis.pdf&quot;&gt;[Thesis]&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Monte Carlo: 
+
+&lt;ul&gt;
+&lt;li&gt;Andrew Barto, Michael Duff, Monte Carlo Inversion and Reinforcement Learning, NIPS, 1994. &lt;a href=&quot;http://papers.nips.cc/paper/865-monte-carlo-matrix-inversion-and-reinforcement-learning.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Satinder P. Singh, Richard S. Sutton, Reinforcement Learning with Replacing Eligibility Traces, Machine Learning, 1996. &lt;a href=&quot;http://www-all.cs.umass.edu/pubs/1995_96/singh_s_ML96.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Temporal-Difference: 
+
+&lt;ul&gt;
+&lt;li&gt;Richard S. Sutton, Learning to predict by the methods of temporal differences. Machine Learning 3: 9-44, 1988. &lt;a href=&quot;http://webdocs.cs.ualberta.ca/%7Esutton/papers/sutton-88-with-erratum.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Q-Learning (Off-policy TD algorithm):
+
+&lt;ul&gt;
+&lt;li&gt;Chris Watkins, Learning from Delayed Rewards, Cambridge, 1989. &lt;a href=&quot;http://www.cs.rhul.ac.uk/home/chrisw/thesis.html&quot;&gt;[Thesis]&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Sarsa (On-policy TD algorithm):
+
+&lt;ul&gt;
+&lt;li&gt;G.A. Rummery, M. Niranjan, On-line Q-learning using connectionist systems, Technical Report, Cambridge Univ., 1994. &lt;a href=&quot;https://www.google.com/url?sa=t&amp;amp;rct=j&amp;amp;q=&amp;amp;esrc=s&amp;amp;source=web&amp;amp;cd=3&amp;amp;ved=0CDIQFjACahUKEwj2lMm5wZDIAhUHkg0KHa6kAVM&amp;amp;url=ftp%3A%2F%2Fmi.eng.cam.ac.uk%2Fpub%2Freports%2Fauto-pdf%2Frummery_tr166.pdf&amp;amp;usg=AFQjCNHz6IrgcaaO5lzC7t8oEIBY9epozg&amp;amp;sig2=sa-emPme1m5Jav7YmaXsNQ&amp;amp;cad=rja&quot;&gt;[Report]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Richard S. Sutton, Generalization in Reinforcement Learning: Successful examples using sparse coding, NIPS, 1996. &lt;a href=&quot;http://webdocs.cs.ualberta.ca/%7Esutton/papers/sutton-96.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;R-Learning (learning of relative values)
+
+&lt;ul&gt;
+&lt;li&gt;Andrew Schwartz, A Reinforcement Learning Method for Maximizing Undiscounted Rewards, ICML, 1993. &lt;a href=&quot;https://scholar.google.com/scholar?q=reinforcement+learning+method+for+maximizing+undiscounted+rewards&amp;amp;hl=en&amp;amp;as_sdt=0&amp;amp;as_vis=1&amp;amp;oi=scholart&amp;amp;sa=X&amp;amp;ved=0CBsQgQMwAGoVChMIho6p_MOQyAIVwh0eCh3XWAwM&quot;&gt;[Paper-Google Scholar]&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Function Approximation methods (Least-Sqaure Temporal Difference, Least-Sqaure Policy Iteration)
+
+&lt;ul&gt;
+&lt;li&gt;Steven J. Bradtke, Andrew G. Barto, Linear Least-Squares Algorithms for Temporal Difference Learning, Machine Learning, 1996. &lt;a href=&quot;http://www-anw.cs.umass.edu/pubs/1995_96/bradtke_b_ML96.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Michail G. Lagoudakis, Ronald Parr, Model-Free Least Squares Policy Iteration, NIPS, 2001. &lt;a href=&quot;http://www.cs.duke.edu/research/AI/LSPI/nips01.pdf&quot;&gt;[Paper]&lt;/a&gt; &lt;a href=&quot;http://www.cs.duke.edu/research/AI/LSPI/&quot;&gt;[Code]&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Policy Search / Policy Gradient
+
+&lt;ul&gt;
+&lt;li&gt;Richard Sutton, David McAllester, Satinder Singh, Yishay Mansour, Policy Gradient Methods for Reinforcement Learning with Function Approximation, NIPS, 1999. &lt;a href=&quot;http://papers.nips.cc/paper/1713-policy-gradient-methods-for-reinforcement-learning-with-function-approximation.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Jan Peters, Sethu Vijayakumar, Stefan Schaal, Natural Actor-Critic, ECML, 2005. &lt;a href=&quot;https://homes.cs.washington.edu/%7Etodorov/courses/amath579/reading/NaturalActorCritic.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Jens Kober, Jan Peters, Policy Search for Motor Primitives in Robotics, NIPS, 2009. &lt;a href=&quot;http://papers.nips.cc/paper/3545-policy-search-for-motor-primitives-in-robotics.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Jan Peters, Katharina Mulling, Yasemin Altun, Relative Entropy Policy Search, AAAI, 2010. &lt;a href=&quot;http://www.kyb.tue.mpg.de/fileadmin/user_upload/files/publications/attachments/AAAI-2010-Peters_6439%5b0%5d.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Freek Stulp, Olivier Sigaud, Path Integral Policy Improvement with Covariance Matrix Adaptation, ICML, 2012. &lt;a href=&quot;http://arxiv.org/pdf/1206.4621v1.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Nate Kohl, Peter Stone, Policy Gradient Reinforcement Learning for Fast Quadrupedal Locomotion, ICRA, 2004. &lt;a href=&quot;http://www.cs.utexas.edu/%7Epstone/Papers/bib2html-links/icra04.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Marc Deisenroth, Carl Rasmussen, PILCO: A Model-Based and Data-Efficient Approach to Policy Search, ICML, 2011. &lt;a href=&quot;http://mlg.eng.cam.ac.uk/pub/pdf/DeiRas11.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Scott Kuindersma, Roderic Grupen, Andrew Barto, Learning Dynamic Arm Motions for Postural Recovery, Humanoids, 2011. &lt;a href=&quot;http://www-all.cs.umass.edu/pubs/2011/kuindersma_g_b_11.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Hierarchical RL
+
+&lt;ul&gt;
+&lt;li&gt;Richard Sutton, Doina Precup, Satinder Singh, Between MDPs and Semi-MDPs: A Framework for Temporal Abstraction in Reinforcement Learning, Artificial Intelligence, 1999. &lt;a href=&quot;https://webdocs.cs.ualberta.ca/%7Esutton/papers/SPS-aij.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;George Konidaris, Andrew Barto, Building Portable Options: Skill Transfer in Reinforcement Learning, IJCAI, 2007. &lt;a href=&quot;http://www-anw.cs.umass.edu/pubs/2007/konidaris_b_IJCAI07.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Deep Learning + Reinforcement Learning (A sample of recent works on DL+RL)
+
+&lt;ul&gt;
+&lt;li&gt;V. Mnih, et. al., Human-level Control through Deep Reinforcement Learning, Nature, 2015. &lt;a href=&quot;http://www.readcube.com/articles/10.1038%2Fnature14236?shared_access_token=Lo_2hFdW4MuqEcF3CVBZm9RgN0jAjWel9jnR3ZoTv0P5kedCCNjz3FJ2FhQCgXkApOr3ZSsJAldp-tw3IWgTseRnLpAc9xQq-vTA2Z5Ji9lg16_WvCy4SaOgpK5XXA6ecqo8d8J7l4EJsdjwai53GqKt-7JuioG0r3iV67MQIro74l6IxvmcVNKBgOwiMGi8U0izJStLpmQp6Vmi_8Lw_A%3D%3D&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Xiaoxiao Guo, Satinder Singh, Honglak Lee, Richard Lewis, Xiaoshi Wang, Deep Learning for Real-Time Atari Game Play Using Offline Monte-Carlo Tree Search Planning, NIPS, 2014. &lt;a href=&quot;http://papers.nips.cc/paper/5421-deep-learning-for-real-time-atari-game-play-using-offline-monte-carlo-tree-search-planning.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Sergey Levine, Chelsea Finn, Trevor Darrel, Pieter Abbeel, End-to-End Training of Deep Visuomotor Policies. ArXiv, 16 Oct 2015. &lt;a href=&quot;http://arxiv.org/pdf/1504.00702v3.pdf&quot;&gt;[ArXiv]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Tom Schaul, John Quan, Ioannis Antonoglou, David Silver, Prioritized Experience Replay, ArXiv, 18 Nov 2015. &lt;a href=&quot;http://arxiv.org/pdf/1511.05952v2.pdf&quot;&gt;[ArXiv]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Hado van Hasselt, Arthur Guez, David Silver, Deep Reinforcement Learning with Double Q-Learning, ArXiv, 22 Sep 2015. &lt;a href=&quot;http://arxiv.org/abs/1509.06461&quot;&gt;[ArXiv]&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h2&gt;
+&lt;a id=&quot;applications&quot; class=&quot;anchor&quot; href=&quot;#applications&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Applications&lt;/h2&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;game-playing&quot; class=&quot;anchor&quot; href=&quot;#game-playing&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Game Playing&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Traditional Games&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Backgammon - &quot;TD-Gammon&quot; game play using TD(λ) (Tesauro, ACM 1995) &lt;a href=&quot;http://www.bkgm.com/articles/tesauro/tdl.html&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Chess - &quot;KnightCap&quot; program using TD(λ) (Baxter, arXiv 1999) &lt;a href=&quot;http://arxiv.org/pdf/cs/9901002v1.pdf&quot;&gt;[arXiv]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Chess - Giraffe: Using deep reinforcement learning to play chess (Lai, arXiv 2015) &lt;a href=&quot;http://arxiv.org/pdf/1509.01549v2.pdf&quot;&gt;[arXiv]&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Computer Games &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Human-level Control through Deep Reinforcement Learning (Mnih, Nature 2015) &lt;a href=&quot;http://www.readcube.com/articles/10.1038%2Fnature14236?shared_access_token=Lo_2hFdW4MuqEcF3CVBZm9RgN0jAjWel9jnR3ZoTv0P5kedCCNjz3FJ2FhQCgXkApOr3ZSsJAldp-tw3IWgTseRnLpAc9xQq-vTA2Z5Ji9lg16_WvCy4SaOgpK5XXA6ecqo8d8J7l4EJsdjwai53GqKt-7JuioG0r3iV67MQIro74l6IxvmcVNKBgOwiMGi8U0izJStLpmQp6Vmi_8Lw_A%3D%3D&quot;&gt;[Paper]&lt;/a&gt; &lt;a href=&quot;https://sites.google.com/a/deepmind.com/dqn/&quot;&gt;[Code]&lt;/a&gt; &lt;a href=&quot;https://www.youtube.com/watch?v=iqXKQf2BOSE&quot;&gt;[Video]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/SarvagyaVaish/FlappyBirdRL&quot;&gt;Flappy Bird Reinforcement Learning&lt;/a&gt; &lt;a href=&quot;https://www.youtube.com/watch?v=xM62SpKAZHU&quot;&gt;[Video]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;MarI/O - learning to play Mario with evolutionary reinforcement learning using artificial neural networks (Stanley, Evolutionary Computation 2002) &lt;a href=&quot;http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf&quot;&gt;[Paper]&lt;/a&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=qv6UVOQ0F44&quot;&gt;[Video]&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;robotics&quot; class=&quot;anchor&quot; href=&quot;#robotics&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Robotics&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Policy Gradient Reinforcement Learning for Fast Quadrupedal Locomotion (Kohl, ICRA 2004) &lt;a href=&quot;http://www.cs.utexas.edu/%7Epstone/Papers/bib2html-links/icra04.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Robot Motor SKill Coordination with EM-based Reinforcement Learning (Kormushev, IROS 2010) &lt;a href=&quot;http://kormushev.com/papers/Kormushev-IROS2010.pdf&quot;&gt;[Paper]&lt;/a&gt; &lt;a href=&quot;https://www.youtube.com/watch?v=W_gxLKSsSIE&quot;&gt;[Video]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Generalized Model Learning for Reinforcement Learning on a Humanoid Robot (Hester, ICRA 2010) &lt;a href=&quot;https://ccc.inaoep.mx/%7Emdprl/documentos/Hester_2010.pdf&quot;&gt;[Paper]&lt;/a&gt; &lt;a href=&quot;https://www.youtube.com/watch?v=mRpX9DFCdwI&amp;amp;list=PL5nBAYUyJTrM48dViibyi68urttMlUv7e&amp;amp;index=12&quot;&gt;[Video]&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;Autonomous Skill Acquisition on a Mobile Manipulator (Konidaris, AAAI 2011) &lt;a href=&quot;http://lis.csail.mit.edu/pubs/konidaris-aaai11b.pdf&quot;&gt;[Paper]&lt;/a&gt; &lt;a href=&quot;https://www.youtube.com/watch?v=yUICAkSQTZY&quot;&gt;[Video]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;PILCO: A Model-Based and Data-Efficient Approach to Policy Search (Deisenroth, ICML 2011) &lt;a href=&quot;http://mlg.eng.cam.ac.uk/pub/pdf/DeiRas11.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Incremental Semantically Grounded Learning from Demonstration (Niekum, RSS 2013) &lt;a href=&quot;http://people.cs.umass.edu/%7Esniekum/pubs/NiekumRSS2013.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Efficient Reinforcement Learning for Robots using Informative Simulated Priors (Cutler, ICRA 2015) &lt;a href=&quot;http://markjcutler.com/papers/Cutler15_ICRA.pdf&quot;&gt;[Paper]&lt;/a&gt; &lt;a href=&quot;https://www.youtube.com/watch?v=kKClFx6l1HY&quot;&gt;[Video]&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;control&quot; class=&quot;anchor&quot; href=&quot;#control&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Control&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;An Application of Reinforcement Learning to Aerobatic Helicopter Flight (Abbeel, NIPS 2006) &lt;a href=&quot;http://heli.stanford.edu/papers/nips06-aerobatichelicopter.pdf&quot;&gt;[Paper]&lt;/a&gt; &lt;a href=&quot;https://www.youtube.com/watch?v=VCdxqn0fcnE&quot;&gt;[Video]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Autonomous helicopter control using Reinforcement Learning Policy Search Methods (Bagnell, ICRA 2011) &lt;a href=&quot;http://repository.cmu.edu/cgi/viewcontent.cgi?article=1082&amp;amp;context=robotics&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;operations-research&quot; class=&quot;anchor&quot; href=&quot;#operations-research&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Operations Research&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Scaling Average-reward Reinforcement Learning for Product Delivery (Proper, AAAI 2004) &lt;a href=&quot;http://web.engr.oregonstate.edu/%7Eproper/AAAI04SProper.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Cross Channel Optimized Marketing by Reinforcement Learning (Abe, KDD 2004) &lt;a href=&quot;http://www.research.ibm.com/people/n/nabe/kdd04AVAS.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;human-computer-interaction&quot; class=&quot;anchor&quot; href=&quot;#human-computer-interaction&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Human Computer Interaction&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Optimizing Dialogue Management with Reinforcement Learning: Experiments with the NJFun System (Singh, JAIR 2002) &lt;a href=&quot;http://web.eecs.umich.edu/%7Ebaveja/Papers/RLDSjair.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h2&gt;
+&lt;a id=&quot;tutorials--websites&quot; class=&quot;anchor&quot; href=&quot;#tutorials--websites&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Tutorials / Websites&lt;/h2&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Mance Harmon and Stephanie Harmon, &lt;a href=&quot;http://old.nbu.bg/cogs/events/2000/Readings/Petrov/rltutorial.pdf&quot;&gt;Reinforcement Learning: A Tutorial&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://webdocs.cs.ualberta.ca/%7Evanhasse/rl_algs/rl_algs.html&quot;&gt;Short introduction to some Reinforcement Learning algorithms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;C. Igel, M.A. Riedmiller, et al., Reinforcement Learning in a Nutshell, ESANN, 2007. &lt;a href=&quot;http://image.diku.dk/igel/paper/RLiaN.pdf&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;UNSW - &lt;a href=&quot;http://www.cse.unsw.edu.au/%7Ecs9417ml/RL1/index.html&quot;&gt;Reinforcement Learning&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://www.cse.unsw.edu.au/%7Ecs9417ml/RL1/introduction.html&quot;&gt;Introduction&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cse.unsw.edu.au/%7Ecs9417ml/RL1/tdlearning.html&quot;&gt;TD-Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cse.unsw.edu.au/%7Ecs9417ml/RL1/algorithms.html&quot;&gt;Q-Learning and SARSA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://www.cse.unsw.edu.au/%7Ecs9417ml/RL1/applet.html&quot;&gt;Applet for &quot;Cat and Mouse&quot; Game&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://wiki.ros.org/reinforcement_learning/Tutorials/Reinforcement%20Learning%20Tutorial&quot;&gt;ROS Reinforcement Learning Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://cs.brown.edu/research/ai/pomdp/tutorial/index.html&quot;&gt;POMDP for Dummies&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Scholarpedia articles on:
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://www.scholarpedia.org/article/Reinforcement_learning&quot;&gt;Reinforcement Learning&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.scholarpedia.org/article/Temporal_difference_learning&quot;&gt;Temporal Difference Learning&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Repository with useful &lt;a href=&quot;http://busoniu.net/repository.php&quot;&gt;MATLAB Software, presentations, and demo videos&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://liinwww.ira.uka.de/bibliography/Neural/reinforcement.learning.html&quot;&gt;Bibliography on Reinforcement Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;UC Berkeley - CS 294: Deep Reinforcement Learning, Fall 2015 (John Schulman, Pieter Abbeel) &lt;a href=&quot;http://rll.berkeley.edu/deeprlcourse/&quot;&gt;[Class Website]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://studywolf.wordpress.com/2012/11/25/reinforcement-learning-q-learning-and-exploration/&quot;&gt;Blog posts on Reinforcement Learning, Parts 1-4&lt;/a&gt; by Travis DeWolf&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h2&gt;
+&lt;a id=&quot;online-demos&quot; class=&quot;anchor&quot; href=&quot;#online-demos&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Online Demos&lt;/h2&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.dcsc.tudelft.nl/%7Erobotics/media.html&quot;&gt;Real-world demonstrations of Reinforcement Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://cs.stanford.edu/people/karpathy/convnetjs/demo/rldemo.html&quot;&gt;Deep Q-Learning Demo&lt;/a&gt; - A deep Q learning demonstration using ConvNetJS&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/nivwusquorum/tensorflow-deepq&quot;&gt;Deep Q-Learning with Tensor Flow&lt;/a&gt; - A deep Q learning demonstration using Google Tensorflow&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Recurrent Neural Network</title>
+   <link href="http://pwer21c.github.io/posts/recurrent-neural-network"/>
+   <updated>2016-04-28T00:00:00+02:00</updated>
+   <id>http://pwer21c.github.io/posts/recurrent-neural-network</id>
+   <content type="html">&lt;h2&gt;
+&lt;a id=&quot;table-of-contents&quot; class=&quot;anchor&quot; href=&quot;#table-of-contents&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Table of Contents&lt;/h2&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#codes&quot;&gt;Codes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;#theory&quot;&gt;Theory&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#lectures&quot;&gt;Lectures&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#books--thesis&quot;&gt;Books / Thesis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#network-variants&quot;&gt;Network Variants&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#surveys&quot;&gt;Surveys&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;#applications&quot;&gt;Applications&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#language-modeling&quot;&gt;Language Modeling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#speech-recognition&quot;&gt;Speech Recognition&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#machine-translation&quot;&gt;Machine Translation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#conversation-modeling&quot;&gt;Conversation Modeling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#image-captioning&quot;&gt;Image Captioning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#video-captioning&quot;&gt;Video Captioning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#question-answering&quot;&gt;Question Answering&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#image-generation&quot;&gt;Image Generation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#turing-machines&quot;&gt;Turing Machines&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#robotics&quot;&gt;Robotics&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#other&quot;&gt;Other&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#datasets&quot;&gt;Datasets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#blogs&quot;&gt;Blogs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#online-demos&quot;&gt;Online Demos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h2&gt;
+&lt;a id=&quot;codes&quot; class=&quot;anchor&quot; href=&quot;#codes&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Codes&lt;/h2&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://www.tensorflow.org/&quot;&gt;Tensorflow&lt;/a&gt; - Python, C++
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://www.tensorflow.org/versions/master/get_started/index.html&quot;&gt;Get started&lt;/a&gt;, &lt;a href=&quot;https://www.tensorflow.org/versions/master/tutorials/index.html&quot;&gt;Tutorials&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.tensorflow.org/versions/master/tutorials/recurrent/index.html&quot;&gt;Recurrent Neural Network Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.tensorflow.org/versions/master/tutorials/seq2seq/index.html&quot;&gt;Sequence-to-Sequence Model Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/nlintz/TensorFlow-Tutorials&quot;&gt;Tutorials&lt;/a&gt; by nlintz&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/aymericdamien/TensorFlow-Examples&quot;&gt;Notebook examples&lt;/a&gt; by aymericdamien&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/tensorflow/skflow&quot;&gt;Scikit Flow (skflow)&lt;/a&gt; - Simiplied Scikit-learn like Interface for TensorFlow&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://keras.io/&quot;&gt;Keras&lt;/a&gt; : (Tensorflow / Theano)-based modular deep learning library similar to Torch&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/sherjilozair/char-rnn-tensorflow&quot;&gt;char-rnn-tensorflow&lt;/a&gt; by sherjilozair: char-rnn in tensorflow&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://deeplearning.net/software/theano/&quot;&gt;Theano&lt;/a&gt; - Python
+
+&lt;ul&gt;
+&lt;li&gt;Simple IPython &lt;a href=&quot;http://nbviewer.ipython.org/github/craffel/theano-tutorial/blob/master/Theano%20Tutorial.ipynb&quot;&gt;tutorial on Theano&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://www.deeplearning.net/tutorial/&quot;&gt;Deep Learning Tutorials&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.deeplearning.net/tutorial/rnnslu.html#rnnslu&quot;&gt;RNN for semantic parsing of speech&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.deeplearning.net/tutorial/lstm.html#lstm&quot;&gt;LSTM network for sentiment analysis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://deeplearning.net/software/pylearn2/&quot;&gt;Pylearn2&lt;/a&gt; : Library that wraps a lot of models and training algorithms in deep learning&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/mila-udem/blocks&quot;&gt;Blocks&lt;/a&gt; : modular framework that enables building neural network models&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://keras.io/&quot;&gt;Keras&lt;/a&gt; : (Tensorflow / Theano)-based modular deep learning library similar to Torch&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/Lasagne/Lasagne&quot;&gt;Lasagne&lt;/a&gt; : Lightweight library to build and train neural networks in Theano&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/gwtaylor/theano-rnn&quot;&gt;theano-rnn&lt;/a&gt; by Graham Taylor&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/IndicoDataSolutions/Passage&quot;&gt;Passage&lt;/a&gt; : Library for text analysis with RNNs&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/Ivaylo-Popov/Theano-Lights&quot;&gt;Theano-Lights&lt;/a&gt; : Contains many generative models&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/BVLC/caffe&quot;&gt;Caffe&lt;/a&gt; - C++ with MATLAB/Python wrappers
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://jeffdonahue.com/lrcn/&quot;&gt;LRCN&lt;/a&gt; by Jeff Donahue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://torch.ch/&quot;&gt;Torch&lt;/a&gt; - Lua
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/karpathy/char-rnn&quot;&gt;char-rnn&lt;/a&gt; by Andrej Karpathy : multi-layer RNN/LSTM/GRU for training/sampling from character-level language models&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/karpathy/neuraltalk2&quot;&gt;neuraltalk2&lt;/a&gt; by Andrej Karpathy : Recurrent Neural Network captions image, much faster and better version of the original &lt;a href=&quot;https://github.com/karpathy/neuraltalk&quot;&gt;neuraltalk&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/wojzaremba/lstm&quot;&gt;LSTM&lt;/a&gt; by Wojciech Zaremba : Long Short Term Memory Units to train a language model on word level Penn Tree Bank dataset&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/oxford-cs-ml-2015&quot;&gt;Oxford&lt;/a&gt; by Nando de Freitas : Oxford Computer Science - Machine Learning 2015 Practicals&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/Element-Research/rnn&quot;&gt;rnn&lt;/a&gt; by Nicholas Leonard : general library for implementing RNN, LSTM, BRNN and BLSTM (highly unit tested).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://deeplearning4j.org/&quot;&gt;DL4J&lt;/a&gt; by &lt;a href=&quot;http://www.skymind.io/&quot;&gt;Skymind&lt;/a&gt; : Deep Learning library for Java, Scala &amp;amp; Clojure on Hadoop, Spark &amp;amp; GPUs
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://deeplearning4j.org/&quot;&gt;Documentation&lt;/a&gt; (Also in &lt;a href=&quot;http://deeplearning4j.org/zh-index.html&quot;&gt;Chinese&lt;/a&gt;, &lt;a href=&quot;http://deeplearning4j.org/ja-index.html&quot;&gt;Japanese&lt;/a&gt;, &lt;a href=&quot;http://deeplearning4j.org/kr-index.html&quot;&gt;Korean&lt;/a&gt;) : &lt;a href=&quot;http://deeplearning4j.org/usingrnns.html&quot;&gt;RNN&lt;/a&gt;, &lt;a href=&quot;http://deeplearning4j.org/lstm.html&quot;&gt;LSTM&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/deeplearning4j/dl4j-0.4-examples/tree/master/src/main/java/org/deeplearning4j/examples/rnn&quot;&gt;rnn examples&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Etc.
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://neon.nervanasys.com/docs/latest/index.html&quot;&gt;Neon&lt;/a&gt;: new deep learning library in Python, with support for RNN/LSTM, and a fast image captioning model&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/IDSIA/brainstorm&quot;&gt;Brainstorm&lt;/a&gt;: deep learning library in Python, developed by IDSIA, thereby including various recurrent structures&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://chainer.org/&quot;&gt;Chainer&lt;/a&gt; : new, flexible deep learning library in Python&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://joschu.github.io/&quot;&gt;CGT&lt;/a&gt;(Computational Graph Toolkit) : replicates Theano&#39;s API, but with very short compilation time and multithreading&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://sourceforge.net/p/rnnl/wiki/Home/&quot;&gt;RNNLIB&lt;/a&gt; by Alex Graves : C++ based LSTM library&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://rnnlm.org/&quot;&gt;RNNLM&lt;/a&gt; by Tomas Mikolov : C++ based simple code&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/yandex/faster-rnnlm&quot;&gt;faster-RNNLM&lt;/a&gt; of Yandex : C++ based rnnlm implementation aimed to handle huge datasets&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/karpathy/neuraltalk&quot;&gt;neuraltalk&lt;/a&gt; by Andrej Karpathy : numpy-based RNN/LSTM implementation&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://gist.github.com/karpathy/587454dc0146a6ae21fc&quot;&gt;gist&lt;/a&gt; by Andrej Karpathy : raw numpy code that implements an efficient batched LSTM&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/karpathy/recurrentjs&quot;&gt;Recurrentjs&lt;/a&gt; by Andrej Karpathy : a beta javascript library for RNN&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://github.com/5vision/DARQN&quot;&gt;DARQN&lt;/a&gt; by 5vision : Deep Attention Recurrent Q-Network&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h2&gt;
+&lt;a id=&quot;theory&quot; class=&quot;anchor&quot; href=&quot;#theory&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Theory&lt;/h2&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;lectures&quot; class=&quot;anchor&quot; href=&quot;#lectures&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Lectures&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Stanford NLP (&lt;a href=&quot;http://cs224d.stanford.edu/index.html&quot;&gt;CS224d&lt;/a&gt;) by Richard Socher
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://cs224d.stanford.edu/lecture_notes/LectureNotes3.pdf&quot;&gt;Lecture Note 3&lt;/a&gt; : neural network basics&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://cs224d.stanford.edu/lecture_notes/LectureNotes4.pdf&quot;&gt;Lecture Note 4&lt;/a&gt; : RNN language models, bi-directional RNN, GRU, LSTM&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Stanford vision (&lt;a href=&quot;http://cs231n.github.io/&quot;&gt;CS231n&lt;/a&gt;) by Andrej Karpathy
+
+&lt;ul&gt;
+&lt;li&gt;About NN basic, and CNN&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Oxford &lt;a href=&quot;https://www.cs.ox.ac.uk/people/nando.defreitas/machinelearning/&quot;&gt;Machine Learning&lt;/a&gt; by Nando de Freitas
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=56TYLaQN4N8&quot;&gt;Lecture 12&lt;/a&gt; : Recurrent neural networks and LSTMs&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=-yX1SYeDHbg&quot;&gt;Lecture 13&lt;/a&gt; : (guest lecture) Alex Graves on Hallucination with RNNs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;books--thesis&quot; class=&quot;anchor&quot; href=&quot;#books--thesis&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Books / Thesis&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Alex Graves (2008)
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cs.toronto.edu/%7Egraves/preprint.pdf&quot;&gt;Supervised Sequence Labelling with Recurrent Neural Networks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Tomas Mikolov (2012)
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.fit.vutbr.cz/%7Eimikolov/rnnlm/thesis.pdf&quot;&gt;Statistical Language Models based on Neural Networks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Ilya Sutskever (2013)
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cs.utoronto.ca/%7Eilya/pubs/ilya_sutskever_phd_thesis.pdf&quot;&gt;Training Recurrent Neural Networks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Richard Socher (2014)
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://nlp.stanford.edu/%7Esocherr/thesis.pdf&quot;&gt;Recursive Deep Learning for Natural Language Processing and Computer Vision&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;network-variants&quot; class=&quot;anchor&quot; href=&quot;#network-variants&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Network Variants&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Bi-directional RNN [&lt;a href=&quot;http://www.di.ufpe.br/%7Efnj/RNA/bibliografia/BRNN.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Mike Schuster and Kuldip K. Paliwal, &lt;em&gt;Bidirectional Recurrent Neural Networks&lt;/em&gt;, Trans. on Signal Processing 1997&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LSTM [&lt;a href=&quot;http://deeplearning.cs.cmu.edu/pdfs/Hochreiter97_lstm.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Sepp Hochreiter and Jurgen Schmidhuber, &lt;em&gt;Long Short-Term Memory&lt;/em&gt;, Neural Computation 1997&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Multi-dimensional RNN [&lt;a href=&quot;http://arxiv.org/pdf/0705.2011.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Alex Graves, Santiago Fernandez, and Jurgen Schmidhuber, &lt;em&gt;Multi-Dimensional Recurrent Neural Networks&lt;/em&gt;, ICANN 2007&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GRU (Gated Recurrent Unit) [&lt;a href=&quot;http://arxiv.org/pdf/1406.1078.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Kyunghyun Cho, Bart van Berrienboer, Caglar Gulcehre, Dzmitry Bahdanau, Fethi Bougares, Holger Schwenk, and Yoshua Bengio, &lt;em&gt;Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation&lt;/em&gt;, arXiv:1406.1078 / EMNLP 2014&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;NTM [&lt;a href=&quot;http://arxiv.org/pdf/1410.5401&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;A.Graves, G. Wayne, and I. Danihelka., &lt;em&gt;Neural Turing Machines,&lt;/em&gt; arXiv preprint arXiv:1410.5401 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Neural GPU [&lt;a href=&quot;http://arxiv.org/pdf/1511.08228.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Łukasz Kaiser, Ilya Sutskever, arXiv:1511.08228 / ICML 2016 (under review)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Memory Network [&lt;a href=&quot;http://arxiv.org/pdf/1410.3916&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Jason Weston, Sumit Chopra, Antoine Bordes, &lt;em&gt;Memory Networks,&lt;/em&gt; arXiv:1410.3916 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GFRNN [&lt;a href=&quot;http://arxiv.org/pdf/1502.02367&quot;&gt;Paper-arXiv&lt;/a&gt;] [&lt;a href=&quot;http://jmlr.org/proceedings/papers/v37/chung15.pdf&quot;&gt;Paper-ICML&lt;/a&gt;] [&lt;a href=&quot;http://jmlr.org/proceedings/papers/v37/chung15-supp.pdf&quot;&gt;Supplementary&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Junyoung Chung, Caglar Gulcehre, Kyunghyun Cho, Yoshua Bengio, &lt;em&gt;Gated Feedback Recurrent Neural Networks&lt;/em&gt;, arXiv:1502.02367 / ICML 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Tree-Structured RNNs
+
+&lt;ul&gt;
+&lt;li&gt;Kai Sheng Tai, Richard Socher, and Christopher D. Manning, &lt;em&gt;Improved Semantic Representations From Tree-Structured Long Short-Term Memory Networks&lt;/em&gt;, arXiv:1503.00075 / ACL 2015 [&lt;a href=&quot;http://arxiv.org/pdf/1503.00075&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Samuel R. Bowman, Christopher D. Manning, and Christopher Potts, &lt;em&gt;Tree-structured composition in neural networks without tree-structured architectures&lt;/em&gt;, arXiv:1506.04834 [&lt;a href=&quot;http://arxiv.org/pdf/1506.04834&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Grid LSTM [&lt;a href=&quot;http://arxiv.org/pdf/1507.01526&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Nal Kalchbrenner, Ivo Danihelka, and Alex Graves, &lt;em&gt;Grid Long Short-Term Memory&lt;/em&gt;, arXiv:1507.01526&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Pointer Network [&lt;a href=&quot;http://arxiv.org/pdf/1506.03134&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Oriol Vinyals, Meire Fortunato, and Navdeep Jaitly, &lt;em&gt;Pointer Networks&lt;/em&gt;, arXiv:1506.03134 / NIPS 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Deep Attention Recurrent Q-Network [&lt;a href=&quot;http://arxiv.org/abs/1512.01693&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Ivan Sorokin, Alexey Seleznev, Mikhail Pavlov, Aleksandr Fedorov, Anastasiia Ignateva, &lt;em&gt;Deep Attention Recurrent Q-Network&lt;/em&gt; , arXiv:1512.01693 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;surveys&quot; class=&quot;anchor&quot; href=&quot;#surveys&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Surveys&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Yann LeCun, Yoshua Bengio, and Geoffrey Hinton, &lt;a href=&quot;http://www.nature.com/nature/journal/v521/n7553/pdf/nature14539.pdf&quot;&gt;Deep Learning&lt;/a&gt;, Nature 2015&lt;/li&gt;
+&lt;li&gt;Klaus Greff, Rupesh Kumar Srivastava, Jan Koutnik, Bas R. Steunebrink, Jurgen Schmidhuber, &lt;a href=&quot;http://arxiv.org/pdf/1503.04069&quot;&gt;LSTM: A Search Space Odyssey&lt;/a&gt;, arXiv:1503.04069&lt;/li&gt;
+&lt;li&gt;Zachary C. Lipton, &lt;a href=&quot;http://arxiv.org/pdf/1506.00019&quot;&gt;A Critical Review of Recurrent Neural Networks for Sequence Learning&lt;/a&gt;, arXiv:1506.00019&lt;/li&gt;
+&lt;li&gt;Andrej Karpathy, Justin Johnson, Li Fei-Fei, &lt;a href=&quot;http://arxiv.org/pdf/1506.02078&quot;&gt;Visualizing and Understanding Recurrent Networks&lt;/a&gt;, arXiv:1506.02078&lt;/li&gt;
+&lt;li&gt;Rafal Jozefowicz, Wojciech Zaremba, Ilya Sutskever, &lt;a href=&quot;http://jmlr.org/proceedings/papers/v37/jozefowicz15.pdf&quot;&gt;An Empirical Exploration of Recurrent Network Architectures&lt;/a&gt;, ICML, 2015.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h2&gt;
+&lt;a id=&quot;applications&quot; class=&quot;anchor&quot; href=&quot;#applications&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Applications&lt;/h2&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;language-modeling&quot; class=&quot;anchor&quot; href=&quot;#language-modeling&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Language Modeling&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Tomas Mikolov, Martin Karafiat, Lukas Burget, Jan &quot;Honza&quot; Cernocky, Sanjeev Khudanpur, &lt;em&gt;Recurrent Neural Network based Language Model&lt;/em&gt;, Interspeech 2010 [&lt;a href=&quot;http://www.fit.vutbr.cz/research/groups/speech/publi/2010/mikolov_interspeech2010_IS100722.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Tomas Mikolov, Stefan Kombrink, Lukas Burget, Jan &quot;Honza&quot; Cernocky, Sanjeev Khudanpur, &lt;em&gt;Extensions of Recurrent Neural Network Language Model&lt;/em&gt;, ICASSP 2011 [&lt;a href=&quot;http://www.fit.vutbr.cz/research/groups/speech/publi/2011/mikolov_icassp2011_5528.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Stefan Kombrink, Tomas Mikolov, Martin Karafiat, Lukas Burget, &lt;em&gt;Recurrent Neural Network based Language Modeling in Meeting Recognition&lt;/em&gt;, Interspeech 2011 [&lt;a href=&quot;http://www.fit.vutbr.cz/%7Eimikolov/rnnlm/ApplicationOfRNNinMeetingRecognition_IS2011.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Jiwei Li, Minh-Thang Luong, and Dan Jurafsky, &lt;em&gt;A Hierarchical Neural Autoencoder for Paragraphs and Documents&lt;/em&gt;, ACL 2015 [&lt;a href=&quot;http://arxiv.org/pdf/1506.01057&quot;&gt;Paper&lt;/a&gt;], [&lt;a href=&quot;https://github.com/jiweil/Hierarchical-Neural-Autoencoder&quot;&gt;Code&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Ryan Kiros, Yukun Zhu, Ruslan Salakhutdinov, and Richard S. Zemel, &lt;em&gt;Skip-Thought Vectors&lt;/em&gt;, arXiv:1506.06726 / NIPS 2015 [&lt;a href=&quot;http://arxiv.org/pdf/1506.06726.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Yoon Kim, Yacine Jernite, David Sontag, and Alexander M. Rush, &lt;em&gt;Character-Aware Neural Language Models&lt;/em&gt;, arXiv:1508.06615 [&lt;a href=&quot;http://arxiv.org/pdf/1508.06615&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Xingxing Zhang, Liang Lu, and Mirella Lapata, &lt;em&gt;Tree Recurrent Neural Networks with Application to Language Modeling&lt;/em&gt;, arXiv:1511.00060 [&lt;a href=&quot;http://arxiv.org/pdf/1511.00060.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Felix Hill, Antoine Bordes, Sumit Chopra, and Jason Weston, &lt;em&gt;The Goldilocks Principle: Reading children&#39;s books with explicit memory representations&lt;/em&gt;, arXiv:1511.0230 [&lt;a href=&quot;http://arxiv.org/pdf/1511.02301.pdf&quot;&gt;Paper&lt;/a&gt;] &lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;speech-recognition&quot; class=&quot;anchor&quot; href=&quot;#speech-recognition&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Speech Recognition&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Geoffrey Hinton, Li Deng, Dong Yu, George E. Dahl, Abdel-rahman Mohamed, Navdeep Jaitly, Andrew Senior, Vincent Vanhoucke, Patrick Nguyen, Tara N. Sainath, and Brian Kingsbury, &lt;em&gt;Deep Neural Networks for Acoustic Modeling in Speech Recognition&lt;/em&gt;, IEEE Signam Processing Magazine 2012 [&lt;a href=&quot;http://cs224d.stanford.edu/papers/maas_paper.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Alex Graves, Abdel-rahman Mohamed, and Geoffrey Hinton, &lt;em&gt;Speech Recognition with Deep Recurrent Neural Networks&lt;/em&gt;, arXiv:1303.5778 / ICASSP 2013 [&lt;a href=&quot;http://www.cs.toronto.edu/%7Efritz/absps/RNN13.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Jan Chorowski, Dzmitry Bahdanau, Dmitriy Serdyuk, Kyunghyun Cho, and Yoshua Bengio, &lt;em&gt;Attention-Based Models for Speech Recognition&lt;/em&gt;, arXiv:1506.07503 / NIPS 2015 [&lt;a href=&quot;http://arxiv.org/pdf/1506.07503&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Haşim Sak, Andrew Senior, Kanishka Rao, and Françoise Beaufays. &lt;em&gt;Fast and Accurate Recurrent Neural Network Acoustic Models for Speech Recognition&lt;/em&gt;, arXiv:1507.06947 2015 [&lt;a href=&quot;http://arxiv.org/pdf/1507.06947v1.pdf&quot;&gt;Paper&lt;/a&gt;].&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;machine-translation&quot; class=&quot;anchor&quot; href=&quot;#machine-translation&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Machine Translation&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Oxford [&lt;a href=&quot;http://nal.co/papers/KalchbrennerBlunsom_EMNLP13&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Nal Kalchbrenner and Phil Blunsom, &lt;em&gt;Recurrent Continuous Translation Models&lt;/em&gt;, EMNLP 2013&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Univ. Montreal 
+
+&lt;ul&gt;
+&lt;li&gt;Kyunghyun Cho, Bart van Berrienboer, Caglar Gulcehre, Dzmitry Bahdanau, Fethi Bougares, Holger Schwenk, and Yoshua Bengio, &lt;em&gt;Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation&lt;/em&gt;, arXiv:1406.1078 / EMNLP 2014 [&lt;a href=&quot;http://arxiv.org/pdf/1406.1078&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Kyunghyun Cho, Bart van Merrienboer, Dzmitry Bahdanau, and Yoshua Bengio, &lt;em&gt;On the Properties of Neural Machine Translation: Encoder-Decoder Approaches&lt;/em&gt;, SSST-8 2014 [&lt;a href=&quot;http://www.aclweb.org/anthology/W14-4012&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Jean Pouget-Abadie, Dzmitry Bahdanau, Bart van Merrienboer, Kyunghyun Cho, and Yoshua Bengio, &lt;em&gt;Overcoming the Curse of Sentence Length for Neural Machine Translation using Automatic Segmentation&lt;/em&gt;, SSST-8 2014&lt;/li&gt;
+&lt;li&gt;Dzmitry Bahdanau, KyungHyun Cho, and Yoshua Bengio, &lt;em&gt;Neural Machine Translation by Jointly Learning to Align and Translate&lt;/em&gt;, arXiv:1409.0473 / ICLR 2015 [&lt;a href=&quot;http://arxiv.org/pdf/1409.0473&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Sebastian Jean, Kyunghyun Cho, Roland Memisevic, and Yoshua Bengio, &lt;em&gt;On using very large target vocabulary for neural machine translation&lt;/em&gt;, arXiv:1412.2007 / ACL 2015 [&lt;a href=&quot;http://arxiv.org/pdf/1412.2007.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Univ. Montreal + Middle East Tech. Univ. + Univ. Maine [&lt;a href=&quot;http://arxiv.org/pdf/1503.03535.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Caglar Gulcehre, Orhan Firat, Kelvin Xu, Kyunghyun Cho, Loic Barrault, Huei-Chi Lin, Fethi Bougares, Holger Schwenk, and Yoshua Bengio, &lt;em&gt;On Using Monolingual Corpora in Neural Machine Translation&lt;/em&gt;, arXiv:1503.03535&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Google [&lt;a href=&quot;http://papers.nips.cc/paper/5346-sequence-to-sequence-learning-with-neural-networks.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Ilya Sutskever, Oriol Vinyals, and Quoc V. Le, &lt;em&gt;Sequence to Sequence Learning with Neural Networks&lt;/em&gt;, arXiv:1409.3215 / NIPS 2014&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Google + NYU [&lt;a href=&quot;http://arxiv.org/pdf/1410.8206&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Minh-Thang Luong, Ilya Sutskever, Quoc V. Le, Oriol Vinyals, and Wojciech Zaremba, &lt;em&gt;Addressing the Rare Word Problem in Neural Machine Transltaion&lt;/em&gt;, arXiv:1410.8206 / ACL 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;ICT + Huawei [&lt;a href=&quot;http://arxiv.org/pdf/1506.06442.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Fandong Meng, Zhengdong Lu, Zhaopeng Tu, Hang Li, and Qun Liu, &lt;em&gt;A Deep Memory-based Architecture for Sequence-to-Sequence Learning&lt;/em&gt;, arXiv:1506.06442 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Stanford [&lt;a href=&quot;http://arxiv.org/pdf/1508.04025.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Minh-Thang Luong, Hieu Pham, and Christopher D. Manning, &lt;em&gt;Effective Approaches to Attention-based Neural Machine Translation&lt;/em&gt;, arXiv:1508.04025&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Middle East Tech. Univ. + NYU + Univ. Montreal [&lt;a href=&quot;http://arxiv.org/pdf/1601.01073.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Orhan Firat, Kyunghyun Cho, and Yoshua Bengio, &lt;em&gt;Multi-Way, Multilingual Neural Machine Translation with a Shared Attention Mechanism&lt;/em&gt;, arXiv:1601.01073&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;conversation-modeling&quot; class=&quot;anchor&quot; href=&quot;#conversation-modeling&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Conversation Modeling&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Lifeng Shang, Zhengdong Lu, and Hang Li, &lt;em&gt;Neural Responding Machine for Short-Text Conversation&lt;/em&gt;, arXiv:1503.02364 / ACL 2015 [&lt;a href=&quot;http://arxiv.org/pdf/1503.02364&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Oriol Vinyals and Quoc V. Le, &lt;em&gt;A Neural Conversational Model&lt;/em&gt;, arXiv:1506.05869 [&lt;a href=&quot;http://arxiv.org/pdf/1506.05869&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Ryan Lowe, Nissan Pow, Iulian V. Serban, and Joelle Pineau, &lt;em&gt;The Ubuntu Dialogue Corpus: A Large Dataset for Research in Unstructured Multi-Turn Dialogue Systems&lt;/em&gt;, arXiv:1506.08909 [&lt;a href=&quot;http://arxiv.org/pdf/1506.08909&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;image-captioning&quot; class=&quot;anchor&quot; href=&quot;#image-captioning&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Image Captioning&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;UCLA + Baidu [&lt;a href=&quot;http://www.stat.ucla.edu/%7Ejunhua.mao/m-RNN.html&quot;&gt;Web&lt;/a&gt;] [&lt;a href=&quot;http://arxiv.org/pdf/1410.1090&quot;&gt;Paper-arXiv1&lt;/a&gt;], [&lt;a href=&quot;http://arxiv.org/pdf/1412.6632&quot;&gt;Paper-arXiv2&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Junhua Mao, Wei Xu, Yi Yang, Jiang Wang, and Alan L. Yuille, &lt;em&gt;Explain Images with Multimodal Recurrent Neural Networks&lt;/em&gt;, arXiv:1410.1090&lt;/li&gt;
+&lt;li&gt;Junhua Mao, Wei Xu, Yi Yang, Jiang Wang, Zhiheng Huang, and Alan L. Yuille, &lt;em&gt;Deep Captioning with Multimodal Recurrent Neural Networks (m-RNN)&lt;/em&gt;, arXiv:1412.6632 / ICLR 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Univ. Toronto [&lt;a href=&quot;http://arxiv.org/pdf/1411.2539&quot;&gt;Paper&lt;/a&gt;] [&lt;a href=&quot;http://deeplearning.cs.toronto.edu/i2t&quot;&gt;Web demo&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Ryan Kiros, Ruslan Salakhutdinov, and Richard S. Zemel, &lt;em&gt;Unifying Visual-Semantic Embeddings with Multimodal Neural Language Models&lt;/em&gt;, arXiv:1411.2539 / TACL 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Berkeley [&lt;a href=&quot;http://jeffdonahue.com/lrcn/&quot;&gt;Web&lt;/a&gt;] [&lt;a href=&quot;http://arxiv.org/pdf/1411.4389&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Jeff Donahue, Lisa Anne Hendricks, Sergio Guadarrama, Marcus Rohrbach, Subhashini Venugopalan, Kate Saenko, and Trevor Darrell, &lt;em&gt;Long-term Recurrent Convolutional Networks for Visual Recognition and Description&lt;/em&gt;, arXiv:1411.4389 / CVPR 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Google [&lt;a href=&quot;http://arxiv.org/pdf/1411.4555&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Oriol Vinyals, Alexander Toshev, Samy Bengio, and Dumitru Erhan, &lt;em&gt;Show and Tell: A Neural Image Caption Generator&lt;/em&gt;, arXiv:1411.4555 / CVPR 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Stanford &lt;a href=&quot;http://cs.stanford.edu/people/karpathy/deepimagesent/&quot;&gt;[Web]&lt;/a&gt; &lt;a href=&quot;http://cs.stanford.edu/people/karpathy/cvpr2015.pdf&quot;&gt;[Paper]&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Andrej Karpathy and Li Fei-Fei, &lt;em&gt;Deep Visual-Semantic Alignments for Generating Image Description&lt;/em&gt;, CVPR 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Microsoft [&lt;a href=&quot;http://arxiv.org/pdf/1411.4952&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Hao Fang, Saurabh Gupta, Forrest Iandola, Rupesh Srivastava, Li Deng, Piotr Dollar, Jianfeng Gao, Xiaodong He, Margaret Mitchell, John C. Platt, Lawrence Zitnick, and Geoffrey Zweig, &lt;em&gt;From Captions to Visual Concepts and Back&lt;/em&gt;, arXiv:1411.4952 / CVPR 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CMU + Microsoft [&lt;a href=&quot;http://arxiv.org/pdf/1411.5654&quot;&gt;Paper-arXiv&lt;/a&gt;], [&lt;a href=&quot;http://www.cs.cmu.edu/%7Exinleic/papers/cvpr15_rnn.pdf&quot;&gt;Paper-CVPR&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Xinlei Chen, and C. Lawrence Zitnick, &lt;em&gt;Learning a Recurrent Visual Representation for Image Caption Generation&lt;/em&gt;
+&lt;/li&gt;
+&lt;li&gt;Xinlei Chen, and C. Lawrence Zitnick, &lt;em&gt;Mind’s Eye: A Recurrent Visual Representation for Image Caption Generation&lt;/em&gt;, CVPR 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Univ. Montreal + Univ. Toronto [&lt;a href=&quot;http://kelvinxu.github.io/projects/capgen.html&quot;&gt;Web&lt;/a&gt;] [&lt;a href=&quot;http://www.cs.toronto.edu/%7Ezemel/documents/captionAttn.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Kelvin Xu, Jimmy Lei Ba, Ryan Kiros, Kyunghyun Cho, Aaron Courville, Ruslan Salakhutdinov, Richard S. Zemel, and Yoshua Bengio, &lt;em&gt;Show, Attend, and Tell: Neural Image Caption Generation with Visual Attention&lt;/em&gt;, arXiv:1502.03044 / ICML 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Idiap + EPFL + Facebook [&lt;a href=&quot;http://arxiv.org/pdf/1502.03671&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Remi Lebret, Pedro O. Pinheiro, and Ronan Collobert, &lt;em&gt;Phrase-based Image Captioning&lt;/em&gt;, arXiv:1502.03671 / ICML 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;UCLA + Baidu [&lt;a href=&quot;http://arxiv.org/pdf/1504.06692&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Junhua Mao, Wei Xu, Yi Yang, Jiang Wang, Zhiheng Huang, and Alan L. Yuille, &lt;em&gt;Learning like a Child: Fast Novel Visual Concept Learning from Sentence Descriptions of Images&lt;/em&gt;, arXiv:1504.06692&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MS + Berkeley
+
+&lt;ul&gt;
+&lt;li&gt;Jacob Devlin, Saurabh Gupta, Ross Girshick, Margaret Mitchell, and C. Lawrence Zitnick, &lt;em&gt;Exploring Nearest Neighbor Approaches for Image Captioning&lt;/em&gt;, arXiv:1505.04467 (Note: technically not RNN) [&lt;a href=&quot;http://arxiv.org/pdf/1505.04467.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Jacob Devlin, Hao Cheng, Hao Fang, Saurabh Gupta, Li Deng, Xiaodong He, Geoffrey Zweig, and Margaret Mitchell, &lt;em&gt;Language Models for Image Captioning: The Quirks and What Works&lt;/em&gt;, arXiv:1505.01809 [&lt;a href=&quot;http://arxiv.org/pdf/1505.01809.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Adelaide [&lt;a href=&quot;http://arxiv.org/pdf/1506.01144.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Qi Wu, Chunhua Shen, Anton van den Hengel, Lingqiao Liu, and Anthony Dick, &lt;em&gt;Image Captioning with an Intermediate Attributes Layer&lt;/em&gt;, arXiv:1506.01144&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Tilburg [&lt;a href=&quot;http://arxiv.org/pdf/1506.03694.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Grzegorz Chrupala, Akos Kadar, and Afra Alishahi, &lt;em&gt;Learning language through pictures&lt;/em&gt;, arXiv:1506.03694&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Univ. Montreal [&lt;a href=&quot;http://arxiv.org/pdf/1507.01053.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Kyunghyun Cho, Aaron Courville, and Yoshua Bengio, &lt;em&gt;Describing Multimedia Content using Attention-based Encoder-Decoder Networks&lt;/em&gt;, arXiv:1507.01053&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Cornell [&lt;a href=&quot;http://arxiv.org/pdf/1508.02091.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Jack Hessel, Nicolas Savva, and Michael J. Wilber, &lt;em&gt;Image Representations and New Domains in Neural Image Captioning&lt;/em&gt;, arXiv:1508.02091&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;video-captioning&quot; class=&quot;anchor&quot; href=&quot;#video-captioning&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Video Captioning&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Berkeley [&lt;a href=&quot;http://jeffdonahue.com/lrcn/&quot;&gt;Web&lt;/a&gt;] [&lt;a href=&quot;http://arxiv.org/pdf/1411.4389&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Jeff Donahue, Lisa Anne Hendricks, Sergio Guadarrama, Marcus Rohrbach, Subhashini Venugopalan, Kate Saenko, and Trevor Darrell, &lt;em&gt;Long-term Recurrent Convolutional Networks for Visual Recognition and Description&lt;/em&gt;, arXiv:1411.4389 / CVPR 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;UT Austin + UML + Berkeley [&lt;a href=&quot;http://arxiv.org/pdf/1412.4729&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Subhashini Venugopalan, Huijuan Xu, Jeff Donahue, Marcus Rohrbach, Raymond Mooney, and Kate Saenko, &lt;em&gt;Translating Videos to Natural Language Using Deep Recurrent Neural Networks&lt;/em&gt;, arXiv:1412.4729&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Microsoft [&lt;a href=&quot;http://arxiv.org/pdf/1505.01861&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Yingwei Pan, Tao Mei, Ting Yao, Houqiang Li, and Yong Rui, &lt;em&gt;Joint Modeling Embedding and Translation to Bridge Video and Language&lt;/em&gt;, arXiv:1505.01861&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;UT Austin + Berkeley + UML [&lt;a href=&quot;http://arxiv.org/pdf/1505.00487&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Subhashini Venugopalan, Marcus Rohrbach, Jeff Donahue, Raymond Mooney, Trevor Darrell, and Kate Saenko, &lt;em&gt;Sequence to Sequence--Video to Text&lt;/em&gt;, arXiv:1505.00487&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Univ. Montreal + Univ. Sherbrooke [&lt;a href=&quot;http://arxiv.org/pdf/1502.08029.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Li Yao, Atousa Torabi, Kyunghyun Cho, Nicolas Ballas, Christopher Pal, Hugo Larochelle, and Aaron Courville, &lt;em&gt;Describing Videos by Exploiting Temporal Structure&lt;/em&gt;, arXiv:1502.08029&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MPI + Berkeley [&lt;a href=&quot;http://arxiv.org/pdf/1506.01698.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Anna Rohrbach, Marcus Rohrbach, and Bernt Schiele, &lt;em&gt;The Long-Short Story of Movie Description&lt;/em&gt;, arXiv:1506.01698&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Univ. Toronto + MIT [&lt;a href=&quot;http://arxiv.org/pdf/1506.06724.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Yukun Zhu, Ryan Kiros, Richard Zemel, Ruslan Salakhutdinov, Raquel Urtasun, Antonio Torralba, and Sanja Fidler, &lt;em&gt;Aligning Books and Movies: Towards Story-like Visual Explanations by Watching Movies and Reading Books&lt;/em&gt;, arXiv:1506.06724&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Univ. Montreal [&lt;a href=&quot;http://arxiv.org/pdf/1507.01053.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Kyunghyun Cho, Aaron Courville, and Yoshua Bengio, &lt;em&gt;Describing Multimedia Content using Attention-based Encoder-Decoder Networks&lt;/em&gt;, arXiv:1507.01053&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Zhejiang Univ. + UTS [&lt;a href=&quot;http://arxiv.org/abs/1511.03476&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Pingbo Pan, Zhongwen Xu, Yi Yang, Fei Wu, Yueting Zhuang, &lt;em&gt;Hierarchical Recurrent Neural Encoder for Video Representation with Application to Captioning&lt;/em&gt;, arXiv:1511.03476&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Univ. Montreal + NYU + IBM [&lt;a href=&quot;http://arxiv.org/pdf/1511.04590.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Li Yao, Nicolas Ballas, Kyunghyun Cho, John R. Smith, and Yoshua Bengio, &lt;em&gt;Empirical performance upper bounds for image and video captioning&lt;/em&gt;, arXiv:1511.04590&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;video-modeling&quot; class=&quot;anchor&quot; href=&quot;#video-modeling&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Video Modeling&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Univ. Toronto [&lt;a href=&quot;http://arxiv.org/abs/1502.04681&quot;&gt;paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Nitish Srivastava, Elman Mansimov, Ruslan Salakhutdinov, Unsupervised Learning of Video Representations using LSTMs, arXiv:1502.04681 / ICML 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Univ. Cambridge [&lt;a href=&quot;http://arxiv.org/abs/1511.06309&quot;&gt;paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Viorica Patraucean, Ankur Handa, Roberto Cipolla, Spatio-temporal video autoencoder with differentiable memory, arXiv:1511.06309&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;question-answering&quot; class=&quot;anchor&quot; href=&quot;#question-answering&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Question Answering&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;FAIR [&lt;a href=&quot;https://research.facebook.com/researchers/1543934539189348&quot;&gt;Web&lt;/a&gt;] [&lt;a href=&quot;http://arxiv.org/pdf/1502.05698.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Jason Weston, Antoine Bordes, Sumit Chopra, Tomas Mikolov, and Alexander M. Rush, &lt;em&gt;Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks&lt;/em&gt;, arXiv:1502.05698&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Virginia Tech. + MSR [&lt;a href=&quot;http://www.visualqa.org/&quot;&gt;Web&lt;/a&gt;] [&lt;a href=&quot;http://arxiv.org/pdf/1505.00468&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Stanislaw Antol, Aishwarya Agrawal, Jiasen Lu, Margaret Mitchell, Dhruv Batra, C. Lawrence Zitnick, and Devi Parikh, &lt;em&gt;VQA: Visual Question Answering&lt;/em&gt;, arXiv:1505.00468 / CVPR 2015 SUNw:Scene Understanding workshop&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MPI + Berkeley [&lt;a href=&quot;https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/vision-and-language/visual-turing-challenge/&quot;&gt;Web&lt;/a&gt;] [&lt;a href=&quot;http://arxiv.org/pdf/1505.01121&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Mateusz Malinowski, Marcus Rohrbach, and Mario Fritz, &lt;em&gt;Ask Your Neurons: A Neural-based Approach to Answering Questions about Images&lt;/em&gt;, arXiv:1505.01121&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Univ. Toronto [&lt;a href=&quot;http://arxiv.org/pdf/1505.02074&quot;&gt;Paper&lt;/a&gt;] [&lt;a href=&quot;http://www.cs.toronto.edu/%7Emren/imageqa/data/cocoqa/&quot;&gt;Dataset&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Mengye Ren, Ryan Kiros, and Richard Zemel, &lt;em&gt;Exploring Models and Data for Image Question Answering&lt;/em&gt;, arXiv:1505.02074 / ICML 2015 deep learning workshop&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Baidu + UCLA [&lt;a href=&quot;http://arxiv.org/pdf/1505.05612&quot;&gt;Paper&lt;/a&gt;] [&lt;a href=&quot;&quot;&gt;Dataset&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Hauyuan Gao, Junhua Mao, Jie Zhou, Zhiheng Huang, Lei Wang, and Wei Xu, &lt;em&gt;Are You Talking to a Machine? Dataset and Methods for Multilingual Image Question Answering&lt;/em&gt;, arXiv:1505.05612 / NIPS 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;DeepMind + Oxford [&lt;a href=&quot;http://arxiv.org/pdf/1506.03340.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Karl M. Hermann, Tomas Kocisky, Edward Grefenstette, Lasse Espeholt, Will Kay, Mustafa Suleyman, and Phil Blunsom, &lt;em&gt;Teaching Machines to Read and Comprehend&lt;/em&gt;, arXiv:1506.03340 / NIPS 2015&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MetaMind [&lt;a href=&quot;http://arxiv.org/pdf/1506.07285.pdf&quot;&gt;Paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Ankit Kumar, Ozan Irsoy, Jonathan Su, James Bradbury, Robert English, Brian Pierce, Peter Ondruska, Mohit Iyyer, Ishaan Gulrajani, and Richard Socher, &lt;em&gt;Ask Me Anything: Dynamic Memory Networks for Natural Language Processing&lt;/em&gt;, arXiv:1506.07285&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Video QA
+
+&lt;ul&gt;
+&lt;li&gt;CMU + UTS [&lt;a href=&quot;http://arxiv.org/abs/1511.04670&quot;&gt;paper&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Linchao Zhu, Zhongwen Xu, Yi Yang, Alexander G. Hauptmann, Uncovering Temporal Context for Video Question and Answering, arXiv:1511.04670&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;KIT + MIT + Univ. Toronto [&lt;a href=&quot;http://arxiv.org/abs/1512.02902&quot;&gt;Paper&lt;/a&gt;] [&lt;a href=&quot;http://movieqa.cs.toronto.edu/home/&quot;&gt;Dataset&lt;/a&gt;]
+
+&lt;ul&gt;
+&lt;li&gt;Makarand Tapaswi, Yukun Zhu, Rainer Stiefelhagen, Antonio Torralba, Raquel Urtasun, Sanja Fidler, MovieQA: Understanding Stories in Movies through Question-Answering, arXiv:1512.02902&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;image-generation&quot; class=&quot;anchor&quot; href=&quot;#image-generation&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Image Generation&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Karol Gregor, Ivo Danihelka, Alex Graves, Danilo J. Rezende, and Daan Wierstra, &lt;em&gt;DRAW: A Recurrent Neural Network for Image Generation,&lt;/em&gt; ICML 2015 [&lt;a href=&quot;http://arxiv.org/pdf/1502.04623&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Angeliki Lazaridou, Dat T. Nguyen, R. Bernardi, and M. Baroni, &lt;em&gt;Unveiling the Dreams of Word Embeddings: Towards Language-Driven Image Generation,&lt;/em&gt; arXiv:1506.03500 [&lt;a href=&quot;http://arxiv.org/pdf/1506.03500&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Lucas Theis and Matthias Bethge, &lt;em&gt;Generative Image Modeling Using Spatial LSTMs,&lt;/em&gt; arXiv:1506.03478 / NIPS 2015 [&lt;a href=&quot;http://arxiv.org/pdf/1506.03478&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Aaron van den Oord, Nal Kalchbrenner, and Koray Kavukcuoglu, &lt;em&gt;Pixel Recurrent Neural Networks,&lt;/em&gt; arXiv:1601.06759 [&lt;a href=&quot;http://arxiv.org/abs/1601.06759&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;turing-machines&quot; class=&quot;anchor&quot; href=&quot;#turing-machines&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Turing Machines&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt; A.Graves, G. Wayne, and I. Danihelka., &lt;em&gt;Neural Turing Machines,&lt;/em&gt; arXiv preprint arXiv:1410.5401 [&lt;a href=&quot;http://arxiv.org/pdf/1410.5401&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Jason Weston, Sumit Chopra, Antoine Bordes, &lt;em&gt;Memory Networks,&lt;/em&gt; arXiv:1410.3916 [&lt;a href=&quot;http://arxiv.org/pdf/1410.3916&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Armand Joulin and Tomas Mikolov, &lt;em&gt;Inferring Algorithmic Patterns with Stack-Augmented Recurrent Nets&lt;/em&gt;, arXiv:1503.01007 / NIPS 2015 [&lt;a href=&quot;http://arxiv.org/pdf/1503.01007&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Sainbayar Sukhbaatar, Arthur Szlam, Jason Weston, and Rob Fergus, &lt;em&gt;End-To-End Memory Networks&lt;/em&gt;, arXiv:1503.08895 / NIPS 2015 [&lt;a href=&quot;http://arxiv.org/pdf/1503.08895&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Wojciech Zaremba and Ilya Sutskever, &lt;em&gt;Reinforcement Learning Neural Turing Machines,&lt;/em&gt; arXiv:1505.00521 [&lt;a href=&quot;http://arxiv.org/pdf/1505.00521&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Baolin Peng and Kaisheng Yao, &lt;em&gt;Recurrent Neural Networks with External Memory for Language Understanding&lt;/em&gt;, arXiv:1506.00195 [&lt;a href=&quot;http://arxiv.org/pdf/1506.00195.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Fandong Meng, Zhengdong Lu, Zhaopeng Tu, Hang Li, and Qun Liu, &lt;em&gt;A Deep Memory-based Architecture for Sequence-to-Sequence Learning&lt;/em&gt;, arXiv:1506.06442 [&lt;a href=&quot;http://arxiv.org/pdf/1506.06442.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Arvind Neelakantan, Quoc V. Le, and Ilya Sutskever, &lt;em&gt;Neural Programmer: Inducing Latent Programs with Gradient Descent&lt;/em&gt;, arXiv:1511.04834 [&lt;a href=&quot;http://arxiv.org/pdf/1511.04834.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Scott Reed and Nando de Freitas, &lt;em&gt;Neural Programmer-Interpreters&lt;/em&gt;, arXiv:1511.06279 [&lt;a href=&quot;http://arxiv.org/pdf/1511.06279.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Karol Kurach, Marcin Andrychowicz, and Ilya Sutskever, &lt;em&gt;Neural Random-Access Machines&lt;/em&gt;, arXiv:1511.06392 [&lt;a href=&quot;http://arxiv.org/pdf/1511.06392.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Łukasz Kaiser and Ilya Sutskever, &lt;em&gt;Neural GPUs Learn Algorithms&lt;/em&gt;, arXiv:1511.08228 [&lt;a href=&quot;http://arxiv.org/pdf/1511.08228.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Ethan Caballero, &lt;em&gt;Skip-Thought Memory Networks&lt;/em&gt;, arXiv:1511.6420 [&lt;a href=&quot;arxiv.org/pdf/1511.06420.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Wojciech Zaremba, Tomas Mikolov, Armand Joulin, and Rob Fergus, &lt;em&gt;Learning Simple Algorithms from Examples&lt;/em&gt;, arXiv:1511.07275 [&lt;a href=&quot;http://arxiv.org/pdf/1511.07275.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;robotics&quot; class=&quot;anchor&quot; href=&quot;#robotics&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Robotics&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Hongyuan Mei, Mohit Bansal, and Matthew R. Walter, &lt;em&gt;Listen, Attend, and Walk: Neural Mapping of Navigational Instructions to Action Sequences&lt;/em&gt;, arXiv:1506.04089 [&lt;a href=&quot;http://arxiv.org/pdf/1506.04089.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Marvin Zhang, Sergey Levine, Zoe McCarthy, Chelsea Finn, and Pieter Abbeel, &lt;em&gt;Policy Learning with Continuous Memory States for Partially Observed Robotic Control,&lt;/em&gt; arXiv:1507.01273. &lt;a href=&quot;http://arxiv.org/pdf/1507.01273&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h3&gt;
+&lt;a id=&quot;other&quot; class=&quot;anchor&quot; href=&quot;#other&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Other&lt;/h3&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Alex Graves, &lt;em&gt;Generating Sequences With Recurrent Neural Networks,&lt;/em&gt; arXiv:1308.0850 &lt;a href=&quot;http://arxiv.org/abs/1308.0850&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Volodymyr Mnih, Nicolas Heess, Alex Graves, and Koray Kavukcuoglu, &lt;em&gt;Recurrent Models of Visual Attention&lt;/em&gt;, NIPS 2014 / arXiv:1406.6247 [&lt;a href=&quot;http://arxiv.org/pdf/1406.6247.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Wojciech Zaremba and Ilya Sutskever, &lt;em&gt;Learning to Execute&lt;/em&gt;, arXiv:1410.4615 [&lt;a href=&quot;http://arxiv.org/pdf/1410.4615.pdf&quot;&gt;Paper&lt;/a&gt;] [&lt;a href=&quot;https://github.com/wojciechz/learning_to_execute&quot;&gt;Code&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Samy Bengio, Oriol Vinyals, Navdeep Jaitly, and Noam Shazeer, &lt;em&gt;Scheduled Sampling for Sequence Prediction with
+Recurrent Neural Networks&lt;/em&gt;, arXiv:1506.03099 / NIPS 2015 [&lt;a href=&quot;http://arxiv.org/pdf/1506.03099&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Bing Shuai, Zhen Zuo, Gang Wang, and Bing Wang, &lt;em&gt;DAG-Recurrent Neural Networks For Scene Labeling&lt;/em&gt;, arXiv:1509.00552 [&lt;a href=&quot;http://arxiv.org/pdf/1509.00552&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Soren Kaae Sonderby, Casper Kaae Sonderby, Lars Maaloe, and Ole Winther, &lt;em&gt;Recurrent Spatial Transformer Networks&lt;/em&gt;, arXiv:1509.05329 [&lt;a href=&quot;http://arxiv.org/pdf/1509.05329&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Cesar Laurent, Gabriel Pereyra, Philemon Brakel, Ying Zhang, and Yoshua Bengio, &lt;em&gt;Batch Normalized Recurrent Neural Networks&lt;/em&gt;, arXiv:1510.01378 [&lt;a href=&quot;http://arxiv.org/pdf/1510.01378&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Jiwon Kim, Jung Kwon Lee, Kyoung Mu Lee, &lt;em&gt;Deeply-Recursive Convolutional Network for Image Super-Resolution&lt;/em&gt;, arXiv:1511.04491 &lt;a href=&quot;http://arxiv.org/abs/1511.04491&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Quan Gan, Qipeng Guo, Zheng Zhang, and Kyunghyun Cho, &lt;em&gt;First Step toward Model-Free, Anonymous Object Tracking with Recurrent Neural Networks&lt;/em&gt;, arXiv:1511.06425 [&lt;a href=&quot;http://arxiv.org/pdf/1511.06425.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Francesco Visin, Kyle Kastner, Aaron Courville, Yoshua Bengio, Matteo Matteucci, and Kyunghyun Cho, &lt;em&gt;ReSeg: A Recurrent Neural Network for Object Segmentation&lt;/em&gt;, arXiv:1511.07053 [&lt;a href=&quot;http://arxiv.org/pdf/1511.07053.pdf&quot;&gt;Paper&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Juergen Schmidhuber, &lt;em&gt;On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models&lt;/em&gt;, arXiv:1511.09249 &lt;a href=&quot;http://arxiv.org/pdf/1511.09249&quot;&gt;[Paper]&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h2&gt;
+&lt;a id=&quot;datasets&quot; class=&quot;anchor&quot; href=&quot;#datasets&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Datasets&lt;/h2&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Speech Recognition
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://www.openslr.org/resources.php&quot;&gt;OpenSLR&lt;/a&gt; (Open Speech and Language Resources)
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.openslr.org/12/&quot;&gt;LibriSpeech ASR corpus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://voxforge.org/home&quot;&gt;VoxForge&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Image Captioning
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://nlp.cs.illinois.edu/HockenmaierGroup/Framing_Image_Description/KCCA.html&quot;&gt;Flickr 8k&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://shannon.cs.illinois.edu/DenotationGraph/&quot;&gt;Flickr 30k&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://mscoco.org/home/&quot;&gt;Microsoft COCO&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Image Question Answering
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/vision-and-language/visual-turing-challenge/&quot;&gt;DAQUAR&lt;/a&gt; - built upon &lt;a href=&quot;http://cs.nyu.edu/%7Esilberman/datasets/nyu_depth_v2.html&quot;&gt;NYU Depth v2&lt;/a&gt; by N. Silberman et al.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://www.visualqa.org/&quot;&gt;VQA&lt;/a&gt; - based on &lt;a href=&quot;http://mscoco.org/&quot;&gt;MSCOCO&lt;/a&gt; images&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://www.cs.toronto.edu/%7Emren/imageqa/data/cocoqa/&quot;&gt;Image QA&lt;/a&gt; - based on MSCOCO images&lt;/li&gt;
+&lt;li&gt;[Multilingual Image QA] - built from scratch by Baidu - in Chinese, with English translation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Action Recognition
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://www.thumos.info/home.html&quot;&gt;THUMOS&lt;/a&gt; : Large-scale action recognition dataset&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://ai.stanford.edu/%7Esyyeung/resources/multithumos.zip&quot;&gt;MultiTHUMOS&lt;/a&gt; : Extension of THUMOS &#39;14 action detection dataset with dense multilabele annotation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h2&gt;
+&lt;a id=&quot;blogs&quot; class=&quot;anchor&quot; href=&quot;#blogs&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Blogs&lt;/h2&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://karpathy.github.io/2015/05/21/rnn-effectiveness/&quot;&gt;The Unreasonable Effectiveness of RNNs&lt;/a&gt; by &lt;a href=&quot;http://cs.stanford.edu/people/karpathy/&quot;&gt;Andrej Karpathy&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://colah.github.io/posts/2015-08-Understanding-LSTMs/&quot;&gt;Understanding LSTM Networks&lt;/a&gt; in &lt;a href=&quot;http://colah.github.io/&quot;&gt;Colah&#39;s blog&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://www.wildml.com/&quot;&gt;WildML&lt;/a&gt; blog&#39;s RNN tutorial [&lt;a href=&quot;http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/&quot;&gt;Part1&lt;/a&gt;], [&lt;a href=&quot;http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-2-implementing-a-language-model-rnn-with-python-numpy-and-theano/&quot;&gt;Part2&lt;/a&gt;], [&lt;a href=&quot;http://www.wildml.com/2015/10/recurrent-neural-networks-tutorial-part-3-backpropagation-through-time-and-vanishing-gradients/&quot;&gt;Part3&lt;/a&gt;], [&lt;a href=&quot;http://www.wildml.com/2015/10/recurrent-neural-network-tutorial-part-4-implementing-a-grulstm-rnn-with-python-and-theano/&quot;&gt;Part4&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;https://svail.github.io/&quot;&gt;Optimizing RNN Performance&lt;/a&gt; from Baidu&#39;s Silicon Valley AI Lab.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://nbviewer.ipython.org/gist/yoavg/d76121dfde2618422139&quot;&gt;Character Level Language modelling using RNN&lt;/a&gt; by Yoav Goldberg&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&quot;http://peterroelants.github.io/posts/rnn_implementation_part01/&quot;&gt;Implement an RNN in Python&lt;/a&gt;. &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://arunmallya.github.io/writeups/nn/lstm/index.html#/&quot;&gt;LSTM Backpropogation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;h2&gt;
+&lt;a id=&quot;online-demos&quot; class=&quot;anchor&quot; href=&quot;#online-demos&quot; aria-hidden=&quot;true&quot;&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;octicon octicon-link&quot;&gt;&lt;/span&gt;&lt;/a&gt;Online Demos&lt;/h2&gt;
+
+
+
+
+&lt;ul&gt;
+&lt;li&gt;Alex graves, hand-writing generation [&lt;a href=&quot;http://www.cs.toronto.edu/%7Egraves/handwriting.html&quot;&gt;link&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Ink Poster: Handwritten post-it notes [&lt;a href=&quot;http://www.inkposter.com/?&quot;&gt;link&lt;/a&gt;]&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>test</title>
