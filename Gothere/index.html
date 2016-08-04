@@ -16,7 +16,7 @@ description: ""
     {% if post.group == 'gothere' %}
 
     <li>
-      <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+      <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }} {{post.description}}</a>
     </li>
     {% endif %}
     {% endfor %}
