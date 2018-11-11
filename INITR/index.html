@@ -8,7 +8,7 @@ description: ""
 <section class="content">
   <h1 class="thin">Initiation à R</h1>
   <ul class="listing">
-    {% assign sortedPosts = site.posts | sort:'title' %}
+    {% assign sortedPosts = site.posts | sort:'orderis' %}
     {% for post in sortedPosts %}
     {% if post.group == 'initr' %}
 

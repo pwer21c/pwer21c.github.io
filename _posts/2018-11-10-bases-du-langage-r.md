@@ -2,6 +2,7 @@
 layout: post
 title: "Bases du langage R"
 category: posts
+oderis: 1
 group: initr
 ---
 Dans ce chapitre, vous ferez vos premiers pas avec R. Vous apprendrez
