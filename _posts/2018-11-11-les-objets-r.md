@@ -60,7 +60,7 @@ group: initr
 > v <- numeric(0)
 > length(v)
 [1] 0
-</code></code>
+</code></pre>
 
 
 <html>
