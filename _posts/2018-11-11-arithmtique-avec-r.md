@@ -34,12 +34,14 @@ group: initr
 </div>
 <p><span id="result_box" lang="fr">Avec cette connaissance, suivez les instructions ci-dessous pour compléter l'exercice.</span></p>
 <p></p>
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style>
 .dcl__index-module__console--2YAI1, .dcl__index-module__editor--m_p4P {font-size: 15px !important; }
 .lm_header .lm_tab .lm_title {font-size: 15px !important;}
+.dcl__Button-module__extra-small--2toEt, .dcl__Button-module__small--1VJc5 {font-size: 15px;}
 </style>
 </head>
         <body>
