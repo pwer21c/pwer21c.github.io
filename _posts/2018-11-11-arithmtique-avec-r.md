@@ -2,7 +2,7 @@
 layout: post
 title: "Arithmétique avec R"
 category: posts
-oderis: 2
+suboderis: 1
 group: initr
 ---
 

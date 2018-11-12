@@ -2,7 +2,7 @@
 layout: post
 title: "Les objets R"
 category: posts
-oderis: 4
+suboderis: 2
 group: initr
 ---
 <p>Tout dans le langage R est un objet : les variables contenant des données, les fonctions, les opérateurs, même le symbole représentant le nom d’un objet est lui-même un objet. Les objets possèdent au minimum un mode et une longueur et certains peuvent être dotés d’un ou plusieurs attributs</p>
