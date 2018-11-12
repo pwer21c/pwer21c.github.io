@@ -34,5 +34,37 @@ group: initr
 </div>
 <p><span id="result_box" lang="fr">Avec cette connaissance, suivez les instructions ci-dessous pour compléter l'exercice.</span></p>
 <p></p>
-<p class="p1"><span class="s1"></span><strong><span class="s3">* Il vous suffit d’actualiser la page dans votre navigateur pour que la console R en ligne<span class="Apple-converted-space">  </span>puisse charger complètement.</span></strong><span class="s2"><br /></span></p>
-<p><iframe scrolling="yes" src="https://catalogue-ent2.univ-paris8.fr/datacamp/sbang/ch1_1.html" width="100%" height="400px" frameborder="0"></iframe></p>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+.dcl__index-module__console--2YAI1, .dcl__index-module__editor--m_p4P {font-size: 15px !important; }
+.lm_header .lm_tab .lm_title {font-size: 15px !important;}
+</style>
+</head>
+        <body>
+        	<script type="text/javascript" src="//cdn.datacamp.com/dcl-react.js.gz"></script>
+			<div data-datacamp-exercise data-lang="r">
+        	<code data-type="sample-code">
+            # Une addition
+            5 + 5
+            
+            # Une soustraction
+            5 - 5
+            
+            # Une multiplication
+            3 * 5
+            
+            # Une division
+            (5 + 5)/2
+            
+            # Une puissance
+            2^2^3
+            
+            # L'opérateur modulo
+            28 %% 6
+
+</code>
+</div>
+</body>
+</html>
