@@ -6,6 +6,8 @@ oderis: 3
 group: vector
 ---
 
+<h2>Comparer le gain total</h2>
+
 - Calculez total_poker et total_roulette comme l'exercice précédent. Utilisez la fonction sum ().
 - Vérifiez si vos gains totaux au poker sont supérieurs à ceux de la roulette en utilisant une comparaison. 
 - Imprimez simplement le résultat de cette comparaison. 
