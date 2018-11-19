@@ -75,7 +75,7 @@ En R, c'est juste la somme de roulette_vector et de poker_vector.
 #Gagnants au poker du lundi au vendredi
 poker_vector <- c(140, -50, 20, -120, 240)
 roulette_vector <- c(-24, -50, 100, -350, 10)
-days_vector <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+days_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(poker_vector) <- days_vector
 names(roulette_vector) <- days_vector
 
@@ -114,7 +114,7 @@ Maintenant que vous avez les totaux pour la roulette et le poker, vous pouvez fa
 
 poker_vector <- c(140, -50, 20, -120, 240)
 roulette_vector <- c(-24, -50, 100, -350, 10)
-days_vector <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+days_vector <- c("Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi")
 names(poker_vector) <- days_vector
 names(roulette_vector) <- days_vector
 
