@@ -6,6 +6,17 @@ suboderis: 3
 group: initr
 ---
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-15159522-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-15159522-6');
+</script>
+
+
 <div>Toute commande R est soit une expression, soit une <span class="highlight selected">affec</span>tation.</div>
 <div></div>
 <div>Normalement, une expression est immédiatement évaluée et le résultat</div>

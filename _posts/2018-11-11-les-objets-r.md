@@ -5,6 +5,17 @@ category: posts
 suboderis: 2
 group: initr
 ---
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-15159522-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-15159522-6');
+</script>
+
 <p>Tout dans le langage R est un objet : les variables contenant des données, les fonctions, les opérateurs, même le symbole représentant le nom d’un objet est lui-même un objet. Les objets possèdent au minimum un mode et une longueur et certains peuvent être dotés d’un ou plusieurs attributs</p>
 <p></p>
 <p><iframe scrolling="yes" src="https://catalogue-ent2.univ-paris8.fr/datacamp/sbang/ch3_1.html" width="100%" height="330px" frameborder="0"></iframe></p>

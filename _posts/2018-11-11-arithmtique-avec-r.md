@@ -6,6 +6,17 @@ suboderis: 1
 group: initr
 ---
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-15159522-6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-15159522-6');
+</script>
+
+
 <div></div>
 <div><span id="result_box" lang="fr">R peut être utilisé comme une simple calculatrice. Considérons les opérateurs arithmétiques suivants:</span></div>
 <div></div>
