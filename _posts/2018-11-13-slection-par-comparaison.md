@@ -17,6 +17,29 @@ group: vector
 
 <h2>Sélection par comparaison</h2>
 
+En utilisant des opérateurs de comparaison, nous pouvons aborder la question précédente de manière plus proactive.
+Les opérateurs de comparaison (logiques) connus de R sont:
+
+- <code><</code> pour moins de
+- <code>></code> pour plus de
+- <code><=</code> pour inférieur ou égal à
+- <code>>=</code> pour supérieur ou égal à
+- <code>==</code> pour égaux les uns aux autres
+- <code>!=</code> pour  pas égal les uns aux autres
+
+Comme indiqué dans l'exercice précédent, indiquer <code>6> 5</code> renvoie VRAI. La bonne chose à propos de R est que vous pouvez utiliser ces opérateurs de comparaison également sur des vecteurs.
+Par exemple:
+
+<pre><code>
+  > c(4, 5, 6) > 5
+  [1] FALSE FALSE TRUE
+</code></pre>
+
+Cette commande teste pour chaque élément du vecteur si la condition indiquée par l'opérateur de comparaison est TRUE ou FALSE.
+
+- Vérifiez quels éléments de poker_vector sont positifs (c'est-à-dire> 0) et attribuez-les à selection_vector.
+- Imprimez selection_vector afin que vous puissiez l'inspecter. L'impression vous indique si vous avez gagné (VRAI) ou perdu (FAUX) de l'argent pour chaque jour.
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -48,16 +71,14 @@ selection_vector
 </body>
 </html>
 
+Dans les exercices précédents que vous avez utilisés
+<code>selection_vector <- poker_vector > 0</code> pour trouver les jours où vous avez eu un retour positif au poker.
+Maintenant, vous voudriez savoir non seulement les jours sur lesquels vous avez gagné, mais aussi combien vous avez gagné ces jours-là.
+Vous pouvez sélectionner les éléments souhaités en mettant selection_vector entre les crochets qui suivent poker_vector:
 
-# Poker and roulette winnings from Monday to Friday:
-poker_vector <- c(140, -50, 20, -120, 240)
-roulette_vector <- c(-24, -50, 100, -350, 10)
-days_vector <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
-names(poker_vector) <- days_vector
-names(roulette_vector) <- days_vector
+<pre><code>poker_vector[selection_vector]</code></pre>
 
-# Which days did you make money on poker?
-selection_vector <- poker_vector > 0
+Utilisez selection_vector entre crochets pour affecter les montants que vous avez gagnés les jours les plus rentables à la variable poker_winning_days.
 
 <html>
 <head>
@@ -82,8 +103,10 @@ names(roulette_vector) <- days_vector
 # Quels jours as-tu gagné de l'argent au poker?
 selection_vector <- poker_vector >0
 
-#Imprimer les jours de gagnants pour le poker
-poker_winning_days
+#Utilisez selection_vector entre crochets pour
+#affecter les montants que vous avez gagnés
+#les jours les plus rentables à la variable poker_winning_days.
+
 
 </code>
 <code data-type="solution">
@@ -97,7 +120,10 @@ names(roulette_vector) <- days_vector
 #Quels jours as-tu gagné de l'argent au poker?
 selection_vector <- poker_vector >0
 
-#Gagnants au poker ?
+#Utilisez selection_vector entre crochets pour
+#affecter les montants que vous avez gagnés
+#les jours les plus rentables à la variable poker_winning_days.
+
 poker_winning_days <- poker_vector[selection_vector]
 poker_winning_days
   </code>
