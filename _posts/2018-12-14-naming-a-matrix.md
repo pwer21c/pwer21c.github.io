@@ -55,7 +55,7 @@ star_wars_matrix <- matrix(c(new_hope, empire_strikes, return_jedi), nrow = 3, b
 </body>
 </html>
 
-<h2>Nommer une matrice</h2
+<h2>Nommer une matrice</h2>
 
 Pour vous aider à vous souvenir de ce qui est stocké dans star_wars_matrix, vous pouvez ajouter des noms pour les lignes et les colonnes d'une matrice.
 
