@@ -4,7 +4,7 @@
  <title>BANG SANG HUN</title>
  <link href="http://pwer21c.github.io/atom.xml" rel="self"/>
  <link href="http://pwer21c.github.io/"/>
- <updated>2014-05-16T11:23:30+02:00</updated>
+ <updated>2018-11-29T09:57:37+01:00</updated>
  <id>http://pwer21c.github.io</id>
  <author>
    <name>BANG SANG HUN</name>
@@ -12,11 +12,1138 @@
 
  
  <entry>
+   <title>rmarkdown test</title>
+   <link href="http://pwer21c.github.io/posts/rmarkdown-test"/>
+   <updated>2018-11-29T00:00:00+01:00</updated>
+   <id>http://pwer21c.github.io/posts/rmarkdown-test</id>
+   <content type="html">&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;style&gt;
+.dcl__index-module__console--2YAI1, .dcl__index-module__editor--m_p4P {font-size: 15px !important; }
+.lm_header .lm_tab .lm_title {font-size: 15px !important;}
+.dcl__Button-module__extra-small--2toEt, .dcl__Button-module__small--1VJc5 {font-size: 15px;}
+&lt;/style&gt;
+&lt;/head&gt;
+        &lt;body&gt;
+        	&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.datacamp.com/dcl-react.js.gz&quot;&gt;&lt;/script&gt;
+          &lt;script type=&quot;text/javascript&quot; src=&quot;https://cdn.datacamp.com/datacamp-light-latest.min.js&quot;&gt;&lt;/script&gt;
+			&lt;div data-datacamp-exercise=&quot;&quot; data-lang=&quot;r&quot;&gt;
+        	&lt;code data-type=&quot;sample-code&quot;&gt;
+          ## Cleaning
+
+          For the remainder of the report, we will look only at data from the year 1995. We aggregate our data by location, using the *R* code below.
+
+          ```{r}
+          library(nasaweather)
+          library(dplyr)
+
+          year &amp;lt;- 1995
+
+          means &amp;lt;- atmos %&amp;gt;%
+            filter(year == year) %&amp;gt;%
+            group_by(long, lat) %&amp;gt;%
+            summarize(temp = mean(temp, na.rm = TRUE),
+                   pressure = mean(pressure, na.rm = TRUE),
+                   ozone = mean(ozone, na.rm = TRUE),
+                   cloudlow = mean(cloudlow, na.rm = TRUE),
+                   cloudmid = mean(cloudmid, na.rm = TRUE),
+                   cloudhigh = mean(cloudhigh, na.rm = TRUE)) %&amp;gt;%
+            ungroup()
+          ```
+
+&lt;/code&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>indexation des vecteurs</title>
+   <link href="http://pwer21c.github.io/posts/indexation-des-vecteurs"/>
+   <updated>2018-11-22T00:00:00+01:00</updated>
+   <id>http://pwer21c.github.io/posts/indexation-des-vecteurs</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>sélection par comparaison</title>
+   <link href="http://pwer21c.github.io/posts/slection-par-comparaison"/>
+   <updated>2018-11-13T00:00:00+01:00</updated>
+   <id>http://pwer21c.github.io/posts/slection-par-comparaison</id>
+   <content type="html">&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-15159522-6&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-15159522-6');
+&lt;/script&gt;
+
+&lt;h2&gt;Sélection par comparaison&lt;/h2&gt;
+
+&lt;p&gt;En utilisant des opérateurs de comparaison, nous pouvons aborder la question précédente de manière plus proactive.
+Les opérateurs de comparaison (logiques) connus de R sont:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;&amp;lt;&lt;/code&gt; pour moins de&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;&amp;gt;&lt;/code&gt; pour plus de&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;&amp;lt;=&lt;/code&gt; pour inférieur ou égal à&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;&amp;gt;=&lt;/code&gt; pour supérieur ou égal à&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;==&lt;/code&gt; pour égaux les uns aux autres&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;!=&lt;/code&gt; pour  pas égal les uns aux autres&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Comme indiqué dans l’exercice précédent, indiquer &lt;code&gt;6&amp;gt; 5&lt;/code&gt; renvoie VRAI. La bonne chose à propos de R est que vous pouvez utiliser ces opérateurs de comparaison également sur des vecteurs.
+Par exemple:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+  &amp;gt; c(4, 5, 6) &amp;gt; 5
+  [1] FALSE FALSE TRUE
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Cette commande teste pour chaque élément du vecteur si la condition indiquée par l’opérateur de comparaison est TRUE ou FALSE.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Vérifiez quels éléments de poker_vector sont positifs (c’est-à-dire&amp;gt; 0) et attribuez-les à selection_vector.&lt;/li&gt;
+  &lt;li&gt;Imprimez selection_vector afin que vous puissiez l’inspecter. L’impression vous indique si vous avez gagné (VRAI) ou perdu (FAUX) de l’argent pour chaque jour.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;style&gt;
+.dcl__index-module__console--2YAI1, .dcl__index-module__editor--m_p4P {font-size: 15px !important; }
+.lm_header .lm_tab .lm_title {font-size: 15px !important;}
+.dcl__Button-module__extra-small--2toEt, .dcl__Button-module__small--1VJc5 {font-size: 15px;}
+&lt;/style&gt;
+&lt;/head&gt;
+        &lt;body&gt;
+        	&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.datacamp.com/dcl-react.js.gz&quot;&gt;&lt;/script&gt;
+			&lt;div data-datacamp-exercise=&quot;&quot; data-lang=&quot;r&quot;&gt;
+        	&lt;code data-type=&quot;sample-code&quot;&gt;
+#Gagnants au poker et à la roulette du lundi au vendredi
+poker_vector &amp;lt;- c(140, -50, 20, -120, 240)
+roulette_vector &amp;lt;- c(-24, -50, 100, -350, 10)
+days_vector &amp;lt;- c(&quot;Lundi&quot;, &quot;Mardi&quot;, &quot;Mercredi&quot;, &quot;Jeudi&quot;, &quot;Vendredi&quot;)
+names(poker_vector) &amp;lt;- days_vector
+names(roulette_vector) &amp;lt;- days_vector
+
+# Quels jours as-tu gagné de l'argent au poker?
+selection_vector &amp;lt;- poker_vector &amp;gt;0
+
+#Imprimer la variable &quot;selection_vector&quot;
+selection_vector
+
+&lt;/code&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;p&gt;Dans les exercices précédents que vous avez utilisés
+&lt;code&gt;selection_vector &amp;lt;- poker_vector &amp;gt; 0&lt;/code&gt; pour trouver les jours où vous avez eu un retour positif au poker.
+Maintenant, vous voudriez savoir non seulement les jours sur lesquels vous avez gagné, mais aussi combien vous avez gagné ces jours-là.
+Vous pouvez sélectionner les éléments souhaités en mettant selection_vector entre les crochets qui suivent poker_vector:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;poker_vector[selection_vector]&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Utilisez selection_vector entre crochets pour affecter les montants que vous avez gagnés les jours les plus rentables à la variable poker_winning_days.&lt;/p&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;style&gt;
+.dcl__index-module__console--2YAI1, .dcl__index-module__editor--m_p4P {font-size: 15px !important; }
+.lm_header .lm_tab .lm_title {font-size: 15px !important;}
+.dcl__Button-module__extra-small--2toEt, .dcl__Button-module__small--1VJc5 {font-size: 15px;}
+&lt;/style&gt;
+&lt;/head&gt;
+        &lt;body&gt;
+        	&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.datacamp.com/dcl-react.js.gz&quot;&gt;&lt;/script&gt;
+			&lt;div data-datacamp-exercise=&quot;&quot; data-lang=&quot;r&quot;&gt;
+        	&lt;code data-type=&quot;sample-code&quot;&gt;
+#Gagnants au poker et à la roulette du lundi au vendredi
+poker_vector &amp;lt;- c(140, -50, 20, -120, 240)
+roulette_vector &amp;lt;- c(-24, -50, 100, -350, 10)
+days_vector &amp;lt;- c(&quot;Lundi&quot;, &quot;Mardi&quot;, &quot;Mercredi&quot;, &quot;Jeudi&quot;, &quot;Vendredi&quot;)
+names(poker_vector) &amp;lt;- days_vector
+names(roulette_vector) &amp;lt;- days_vector
+
+# Quels jours as-tu gagné de l'argent au poker?
+selection_vector &amp;lt;- poker_vector &amp;gt;0
+
+#Utilisez selection_vector entre crochets pour
+#affecter les montants que vous avez gagnés
+#les jours les plus rentables à la variable poker_winning_days.
+
+
+&lt;/code&gt;
+&lt;code data-type=&quot;solution&quot;&gt;
+#Gagnants au poker et à la roulette du lundi au vendredi
+poker_vector &amp;lt;- c(140, -50, 20, -120, 240)
+roulette_vector &amp;lt;- c(-24, -50, 100, -350, 10)
+days_vector &amp;lt;- c(&quot;Lundi&quot;, &quot;Mardi&quot;, &quot;Mercredi&quot;, &quot;Jeudi&quot;, &quot;Vendredi&quot;)
+names(poker_vector) &amp;lt;- days_vector
+names(roulette_vector) &amp;lt;- days_vector
+
+#Quels jours as-tu gagné de l'argent au poker?
+selection_vector &amp;lt;- poker_vector &amp;gt;0
+
+#Utilisez selection_vector entre crochets pour
+#affecter les montants que vous avez gagnés
+#les jours les plus rentables à la variable poker_winning_days.
+
+poker_winning_days &amp;lt;- poker_vector[selection_vector]
+poker_winning_days
+  &lt;/code&gt;
+	&lt;code data-type=&quot;sct&quot;&gt;
+		test_object(&quot;poker_vector&quot;)
+    success_msg(&quot;Bravo !&quot;)
+	&lt;/code&gt;
+	&lt;div data-type=&quot;hint&quot;&gt;
+    Utiliser les vecteurs poker_vector et selection_vector
+  &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>sélection de vecteur: le bon moment</title>
+   <link href="http://pwer21c.github.io/posts/slection-de-vecteur-le-bon-moment"/>
+   <updated>2018-11-13T00:00:00+01:00</updated>
+   <id>http://pwer21c.github.io/posts/slection-de-vecteur-le-bon-moment</id>
+   <content type="html">&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-15159522-6&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-15159522-6');
+&lt;/script&gt;
+
+&lt;h2&gt;Sélection de vecteur: le bon moment&lt;/h2&gt;
+
+&lt;p&gt;Assigne les résultats de poker de mercredi à la variable “poker_mercredi”&lt;/p&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;style&gt;
+.dcl__index-module__console--2YAI1, .dcl__index-module__editor--m_p4P {font-size: 15px !important; }
+.lm_header .lm_tab .lm_title {font-size: 15px !important;}
+.dcl__Button-module__extra-small--2toEt, .dcl__Button-module__small--1VJc5 {font-size: 15px;}
+&lt;/style&gt;
+&lt;/head&gt;
+        &lt;body&gt;
+        	&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.datacamp.com/dcl-react.js.gz&quot;&gt;&lt;/script&gt;
+			&lt;div data-datacamp-exercise=&quot;&quot; data-lang=&quot;r&quot;&gt;
+        	&lt;code data-type=&quot;sample-code&quot;&gt;
+#Gagnants au poker et à la roulette du lundi au vendredi
+poker_vector &amp;lt;- c(140, -50, 20, -120, 240)
+roulette_vector &amp;lt;- c(-24, -50, 100, -350, 10)
+days_vector &amp;lt;- c(&quot;Lundi&quot;, &quot;Mardi&quot;, &quot;Mercredi&quot;, &quot;Jeudi&quot;, &quot;Vendredi&quot;)
+names(poker_vector) &amp;lt;- days_vector
+names(roulette_vector) &amp;lt;- days_vector
+
+# Définir une nouvelle variable basée sur une sélection
+poker_mercredi &amp;lt;- poker_vector[3]
+
+&lt;/code&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;p&gt;Pour sélectionner plusieurs éléments d’un vecteur, vous pouvez ajouter des crochets à la fin de celui-ci.
+Vous pouvez indiquer entre les crochets quels éléments doivent être sélectionnés.
+Par exemple: supposons que vous souhaitiez sélectionner le premier et le cinquième jour de la semaine: utilisez le vecteur c (1, 5) entre les crochets. Par exemple, le code ci-dessous sélectionne les premier et
+cinquième éléments de poker_vector:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;poker_vector[c(1,5)]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Attribuez les résultats de poker de mardi, mercredi et jeudi à la variable poker_milleu_semaine&lt;/p&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;style&gt;
+.dcl__index-module__console--2YAI1, .dcl__index-module__editor--m_p4P {font-size: 15px !important; }
+.lm_header .lm_tab .lm_title {font-size: 15px !important;}
+.dcl__Button-module__extra-small--2toEt, .dcl__Button-module__small--1VJc5 {font-size: 15px;}
+&lt;/style&gt;
+&lt;/head&gt;
+        &lt;body&gt;
+        	&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.datacamp.com/dcl-react.js.gz&quot;&gt;&lt;/script&gt;
+			&lt;div data-datacamp-exercise=&quot;&quot; data-lang=&quot;r&quot;&gt;
+        	&lt;code data-type=&quot;sample-code&quot;&gt;
+#Gagnants au poker et à la roulette du lundi au vendredi
+poker_vector &amp;lt;- c(140, -50, 20, -120, 240)
+roulette_vector &amp;lt;- c(-24, -50, 100, -350, 10)
+days_vector &amp;lt;- c(&quot;Lundi&quot;, &quot;Mardi&quot;, &quot;Mercredi&quot;, &quot;Jeudi&quot;, &quot;Vendredi&quot;)
+names(poker_vector) &amp;lt;- days_vector
+names(roulette_vector) &amp;lt;- days_vector
+
+# Définir une nouvelle variable basée sur une sélection
+poker_milleu_semaine &amp;lt;- poker_vector[c(2,3,4)]
+
+&lt;/code&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;p&gt;Attribuez à la variable « roulette_selection_vector » les résultats de la roulette du mardi au vendredi.
+Essayez d’utiliser la syntaxe “:”, cela vous facilite les choses au lieu de [c(2,3,4)] :&lt;/p&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;style&gt;
+.dcl__index-module__console--2YAI1, .dcl__index-module__editor--m_p4P {font-size: 15px !important; }
+.lm_header .lm_tab .lm_title {font-size: 15px !important;}
+.dcl__Button-module__extra-small--2toEt, .dcl__Button-module__small--1VJc5 {font-size: 15px;}
+&lt;/style&gt;
+&lt;/head&gt;
+        &lt;body&gt;
+        	&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.datacamp.com/dcl-react.js.gz&quot;&gt;&lt;/script&gt;
+			&lt;div data-datacamp-exercise=&quot;&quot; data-lang=&quot;r&quot;&gt;
+        	&lt;code data-type=&quot;sample-code&quot;&gt;
+#Gagnants au poker et à la roulette du lundi au vendredi
+poker_vector &amp;lt;- c(140, -50, 20, -120, 240)
+roulette_vector &amp;lt;- c(-24, -50, 100, -350, 10)
+days_vector &amp;lt;- c(&quot;Lundi&quot;, &quot;Mardi&quot;, &quot;Mercredi&quot;, &quot;Jeudi&quot;, &quot;Vendredi&quot;)
+names(poker_vector) &amp;lt;- days_vector
+names(roulette_vector) &amp;lt;- days_vector
+
+# Définir une nouvelle variable basée sur une sélection
+poker_selection_vector &amp;lt;- roulette_vector[2:5]
+
+&lt;/code&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>sélection avancée</title>
+   <link href="http://pwer21c.github.io/posts/slection-avance"/>
+   <updated>2018-11-13T00:00:00+01:00</updated>
+   <id>http://pwer21c.github.io/posts/slection-avance</id>
+   <content type="html">&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-15159522-6&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-15159522-6');
+&lt;/script&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Comparer le gain total</title>
+   <link href="http://pwer21c.github.io/posts/comparer-le-gain-total"/>
+   <updated>2018-11-13T00:00:00+01:00</updated>
+   <id>http://pwer21c.github.io/posts/comparer-le-gain-total</id>
+   <content type="html">&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-15159522-6&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-15159522-6');
+&lt;/script&gt;
+
+&lt;h2&gt;Comparer le gain total&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Calculez total_poker et total_roulette comme l’exercice précédent. Utilisez la fonction sum ().&lt;/li&gt;
+  &lt;li&gt;Vérifiez si vos gains totaux au poker sont supérieurs à ceux de la roulette en utilisant une comparaison.&lt;/li&gt;
+  &lt;li&gt;Imprimez simplement le résultat de cette comparaison.&lt;/li&gt;
+  &lt;li&gt;Quelle est votre conclusion ? Est-ce que vous voulez concenter sur la roulette ou le poker ?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;style&gt;
+.dcl__index-module__console--2YAI1, .dcl__index-module__editor--m_p4P {font-size: 15px !important; }
+.lm_header .lm_tab .lm_title {font-size: 15px !important;}
+.dcl__Button-module__extra-small--2toEt, .dcl__Button-module__small--1VJc5 {font-size: 15px;}
+&lt;/style&gt;
+&lt;/head&gt;
+        &lt;body&gt;
+            &lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.datacamp.com/dcl-react.js.gz&quot;&gt;&lt;/script&gt;
+            &lt;div data-datacamp-exercise=&quot;&quot; data-lang=&quot;r&quot;&gt;
+            &lt;code data-type=&quot;sample-code&quot;&gt;
+
+#Gagnants au poker du lundi au vendredi
+poker_vector &amp;lt;- c(140, -50, 20, -120, 240)
+roulette_vector &amp;lt;- c(-24, -50, 100, -350, 10)
+days_vector &amp;lt;- c(&quot;Lundi&quot;, &quot;Mardi&quot;, &quot;Mercredi&quot;, &quot;Jeudi&quot;, &quot;Vendredi&quot;)
+names(poker_vector) &amp;lt;- days_vector
+names(roulette_vector) &amp;lt;- days_vector
+
+#Calculez total_poker et total_roulette 
+total_poker &amp;lt;-sum(poker_vector)
+total_roulette &amp;lt;-sum(roulette_vector)
+
+#Vérifiez si vos gains totaux au poker sont supérieurs à ceux de la roulette 
+total_poker &amp;gt; total_roulette
+
+&lt;/code&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Calculer le gain total</title>
+   <link href="http://pwer21c.github.io/posts/calculer-le-gain-total"/>
+   <updated>2018-11-13T00:00:00+01:00</updated>
+   <id>http://pwer21c.github.io/posts/calculer-le-gain-total</id>
+   <content type="html">&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-15159522-6&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-15159522-6');
+&lt;/script&gt;
+
+&lt;h2&gt;Calculer le gain total&lt;/h2&gt;
+
+&lt;p&gt;Vous pouvez nommer les éléments d’un vecteur. Surtout, pour les variables poker et roulette, vous avez bien nommé les éléments de deux vecteur.
+Dans ce cours, vous allez répondre aux questions suivantes :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Quel a été votre bénéfice ou votre perte en une semaine ?&lt;/li&gt;
+  &lt;li&gt;Au total, avez-vous perdu de l’argent au cours de la semaine ?&lt;/li&gt;
+  &lt;li&gt;Gagnez/perdez-vous de l’argent au poker ou à la roulette ?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pour obtenir les réponses, vous devez faire des calculs arithmétiques sur des vecteurs.
+Il est important de savoir que si vous additionnez deux vecteurs dans R, cela prend la somme par élément. Par exemple, les trois instructions suivantes sont complètement équivalentes:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;c(1, 2, 3) + c(4, 5, 6)
+c(1 + 4, 2 + 5, 3 + 6)
+c(5, 7, 9)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Vous pouvez également faire les calculs avec des variables représentant des vecteurs:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;a &amp;lt;- c(1, 2, 3) 
+b &amp;lt;- c(4, 5, 6)
+c &amp;lt;- a + b&lt;/code&gt;&lt;/pre&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;style&gt;
+.dcl__index-module__console--2YAI1, .dcl__index-module__editor--m_p4P {font-size: 15px !important; }
+.lm_header .lm_tab .lm_title {font-size: 15px !important;}
+.dcl__Button-module__extra-small--2toEt, .dcl__Button-module__small--1VJc5 {font-size: 15px;}
+&lt;/style&gt;
+&lt;/head&gt;
+        &lt;body&gt;
+            &lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.datacamp.com/dcl-react.js.gz&quot;&gt;&lt;/script&gt;
+            &lt;div data-datacamp-exercise=&quot;&quot; data-lang=&quot;r&quot;&gt;
+            &lt;code data-type=&quot;sample-code&quot;&gt;
+A_vector &amp;lt;- c(1, 2, 3)
+B_vector &amp;lt;- c(4, 5, 6)
+
+#Prendre la somme de A_vector et B_vector
+total_vector &amp;lt;- A_vector+B_vector
+  
+#Imprimer total_vector
+total_vector
+             
+&lt;/code&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;p&gt;Le total des bénéfices est la somme des profits / pertes que vous avez réalisés au poker par jour et des profits / pertes que vous avez réalisés à la roulette par jour.&lt;/p&gt;
+
+&lt;p&gt;En R, c’est juste la somme de roulette_vector et de poker_vector.&lt;/p&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;style&gt;
+.dcl__index-module__console--2YAI1, .dcl__index-module__editor--m_p4P {font-size: 15px !important; }
+.lm_header .lm_tab .lm_title {font-size: 15px !important;}
+.dcl__Button-module__extra-small--2toEt, .dcl__Button-module__small--1VJc5 {font-size: 15px;}
+&lt;/style&gt;
+&lt;/head&gt;
+        &lt;body&gt;
+            &lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.datacamp.com/dcl-react.js.gz&quot;&gt;&lt;/script&gt;
+            &lt;div data-datacamp-exercise=&quot;&quot; data-lang=&quot;r&quot;&gt;
+            &lt;code data-type=&quot;sample-code&quot;&gt;
+#Gagnants au poker du lundi au vendredi
+poker_vector &amp;lt;- c(140, -50, 20, -120, 240)
+roulette_vector &amp;lt;- c(-24, -50, 100, -350, 10)
+days_vector &amp;lt;- c(&quot;Lundi&quot;, &quot;Mardi&quot;, &quot;Mercredi&quot;, &quot;Jeudi&quot;, &quot;Vendredi&quot;)
+names(poker_vector) &amp;lt;- days_vector
+names(roulette_vector) &amp;lt;- days_vector
+
+#Vous voulez savoir combien vous avez gagné ?
+total_daily &amp;lt;- poker_vector+roulette_vector
+             
+&lt;/code&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;p&gt;A l’aide d’une fonction sum(), vous pouvez également calculer la somme de tous les éléments d’un vecteur. 
+Par exemple, pour calculer le montant d’argent que vous avez perdu / gagné avec le poker, 
+vous devez:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+total_poker &amp;lt;- sum(poker_vector)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Maintenant que vous avez les totaux pour la roulette et le poker, vous pouvez facilement calculer total_week :&lt;/p&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;style&gt;
+.dcl__index-module__console--2YAI1, .dcl__index-module__editor--m_p4P {font-size: 15px !important; }
+.lm_header .lm_tab .lm_title {font-size: 15px !important;}
+.dcl__Button-module__extra-small--2toEt, .dcl__Button-module__small--1VJc5 {font-size: 15px;}
+&lt;/style&gt;
+&lt;/head&gt;
+        &lt;body&gt;
+            &lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.datacamp.com/dcl-react.js.gz&quot;&gt;&lt;/script&gt;
+            &lt;div data-datacamp-exercise=&quot;&quot; data-lang=&quot;r&quot;&gt;
+            &lt;code data-type=&quot;sample-code&quot;&gt;
+#Gagnants au poker du lundi au vendredi
+
+poker_vector &amp;lt;- c(140, -50, 20, -120, 240)
+roulette_vector &amp;lt;- c(-24, -50, 100, -350, 10)
+days_vector &amp;lt;- c(&quot;Lundi&quot;, &quot;Mardi&quot;, &quot;Mercredi&quot;, &quot;Jeudi&quot;, &quot;Vendredi&quot;)
+names(poker_vector) &amp;lt;- days_vector
+names(roulette_vector) &amp;lt;- days_vector
+
+#Le total des gains avec poker
+total_poker &amp;lt;- sum(poker_vector)
+
+#Le total des gains avec roulette
+total_roulette &amp;lt;-sum(roulette_vector)  
+
+#Le total des gains
+total_week &amp;lt;- total_poker + total_roulette 
+
+#Imprimer  total_week
+  total_week
+
+&lt;/code&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Vecteurs</title>
+   <link href="http://pwer21c.github.io/posts/vecteurs"/>
+   <updated>2018-11-11T00:00:00+01:00</updated>
+   <id>http://pwer21c.github.io/posts/vecteurs</id>
+   <content type="html">&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-15159522-6&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-15159522-6');
+&lt;/script&gt;
+
+&lt;h2&gt;Vecteurs&lt;/h2&gt;
+
+&lt;p&gt;&lt;span id=&quot;result_box&quot; lang=&quot;fr&quot;&gt;&lt;span&gt;En R, le vecteur est l’unité de base dans les calculs. Vous créez un vecteur avec la fonction de combinaison c ().&lt;/span&gt; &lt;span&gt;Vous placez les éléments vectoriels séparés par une virgule entre les parenthèses.&lt;/span&gt; &lt;span&gt;Par exemple:&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;numeric_vector &amp;lt;- c(1, 2, 3)
+character_vector &amp;lt;- c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;span lang=&quot;fr&quot;&gt;&lt;span&gt; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;iframe scrolling=&quot;yes&quot; src=&quot;https://catalogue-ent2.univ-paris8.fr/datacamp/sbang/ch4_1.html&quot; width=&quot;100%&quot; height=&quot;330px&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;style&gt;
+.dcl__index-module__console--2YAI1, .dcl__index-module__editor--m_p4P {font-size: 15px !important; }
+.lm_header .lm_tab .lm_title {font-size: 15px !important;}
+.dcl__Button-module__extra-small--2toEt, .dcl__Button-module__small--1VJc5 {font-size: 15px;}
+&lt;/style&gt;
+&lt;/head&gt;
+        &lt;body&gt;
+            &lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.datacamp.com/dcl-react.js.gz&quot;&gt;&lt;/script&gt;
+            &lt;div data-datacamp-exercise=&quot;&quot; data-lang=&quot;r&quot;&gt;
+            &lt;code data-type=&quot;sample-code&quot;&gt;
+numeric_vector &amp;lt;- c(1, 10, 49)
+character_vector &amp;lt;- c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;)
+# Vecteur booléen
+boolean_vector &amp;lt;-c(TRUE,FALSE,TRUE)
+             
+&lt;/code&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;h2&gt;Créer un vecteur&lt;/h2&gt;
+
+&lt;p&gt;Après une semaine à Las Vegas, vous décidez qu’il est temps de commencer à utiliser vos données analytiques.&lt;br /&gt;Avant de faire une première analyse, tout d'abord vous décidez de collecter tous les gains et toutes les pertes de la semaine écoulée:&lt;/p&gt;
+&lt;p&gt;Pour poker_vector:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lundi, tu as gagné $140&lt;/li&gt;
+&lt;li&gt;Mardi, tu as perdu $50&lt;/li&gt;
+&lt;li&gt;Mercredi, tu as gagné $20&lt;/li&gt;
+&lt;li&gt;Jeudi, tu as perdu $120&lt;/li&gt;
+&lt;li&gt;Vendredi, tu as gagné $240$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pour roulette_vector:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lundi, tu as perdu $24&lt;/li&gt;
+&lt;li&gt;Mardi, tu as perdu $50&lt;/li&gt;
+&lt;li&gt;Mercredi, tu as gagné $100&lt;/li&gt;
+&lt;li&gt;Jeudi, tu as perdu $350&lt;/li&gt;
+&lt;li&gt;Vendredi, tu as gagné $10&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Donc,&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;style&gt;
+.dcl__index-module__console--2YAI1, .dcl__index-module__editor--m_p4P {font-size: 15px !important; }
+.lm_header .lm_tab .lm_title {font-size: 15px !important;}
+.dcl__Button-module__extra-small--2toEt, .dcl__Button-module__small--1VJc5 {font-size: 15px;}
+&lt;/style&gt;
+&lt;/head&gt;
+        &lt;body&gt;
+            &lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.datacamp.com/dcl-react.js.gz&quot;&gt;&lt;/script&gt;
+            &lt;div data-datacamp-exercise=&quot;&quot; data-lang=&quot;r&quot;&gt;
+            &lt;code data-type=&quot;sample-code&quot;&gt;
+#Gagnants au poker du lundi au vendredi
+poker_vector &amp;lt;- c(140, -50, 20, -120, 240)
+poker_vector
+
+#Gagnants à la roulette du lundi au vendredi
+roulette_vector &amp;lt;-  c(-24,-50,100,-350,10)
+roulette_vector
+             
+&lt;/code&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;h2&gt;Nommer les éléments d'un vecteur&lt;/h2&gt;
+
+&lt;p&gt;
+Chaque élément vectoriel fait référence à un jour de la semaine mais il est difficile de dire quel élément appartient à quel jour. 
+Donc, vous pouvez nommer les éléments d'un vecteur avec la fonction names (). Regardez cet exemple:
+&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+some_vector &amp;lt;- c(&quot;John Doe&quot;, &quot;poker player&quot;)
+names(some_vector) &amp;lt;- c(&quot;Name&quot;, &quot;Profession&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ce code crée d’abord un vecteur some_vector, puis donne unnom aux deux éléments. Le premier élément port le nom Nom, tandis que le second est intitulé Profession.  L’impression du contenu sur la console génère le résultat suivant:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+       Name     Profession 
+    &quot;John Doe&quot; &quot;poker player&quot; 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;style&gt;
+.dcl__index-module__console--2YAI1, .dcl__index-module__editor--m_p4P {font-size: 15px !important; }
+.lm_header .lm_tab .lm_title {font-size: 15px !important;}
+.dcl__Button-module__extra-small--2toEt, .dcl__Button-module__small--1VJc5 {font-size: 15px;}
+&lt;/style&gt;
+&lt;/head&gt;
+        &lt;body&gt;
+        	&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.datacamp.com/dcl-react.js.gz&quot;&gt;&lt;/script&gt;
+			&lt;div data-datacamp-exercise=&quot;&quot; data-lang=&quot;r&quot;&gt;
+        	&lt;code data-type=&quot;sample-code&quot;&gt;
+        		#Gagnants au poker du lundi au vendredi
+        	poker_vector &amp;lt;- c(140, -50, 20, -120, 240)
+        	poker_vector
+
+        		#Gagnants à la roulette du lundi au vendredi
+        	roulette_vector &amp;lt;-  c(-24,-50,100,-350,10)
+        	roulette_vector
+
+        		#Attribuer des jours comme noms de poker_vector
+        	names(poker_vector) &amp;lt;- c(&quot;Lundi&quot;, &quot;Mardi&quot;, &quot;Mercredi&quot;, &quot;Jeudi&quot;, &quot;Vendredi&quot;)
+
+        		#Attribuer des jours comme noms de roulette_vector
+        	names(roulette_vector) &amp;lt;- c(&quot;Lundi&quot;, &quot;Mardi&quot;, &quot;Mercredi&quot;, &quot;Jeudi&quot;, &quot;Vendredi&quot;)
+             
+&lt;/code&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;p&gt;Ou bien&lt;/p&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;style&gt;
+.dcl__index-module__console--2YAI1, .dcl__index-module__editor--m_p4P {font-size: 15px !important; }
+.lm_header .lm_tab .lm_title {font-size: 15px !important;}
+.dcl__Button-module__extra-small--2toEt, .dcl__Button-module__small--1VJc5 {font-size: 15px;}
+&lt;/style&gt;
+&lt;/head&gt;
+        &lt;body&gt;
+        	&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.datacamp.com/dcl-react.js.gz&quot;&gt;&lt;/script&gt;
+			&lt;div data-datacamp-exercise=&quot;&quot; data-lang=&quot;r&quot;&gt;
+        	&lt;code data-type=&quot;sample-code&quot;&gt;
+        		#Gagnants au poker du lundi au vendredi
+        	poker_vector &amp;lt;- c(140, -50, 20, -120, 240)
+        	poker_vector
+
+        		#Gagnants à la roulette du lundi au vendredi
+        	roulette_vector &amp;lt;-  c(-24,-50,100,-350,10)
+        	roulette_vector
+
+        		#Variable &quot;jours_vector&quot;
+        	jours_vector &amp;lt;- c(&quot;Lundi&quot;, &quot;Mardi&quot;, &quot;Mercredi&quot;, &quot;Jeudi&quot;, &quot;Vendredi&quot;)
+
+        		#Attribuer les noms du jour à roulette_vector et poker_vector : C'est très joli !!!!
+        	names(poker_vector) &amp;lt;-days_vector   
+			names(roulette_vector) &amp;lt;-days_vector
+             
+&lt;/code&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Variable affectations</title>
+   <link href="http://pwer21c.github.io/posts/variable-affectations"/>
+   <updated>2018-11-11T00:00:00+01:00</updated>
+   <id>http://pwer21c.github.io/posts/variable-affectations</id>
+   <content type="html">&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-15159522-6&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-15159522-6');
+&lt;/script&gt;
+
+&lt;div&gt;Toute commande R est soit une expression, soit une &lt;span class=&quot;highlight selected&quot;&gt;affec&lt;/span&gt;tation.&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;Normalement, une expression est immédiatement évaluée et le résultat&lt;/div&gt;
+&lt;div&gt;est affiché à l’écran :&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;strong&gt;&lt;span style=&quot;font-size: small;&quot;&gt;* Il vous suffit d’actualiser la page dans votre navigateur pour que la console R en ligne puisse charger complètement.&lt;/span&gt;&lt;/strong&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: small;&quot;&gt;&lt;iframe scrolling=&quot;yes&quot; src=&quot;https://catalogue-ent2.univ-paris8.fr/datacamp/sbang/ch1_2_1.html&quot; width=&quot;100%&quot; height=&quot;400px&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;Lors d’une affectation, une expression est évaluée, mais le résultat est stocké dans un objet (variable) et rien n’est affiché à l’écran. Le symbole d’affectation est &amp;lt;-, c’est-à-dire les deux caractères &amp;lt; et - placés obligatoirement l’un à la suite de l’autre :&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;div&gt;&lt;strong&gt;&lt;span style=&quot;font-size: small;&quot;&gt;* Il vous suffit d’actualiser la page dans votre navigateur pour que la console R en ligne puisse charger complètement.&lt;/span&gt;&lt;/strong&gt;&lt;/div&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;style&gt;
+.dcl__index-module__console--2YAI1, .dcl__index-module__editor--m_p4P {font-size: 15px !important; }
+.lm_header .lm_tab .lm_title {font-size: 15px !important;}
+.dcl__Button-module__extra-small--2toEt, .dcl__Button-module__small--1VJc5 {font-size: 15px;}
+&lt;/style&gt;
+&lt;/head&gt;
+        &lt;body&gt;
+        	&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.datacamp.com/dcl-react.js.gz&quot;&gt;&lt;/script&gt;
+			&lt;div data-datacamp-exercise=&quot;&quot; data-lang=&quot;r&quot;&gt;
+        	&lt;code data-type=&quot;sample-code&quot;&gt;
+        	a&amp;lt;-5
+            
+            a
+            
+            b &amp;lt;- 5
+
+            b
+&lt;/code&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>new post</title>
+   <link href="http://pwer21c.github.io/posts/new-post"/>
+   <updated>2018-11-11T00:00:00+01:00</updated>
+   <id>http://pwer21c.github.io/posts/new-post</id>
+   <content type="html">&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-15159522-6&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-15159522-6');
+&lt;/script&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Les objets R</title>
+   <link href="http://pwer21c.github.io/posts/les-objets-r"/>
+   <updated>2018-11-11T00:00:00+01:00</updated>
+   <id>http://pwer21c.github.io/posts/les-objets-r</id>
+   <content type="html">&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-15159522-6&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-15159522-6');
+&lt;/script&gt;
+
+&lt;p&gt;Tout dans le langage R est un objet : les variables contenant des données, les fonctions, les opérateurs, même le symbole représentant le nom d’un objet est lui-même un objet. Les objets possèdent au minimum un mode et une longueur et certains peuvent être dotés d’un ou plusieurs attributs&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;iframe scrolling=&quot;yes&quot; src=&quot;https://catalogue-ent2.univ-paris8.fr/datacamp/sbang/ch3_1.html&quot; width=&quot;100%&quot; height=&quot;330px&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;style&gt;
+.dcl__index-module__console--2YAI1, .dcl__index-module__editor--m_p4P {font-size: 15px !important; }
+.lm_header .lm_tab .lm_title {font-size: 15px !important;}
+.dcl__Button-module__extra-small--2toEt, .dcl__Button-module__small--1VJc5 {font-size: 15px;}
+&lt;/style&gt;
+&lt;/head&gt;
+        &lt;body&gt;
+        	&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.datacamp.com/dcl-react.js.gz&quot;&gt;&lt;/script&gt;
+			&lt;div data-datacamp-exercise=&quot;&quot; data-lang=&quot;r&quot;&gt;
+        	&lt;code data-type=&quot;sample-code&quot;&gt;
+            # Le mode d’un objet est obtenu avec la fonction mode :
+			v &amp;lt;- c(1, 2, 5, 9)
+			mode(v)
+
+
+			#La longueur d’un objet est obtenue avec la fonction length :
+			length(v)
+
+&lt;/code&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;h1&gt;Longeur&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;La longueur d’un objet est égale au nombre d’éléments qu’il contient.&lt;/strong&gt;La longueur, au sens R du terme, d’une chaîne de caractères est toujours 1. Un objet de mode &lt;strong&gt;&lt;em&gt;character&lt;/em&gt;&lt;/strong&gt; doit contenir plusieurs chaînes de caractères pour que sa longueur soit supérieure à 1 :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; v1 &amp;lt;- &quot;actuariat&quot;
+&amp;gt; length(v1)
+[1] 1
+&amp;gt; v2 &amp;lt;- c(&quot;a&quot;, &quot;c&quot;, &quot;t&quot;, &quot;u&quot;, &quot;a&quot;, &quot;r&quot;, &quot;i&quot;, &quot;a&quot;, &quot;t&quot;)
+&amp;gt; length(v2)
+[1] 9
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Il faut utiliser la fonction &lt;em&gt;&lt;strong&gt;nchar &lt;/strong&gt;&lt;/em&gt;pour obtenir le nombre de caractères dans une chaîne :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; nchar(v1)
+[1] 9
+&amp;gt; nchar(v2)
+[1] 1 1 1 1 1 1 1 1 1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Un objet peut être de longueur 0 et doit alors être interprété comme un contenant qui existe, mais qui est vide :&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;
+&amp;gt; v &amp;lt;- numeric(0)
+&amp;gt; length(v)
+[1] 0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;style&gt;
+.dcl__index-module__console--2YAI1, .dcl__index-module__editor--m_p4P {font-size: 15px !important; }
+.lm_header .lm_tab .lm_title {font-size: 15px !important;}
+.dcl__Button-module__extra-small--2toEt, .dcl__Button-module__small--1VJc5 {font-size: 15px;}
+&lt;/style&gt;
+&lt;/head&gt;
+        &lt;body&gt;
+        	&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.datacamp.com/dcl-react.js.gz&quot;&gt;&lt;/script&gt;
+			&lt;div data-datacamp-exercise=&quot;&quot; data-lang=&quot;r&quot;&gt;
+        	&lt;code data-type=&quot;sample-code&quot;&gt;
+            v1 &amp;lt;- &quot;actuariat&quot;
+			length(v1)
+          
+			v2 &amp;lt;- c(&quot;a&quot;, &quot;c&quot;, &quot;t&quot;, &quot;u&quot;, &quot;a&quot;, &quot;r&quot;, &quot;i&quot;, &quot;a&quot;, &quot;t&quot;)
+			length(v2)
+
+&lt;/code&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Arithmétique avec R</title>
+   <link href="http://pwer21c.github.io/posts/arithmtique-avec-r"/>
+   <updated>2018-11-11T00:00:00+01:00</updated>
+   <id>http://pwer21c.github.io/posts/arithmtique-avec-r</id>
+   <content type="html">&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-15159522-6&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-15159522-6');
+&lt;/script&gt;
+
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;span id=&quot;result_box&quot; lang=&quot;fr&quot;&gt;R peut être utilisé comme une simple calculatrice. Considérons les opérateurs arithmétiques suivants:&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;Une addition +&lt;/li&gt;
+&lt;li&gt;Soustraction -&lt;/li&gt;
+&lt;li&gt;Multiplication *&lt;/li&gt;
+&lt;li&gt;Division /&lt;/li&gt;
+&lt;li&gt;Puissance  ^&lt;/li&gt;
+&lt;li&gt;Modulo %%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;span class=&quot;short_text&quot; lang=&quot;fr&quot;&gt; &lt;/span&gt;&lt;span class=&quot;short_text&quot; lang=&quot;fr&quot;&gt;Les deux derniers pourraient avoir besoin d’explications:&lt;/span&gt;&lt;/div&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;l'opérateur de puissance (^) est évalué de droite à gauche ; tous les autres de gauche à droite. Ainsi, 2^2^3 est 2^8, et non 4^3&lt;/li&gt;
+&lt;li&gt;L'opérateur modulo retourne le reste d'une division :
+&lt;ul&gt;
+&lt;li&gt;5 %%2   ( 5/2 =1 reste 1)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;span id=&quot;result_box&quot; lang=&quot;fr&quot;&gt;Avec cette connaissance, suivez les instructions ci-dessous pour compléter l'exercice.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;style&gt;
+.dcl__index-module__console--2YAI1, .dcl__index-module__editor--m_p4P {font-size: 15px !important; }
+.lm_header .lm_tab .lm_title {font-size: 15px !important;}
+.dcl__Button-module__extra-small--2toEt, .dcl__Button-module__small--1VJc5 {font-size: 15px;}
+&lt;/style&gt;
+&lt;/head&gt;
+        &lt;body&gt;
+        	&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.datacamp.com/dcl-react.js.gz&quot;&gt;&lt;/script&gt;
+			&lt;div data-datacamp-exercise=&quot;&quot; data-lang=&quot;r&quot;&gt;
+        	&lt;code data-type=&quot;sample-code&quot;&gt;
+            # Une addition
+            5 + 5
+            
+            # Une soustraction
+            5 - 5
+            
+            # Une multiplication
+            3 * 5
+            
+            # Une division
+            (5 + 5)/2
+            
+            # Une puissance
+            2^2^3
+            
+            # L'opérateur modulo
+            28 %% 6
+
+&lt;/code&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Bases du langage R</title>
+   <link href="http://pwer21c.github.io/posts/bases-du-langage-r"/>
+   <updated>2018-11-10T00:00:00+01:00</updated>
+   <id>http://pwer21c.github.io/posts/bases-du-langage-r</id>
+   <content type="html">&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async=&quot;&quot; src=&quot;https://www.googletagmanager.com/gtag/js?id=UA-15159522-6&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-15159522-6');
+&lt;/script&gt;
+
+&lt;p&gt;Dans ce chapitre, vous ferez vos premiers pas avec R. Vous apprendrez
+comment utiliser la console en tant que calculatrice et comment affecter des variables. Vous allez également apprendre les types de données de base dans R. Allons-y.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Nuxeo drive mac os x pb</title>
+   <link href="http://pwer21c.github.io/posts/new-post"/>
+   <updated>2017-06-22T00:00:00+02:00</updated>
+   <id>http://pwer21c.github.io/posts/new-post</id>
+   <content type="html">&lt;pre&gt;
+&lt;code&gt;
+brew update
+brew install openssl
+export PATH=/usr/local/bin:$PATH
+brew link --force openssl
+echo « export PATH=\ »/usr/local/bin:$PATH\ » » &amp;gt; .bash_profile
+/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+&lt;/code&gt;
+&lt;/pre&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>how to install latex package on my pc</title>
+   <link href="http://pwer21c.github.io/posts/how-to-install-latex-package-on-my-pc"/>
+   <updated>2017-06-22T00:00:00+02:00</updated>
+   <id>http://pwer21c.github.io/posts/how-to-install-latex-package-on-my-pc</id>
+   <content type="html">&lt;p&gt;Copy the file sty&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+cp pgfplots.sty  /usr/local/texlive/2016basic/texmf-dist/tex/latex/base/
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;p&gt;Run texhash&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;
+/usr/local/texlive/2016basic/texmf-dist/tex/latex/base/texhash
+&lt;/code&gt;
+&lt;/pre&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>test me</title>
+   <link href="http://pwer21c.github.io/posts/test-me"/>
+   <updated>2016-08-02T00:00:00+02:00</updated>
+   <id>http://pwer21c.github.io/posts/test-me</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Reinforcement learning</title>
+   <link href="http://pwer21c.github.io/posts/reinforcement-learning"/>
+   <updated>2016-08-02T00:00:00+02:00</updated>
+   <id>http://pwer21c.github.io/posts/reinforcement-learning</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Group ENT réunion   le 23 juin 2014</title>
+   <link href="http://pwer21c.github.io/posts/group-ent-runion-le-23-juin-2014"/>
+   <updated>2016-08-02T00:00:00+02:00</updated>
+   <id>http://pwer21c.github.io/posts/group-ent-runion---le-23-juin-2014</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;https://pwer21c.github.com/slides/esup2306.html&quot;&gt;a link&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>2016년 8월 2일</title>
+   <link href="http://pwer21c.github.io/posts/2016-8-2"/>
+   <updated>2016-08-02T00:00:00+02:00</updated>
+   <id>http://pwer21c.github.io/posts/2016-8-2</id>
+   <content type="html">&lt;p&gt;늘
+늘&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>new post</title>
+   <link href="http://pwer21c.github.io/posts/new-post"/>
+   <updated>2014-05-19T00:00:00+02:00</updated>
+   <id>http://pwer21c.github.io/posts/new-post</id>
+   <content type="html">&lt;p&gt;MOA는 &lt;a href=&quot;http://moa.cms.waikato.ac.nz&quot;&gt;Massive On-line Analysis&lt;/a&gt;의 약자이고 오픈소스 프레임워크로써 머신러닝 혹은 데이타마이닝 처리를 하는데
+활용된다. 머신러닝 알고리즘은 classification, regression, clustering, outlier detection r,flrh recommendation engines 등의 학습 알고리즘을 
+담고있다.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
    <title>test</title>
    <link href="http://pwer21c.github.io/posts/test"/>
    <updated>2014-05-15T00:00:00+02:00</updated>
    <id>http://pwer21c.github.io/posts/test</id>
-   <content type="html">
+   <content type="html">&lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.datacamp.com/dcl-react.js.gz&quot;&gt;&lt;/script&gt;
+
+&lt;div data-datacamp-exercise=&quot;&quot; data-lang=&quot;r&quot;&gt;
+        &lt;code data-type=&quot;sample-code&quot;&gt;
+            # Une addition
+            5 + 5
+            
+            # Une soustraction
+            5 - 5
+            
+            # Une multiplication
+            3 * 5
+            
+            # Une division
+            (5 + 5)/2
+            
+            # Une puissance
+            2^2^3
+            
+            # L'opérateur modulo
+            28 %% 6
+
+
+        &lt;/code&gt;
+        
+&lt;/div&gt;
+
 </content>
  </entry>
  
@@ -25,17 +1152,14 @@
    <link href="http://pwer21c.github.io/posts/personnaliser-loutil-statistics"/>
    <updated>2014-05-15T00:00:00+02:00</updated>
    <id>http://pwer21c.github.io/posts/personnaliser-loutil-statistics</id>
-   <content type="html">&lt;p&gt;Question : Lors de la génération de statistiques avec le canal Statistics, il ne m&#39;est proposé que le groupe Everyone.
-Comment peut-on ajouter d&#39;autres groupes à la liste déroulante ?&lt;/p&gt;
+   <content type="html">&lt;p&gt;Question : Lors de la génération de statistiques avec le canal Statistics, il ne m’est proposé que le groupe Everyone.
+Comment peut-on ajouter d’autres groupes à la liste déroulante ?&lt;/p&gt;
 
 &lt;p&gt;Pour cela adaptez le fichier&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;
  /uportal-war/src/main/data/default_entities/event-aggregation/default.event-aggregation.xml
 &lt;/code&gt;&lt;/pre&gt;
-
-
-&lt;p&gt;, les statistics sont générées à partir des events agrégés. Attention quand même à bien faire attention à ce que vous faites car il y a eu de nombreux messages sur les listes au sujet de l&#39;agrégation des event qui causaient une augmentation significative de la base et qui pouvait provoquer des arrêtes de services, donc monitorez bien votre base.&lt;/p&gt;
+&lt;p&gt;, les statistics sont générées à partir des events agrégés. Attention quand même à bien faire attention à ce que vous faites car il y a eu de nombreux messages sur les listes au sujet de l’agrégation des event qui causaient une augmentation significative de la base et qui pouvait provoquer des arrêtes de services, donc monitorez bien votre base.&lt;/p&gt;
 </content>
  </entry>
  

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Nomer une matrice"
+title: "2. Nomer une matrice"
 category: posts
 oderis: 2
 group: matrix

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Qu'est ce qu'une matrice?"
+title: "1. Qu'est ce qu'une matrice?"
 category: posts
 oderis: 1
 group: matrix
