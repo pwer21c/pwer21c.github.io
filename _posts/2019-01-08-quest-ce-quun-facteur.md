@@ -51,6 +51,7 @@ genre_vector <- c("Masculin", "Feminin", "Feminin", "Masculin", "Masculin")
 
 # Fabriquez factor_genre_vector en utilisant 'factor()'
 factor_genre_vector <- factor(genre_vector)
+factor_genre_vector
 
 </code>
 </div>
