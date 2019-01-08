@@ -8,7 +8,7 @@ description: ""
 <section class="content">
   <h1 class="thin">Factor</h1>
   <ul class="listing">
-    {% assign sortedPosts = site.posts | sort:'orderis' | reverse %}
+    {% assign sortedPosts = site.posts | sort: 'title'   %}
     {% for post in sortedPosts %}
     {% if post.group == 'factor' %}
 
