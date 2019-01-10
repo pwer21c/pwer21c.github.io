@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "S'inscrire sur rstudio.cloud"
+title: "1. S'inscrire sur rstudio.cloud"
 category: posts
 group: rmarkdown
 ---
