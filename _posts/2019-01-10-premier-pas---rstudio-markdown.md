@@ -23,6 +23,13 @@ Essayez de créer un projet en cliquant sur le bouton "New project"
 
 ![Nouveau projet](https://pwer21c.github.io/images/rmarkdown1/002bis.png)
 
+![Nouveau projet](https://pwer21c.github.io/images/rmarkdown1/002bis2.png)
+
+<h3>Créer un nouveau document(Rmarkdown)</h3>
+
+Un document R Markdown est un simple fichier texte enregistré avec l’extension <code>.Rmd</code>.
+Sous RStudio, on peut créer un nouveau document en allant dans le menu File puis en choisissant New file puis R Markdown…. La boîte de dialogue suivante s’affiche :
+
 ![Inscription](https://pwer21c.github.io/images/rmarkdown1/003.png)
 
 ![Inscription](https://pwer21c.github.io/images/rmarkdown1/004.png)
