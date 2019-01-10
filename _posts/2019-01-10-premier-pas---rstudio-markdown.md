@@ -12,3 +12,13 @@ S’inscrire sur rstudio.cloud depuis un navigateur Internet 
 * Cliquez sur le bouton sign up pour terminer la procédure. Vous recevrez ensuite un courriel de confirmation contenant un lien sur lequel il faudra cliquer pour validez un accès complet à [rstudio.cloud](http://rstudio.cloud).
 
 ![Inscription](https://pwer21c.github.io/images/rmarkdown1/001.png)
+
+![Inscription](https://pwer21c.github.io/images/rmarkdown1/002.png)
+
+![Inscription](https://pwer21c.github.io/images/rmarkdown1/003.png)
+
+![Inscription](https://pwer21c.github.io/images/rmarkdown1/004.png)
+
+![Inscription](https://pwer21c.github.io/images/rmarkdown1/005.png)
+
+![Inscription](https://pwer21c.github.io/images/rmarkdown1/006.png)
