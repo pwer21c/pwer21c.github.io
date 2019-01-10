@@ -36,7 +36,7 @@ Sous RStudio, on peut créer un nouveau document en allant dans le menu File pui
 
 ![](https://pwer21c.github.io/images/rmarkdown1/005.png)
 
-![](https://pwer21c.github.io/images/rmarkdown1/006.png)
+![](https://pwer21c.github.io/images/rmarkdown1/006.png){:height="50%" width="50%"}
 
 On peut indiquer le titre, l’auteur du document ainsi que le format de sortie par défaut
 
@@ -50,7 +50,7 @@ Un document R Markdown est donc un fichier texte qui ressemble à quelque chose 
 
 On peut à tout moment compiler, ou plutôt "tricoter" (Knit), un document R Markdown pour obtenir et visualiser le document généré. Pour cela, il suffit de cliquer sur le bouton Knit et de choisir le format de sortie voulu :
 
-![](https://pwer21c.github.io/images/rmarkdown1/008.png)
+![](https://pwer21c.github.io/images/rmarkdown1/008.png){:height="50%" width="50%"}
 
 Et enfin, le fichier PDF est arrivé
 
