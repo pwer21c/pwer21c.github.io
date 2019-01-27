@@ -15,7 +15,16 @@ group: inference
 
   gtag('config', 'UA-15159522-6');
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async src="../js/MathJax.js?config=TeX-AMS_CHTML"></script>
+<script type="text/javascript" async
+  src="https://pwer21c.github.io/js/MathJax.js?config=TeX-AMS_CHTML">
+</script>
+
 
 <h2>Test de Student pour un échantillon</h2>
 
