@@ -32,7 +32,7 @@ group: inference
   - $$H_1$$: $$\mu \ne \mu_0$$ ("two.sided"), $$\mu < \mu_0$$("less") ou $$\mu > \mu_0$$ ("greater")
 
 4) Statistique: Sous $$H_0$$  
-  -  $$ t=\frac{\bar{x}-\mu_0}{\sqrt{\frac{s}{n}}}$$ suit une loi de Student à n-1 ddl
+  -  $$ t_{(n-1)ddl}=\frac{\bar{x}-\mu_0}{\sqrt{\frac{s}{n}}}$$ suit une loi de Student à n-1 ddl
 
 
 <h2>Test de Student pour deux échantillons appariés</h2>
@@ -50,7 +50,7 @@ group: inference
 - $$H_1$$: $$\mu_1 \ne \mu_2$$ ("two.sided"), $$\mu_1 < \mu_2$$("less") ou $$\mu_1 > \mu_2$$ ("greater")
 
 5) Statistique: Sous $$H_0$$  
--  $$ t=\frac{\bar{y}-0}{\sqrt{\frac{s_y}{n}}}$$ suit une loi de Student à n-1 ddl
+-  $$ t_{(n-1)ddl}=\frac{\bar{y}-0}{\sqrt{\frac{s_y}{n}}}$$ suit une loi de Student à n-1 ddl
 
 <h2>Test de Student pour deux échantillons indépendants</h2>
 
