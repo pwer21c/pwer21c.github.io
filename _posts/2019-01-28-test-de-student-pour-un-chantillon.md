@@ -56,18 +56,18 @@ res
 	One Sample t-test
 
 data:  poids
-t = 230.14, df = 14, p-value < 2.2e-16
-alternative hypothesis: true mean is not equal to 25
+t = -1.9184, df = 14, p-value = 0.07569
+alternative hypothesis: true mean is not equal to 250
 95 percent confidence interval:
  246.0605 250.2195
 sample estimates:
-mean of x
+mean of x 
    248.14
 </code></pre>
 
 <b>Dans le résultat ci-dessus:</b>
 
-t est la valeur statistique du test t (t = 230,14),
+t est la valeur statistique du test t (t = -1,9184),
 df est le degré de liberté (df = 14),
 La valeur p est le niveau de signification du test t (valeur p = 2.2 ^ {- 16}).
 conf.int est l' intervalle de confiance de la moyenne à 95% (conf.int = [246.0605 ;250.2195]);
@@ -75,4 +75,4 @@ estimations de l’échantillon est la valeur moyenne de l’échantillon (moyen
 
 <b>Interprétation du résultat</b>
 
-La valeur p du test est 2.2 ^ {- 16}, ce qui est inférieur au niveau de signification alpha = 0,05. Nous pouvons en conclure que le poids moyen des confitures est significativement différent de 250 g avec une valeur p = 2.2 ^ {- 16}.
+La valeur p du test est 0,07569, ce qui est supérieur au niveau de signification alpha = 0,05. Nous pouvons en conclure que le poids moyen des confitures n’est pas significativement différent de 250 g avec une valeur p = 0,07569.
