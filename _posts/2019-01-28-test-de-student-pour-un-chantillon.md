@@ -42,8 +42,8 @@ vitesse_vector <- c("Rapide", "Lent", "Lent", "Rapide", "Ultra-Rapide")
 factor_vitesse_vector <- factor(vitesse_vector, ordered = TRUE, levels = c("Lent", "Rapide", "Ultra-Rapide"))
 # vos données
 poids<-c(253,247.4,247,246,251,255,244,245,243.5,254.5,243.6,247.3,249,248.6 , 247.2)
-# Nous voulons savoir si le poids moyen des souris diffère de 25 g (test bilatéral)?
-res <- t.test(poids, mu = 25,alternative = "two.sided")
+# Nous voulons savoir si le poids moyen des souris diffère de 250 g (test bilatéral)?
+res <- t.test(poids, mu = 250,alternative = "two.sided")
 # Printing the results
 res
 
