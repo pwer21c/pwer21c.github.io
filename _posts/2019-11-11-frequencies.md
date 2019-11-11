@@ -34,8 +34,8 @@ category: posts
 				<p title="">
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/lKPHTFjY4m8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
-				<h3 title="">
-					Analyse des données catégoriques</a></h3>
+				<h3 style="color:blue;">
+					Analyse des données catégoriques</h3>
 				<p title="">
 					Aperçu du chapitre</p>
 			</td>
@@ -43,8 +43,8 @@ category: posts
 				<p title="">
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/3eeiAFfY2ls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
-				<h3 title="">
-					Analyse des données catégoriques</a></h3>
+				<h3 style="color:blue;">
+					Analyse des données catégoriques</h3>
 				<p title="">
 					Test binomial</p>
 			</td>
@@ -52,8 +52,8 @@ category: posts
 				<p title="">
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/FfabgyEKwtk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
-				<h3 title="">
-					Analyse des données catégoriques</a></h3>
+				<h3 style="color:blue;">
+					Analyse des données catégoriques</h3>
 				<p title="">
 					le test d'adequation chi carré</p>
 			</td>
@@ -61,8 +61,8 @@ category: posts
 				<p title="">
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/vsrj647Tb3g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
-				<h3 title="">
-					Analyse des données catégoriques</a></h3>
+				<h3 style="color:blue;">
+					Analyse des données catégoriques</h3>
 				<p title="">
 					le test d'association chi carré</p>
 			</td>
@@ -72,8 +72,8 @@ category: posts
 				<p title="">
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/W_y6EiF8mPA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
-				<h3 title="">
-					Analyse des données catégoriques</a></h3>
+				<h3 style="color:blue;">
+					Analyse des données catégoriques</h3>
 				<p title="">
 					Le test McNEMAR</p>
 			</td>

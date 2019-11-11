@@ -26,8 +26,6 @@ category: posts
 </style>
 </head>
 <body>
-
-
 <table>
 	<tbody>
 		<tr>
@@ -35,8 +33,8 @@ category: posts
 				<p title="">
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/B2OgFq05QMs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
-				<h3 title="">
-					Traitement des données</a></h3>
+				<h3 style="color:blue;">
+					Traitement des données</h3>
 				<p title="">
 					Aperçu du chapitre</p>
 			</td>
@@ -44,8 +42,8 @@ category: posts
 				<p title="">
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/bGLFzfID2-M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
-				<h3 title="">
-					Traitement des données</a></h3>
+				<h3 style="color:blue;">
+					Traitement des données</h3>
 				<p title="">
 					Insertion des données</p>
 			</td>
@@ -53,8 +51,8 @@ category: posts
 				<p title="">
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/R0uE4LlHeac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
-				<h3 title="">
-					Traitement des données</a></h3>
+				<h3 style="color:blue;">
+					Traitement des données</h3>
 				<p title="">
 					Importation des données</p>
 			</td>
@@ -62,8 +60,8 @@ category: posts
 				<p title="">
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/7tlvuYO76Ok" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
-				<h3 title="">
-					Traitement des données</a></h3>
+				<h3 style="color:blue;">
+					Traitement des données</h3>
 				<p title="">
 					Types variables & des étiquettes</p>
 			</td>
@@ -73,8 +71,8 @@ category: posts
 				<p title="">
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/-t1Q52QChoo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
-				<h3 title="">
-					Traitement des données</a></h3>
+				<h3 style="color:blue;">
+					Traitement des données</h3>
 				<p title="">
 					Calcul d'une moyennne</p>
 			</td>
@@ -82,8 +80,8 @@ category: posts
 				<p title="">
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/EBvvkvqm9_o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
-				<h3 title="">
-					Traitement des données</a></h3>
+				<h3 style="color:blue;">
+					Traitement des données</h3>
 				<p title="">
 					Calculer les scores Z</p>
 			</td>
@@ -91,8 +89,8 @@ category: posts
 				<p title="">
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/moIsRlUZabw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
-				<h3 title="">
-					Traitement des donnés</a></h3>
+				<h3 style="color:blue;">
+					Traitement des donnés</h3>
 				<p title="">
 					Transformer des partitiions en catégories</p>
 			</td>
@@ -100,8 +98,8 @@ category: posts
 				<p title="">
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/pij0KlFhITw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
-				<h3 title="">
-					Traitement des données</a></h3>
+				<h3 style="color:blue;">
+					Traitement des données</h3>
 				<p title="">
 					Cas de filtrage</p>
 			</td>
