@@ -36,36 +36,36 @@ category: posts
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/Ej9e8lzaeDE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
 				<h3 title="">
-					Getting started</h3>
+					Exploration</h3>
 				<p title="">
-					Welcome</p>
+					Exploration: chapter overview</p>
 			</td>
 			<td title="" width="25%">
 				<p title="">
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/syx0f4xCxpk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
 				<h3 title="">
-					Getting started</h3>
+					Exploration</h3>
 				<p title="">
-					Installing jamovi</p>
+					Descriptive statistics</p>
 			</td>
 			<td title="" width="25%">
 				<p title="">
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/e2Wc2wpWk4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
 				<h3 title="">
-					Getting started</a></h3>
+					Exploration</a></h3>
 				<p title="">
-					Navigating jamovi</p>
+					Histograms</p>
 			</td>
 			<td title="" width="25%">
 				<p title="">
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/GkqrmufO3yU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
 				<h3 title="">
-					Getting started</a></h3>
+					Exploration</a></h3>
 				<p title="">
-					Sample data</p>
+					Density plots</p>
 			</td>
 		</tr>
 		<tr>
@@ -74,36 +74,36 @@ category: posts
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/X0GNondPmrk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
 				<h3 title="">
-					Getting started</a></h3>
+					Exploration</a></h3>
 				<p title="">
-					Sharing files</p>
+					Box plots</p>
 			</td>
 			<td title="" width="25%">
 				<p title="">
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/ryiGWk8DwgY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
 				<h3 title="">
-					Getting started</a></h3>
+					Exploration</a></h3>
 				<p title="">
-					Sharing with OSF.io</p>
+					Violin plots</p>
 			</td>
 			<td title="" width="25%">
 				<p title="">
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/Zm1xAy6HkUo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
 				<h3 title="">
-					Getting started</a></h3>
+					Exploration</a></h3>
 				<p title="">
-					jamovi modules</p>
+					Dot plots</p>
 			</td>
 			<td title="" width="25%">
 				<p title="">
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/g5lnGkIeyw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
 				<h3 title="">
-					Getting started</a></h3>
+					Exploration</a></h3>
 				<p title="">
-					The jmv package for R</p>
+					Bar plots</p>
 			</td>
 		</tr>
         <tr>
@@ -112,74 +112,9 @@ category: posts
 					<iframe width="280" height="150" src="https://www.youtube.com/embed/X0GNondPmrk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</p>
 				<h3 title="">
-					Wrangling data</a></h3>
+					Exploration</a></h3>
 				<p title="">
-					Wrangling data: chapter overview</p>
-			</td>
-			<td title="" width="25%">
-				<p title="">
-					<iframe width="280" height="150" src="https://www.youtube.com/embed/ryiGWk8DwgY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</p>
-				<h3 title="">
-					Wrangling data</a></h3>
-				<p title="">
-					Entering data</p>
-			</td>
-			<td title="" width="25%">
-				<p title="">
-					<iframe width="280" height="150" src="https://www.youtube.com/embed/Zm1xAy6HkUo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</p>
-				<h3 title="">
-					Wrangling data</a></h3>
-				<p title="">
-					Importing data</p>
-			</td>
-			<td title="" width="25%">
-				<p title="">
-					<iframe width="280" height="150" src="https://www.youtube.com/embed/g5lnGkIeyw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</p>
-				<h3 title="">
-					Wrangling data</a></h3>
-				<p title="">
-					Variable types & labels</p>
-			</td>
-		</tr>
-		<tr>
-			<td title="" width="25%">
-				<p title="">
-					<iframe width="280" height="150" src="https://www.youtube.com/embed/X0GNondPmrk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</p>
-				<h3 title="">
-					Wrangling data</a></h3>
-				<p title="">
-					Computing means</p>
-			</td>
-			<td title="" width="25%">
-				<p title="">
-					<iframe width="280" height="150" src="https://www.youtube.com/embed/ryiGWk8DwgY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</p>
-				<h3 title="">
-					Wrangling data</a></h3>
-				<p title="">
-					Computing z-scores</p>
-			</td>
-			<td title="" width="25%">
-				<p title="">
-					<iframe width="280" height="150" src="https://www.youtube.com/embed/Zm1xAy6HkUo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</p>
-				<h3 title="">
-					Wrangling data</a></h3>
-				<p title="">
-					Transforming scores to categories</p>
-			</td>
-			<td title="" width="25%">
-				<p title="">
-					<iframe width="280" height="150" src="https://www.youtube.com/embed/g5lnGkIeyw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</p>
-				<h3 title="">
-					Wrangling data</a></h3>
-				<p title="">
-					Filtering cases</p>
+					Exporting tables & plots</p>
 			</td>
 		</tr>
 	</tbody>
