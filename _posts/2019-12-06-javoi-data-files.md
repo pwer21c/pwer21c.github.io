@@ -2,6 +2,7 @@
 layout: post
 title: "Jamovi data files"
 category: posts
+group: jamovi
 ---
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-15159522-6"></script>
 <script>
