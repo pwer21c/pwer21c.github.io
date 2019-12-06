@@ -14,7 +14,19 @@ title: "Posts"
      <li><a href="/rmarkdown/">R - Reporting avec R Markdown</a></li>
     <li><a href="/inference/">R - Les statistiques inférentielles avec R</a></li>
   </ul>
-  <h1 class="thin">POSTS</h1>
+
+  <h1 class="thin">Jamovi</h1>
+  <ul class="listing">
+    {% for post in site.posts %}
+    {% if post.group == 'jamovi'%}
+    <li>
+      <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h1 class="thin">Last POSTS</h1>
   <ul class="listing">
     {% for post in site.posts %}
     {% if post.group == null || post.group != 'thesis' || post.group != 'gothere' || post.group !='slides' || post.group != 'dsi' %}
@@ -24,4 +36,5 @@ title: "Posts"
     {% endif %}
     {% endfor %}
   </ul>
+
 </section>
