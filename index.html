@@ -4,24 +4,18 @@ title: "Posts"
 ---
 
 <section class="content">
-  <h1 class="thin">POSTS</h1>
+
+  <h1 class="thin">R logiciels</h1>
   <ul class="listing">
-   <li><a href="#">Initiation à R</a></li>
-   <li style="list-style-type:none;">
-   <ul class="sublisting">
-     <li><a href="/INITR/">Bases du langage R</a></li>
-     <li><a href="/vectors/">Vecteurs</a></li>
-     <li><a href="/matrix/">Matrices</a></li>
-     <li><a href="/factor/">Factors</a></li>
-   </ul>
-   </li>
-  </ul>
-  <ul class="listing">
-   <li><a href="/rmarkdown/">Reporting avec R Markdown</a></li>
+    <li><a href="/INITR/">R - Bases du langage R</a></li>
+    <li><a href="/vectors/">R - Vecteurs</a></li>
+     <li><a href="/matrix/">R - Matrices</a></li>
+     <li><a href="/factor/">R - Factors</a></li>
+     <li><a href="/rmarkdown/">Reporting avec R Markdown</a></li>
+    <li><a href="/inference/">R - Les statistiques inférentielles avec R</li>
   </ul>
   <h1 class="thin">POSTS</h1>
   <ul class="listing">
-    <li><a href="/inference/">Les statistiques inférentielles avec R</li>
     {% for post in site.posts %}
     {% if post.group == null || post.group != 'thesis' || post.group != 'gothere' || post.group !='slides' || post.group != 'dsi' %}
     <li>
@@ -29,18 +23,5 @@ title: "Posts"
     </li>
     {% endif %}
     {% endfor %}
-    <li>testme</li>li> 
-  </ul>
-  <h1 class="thin">POSTS</h1>
-  <ul class="listing">
-    <li><a href="/inference/">Les statistiques inférentielles avec R</li>
-    {% for post in site.posts %}
-    {% if post.group == null || post.group != 'thesis' || post.group != 'gothere' || post.group !='slides' || post.group != 'dsi' %}
-    <li>
-      <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% endif %}
-    {% endfor %}
-    <li>testme</li>li> 
   </ul>
 </section>
