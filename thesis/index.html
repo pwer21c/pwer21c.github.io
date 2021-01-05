@@ -1,21 +1,1189 @@
----
-layout: page
-title: "Thèse"
-description: ""
----
-    {% include JB/pages_list %}
+<!doctype html>
+<html lang="en">
 
-<section class="content">
-  <h1 class="thin">Mes études</h1>
-  <ul class="listing">
-    {% for post in site.posts %}
-    {% if post.group == 'thesis' %}
+	<head>
+		<meta charset="utf-8">
+		<title>Development framework for language acquisition based on the embodied cognition</title>
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="BANG sanghun">
 
-    <li>
-      <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% endif %}
-    {% endfor %}
-  </ul>
-</section>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<!-- Custom modifications of sky theme -->
+        <link rel="stylesheet" href="css/theme/sky_custom.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+                <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+                <script>
+                        if ( window.location.search.match( /print-pdf/gi ) ) {
+                            document.write( '<link rel="stylesheet" href="css/print/pdf.css" type="text/css">' );
+                            document.write( '<link rel="stylesheet" href="css/print/pdf_custom.css" type="text/css">' );
+                        }
+                </script>		
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<script>
+                    // Título que se muestra en la barra superior
+                    var titulo = "Development framework for language acquisition based on the embodied cognition";
+		</script>
+	</head>
+
+	<body>
+            <div class="reveal">
+                <div class="slides">
+
+                <!--  ##################################################################  -->
+                <!--  #######                                ###########################  -->
+                <!--  #######     Title of presentation      ###########################  -->
+                <!--  #######                                ###########################  -->
+                <!--  ##################################################################  -->
+
+                <section>
+                        <h3>Development framework for language acquisition based on the embodied cognition: </h3>
+                        <p>case of problem solving and gesture </p>
+                        <div class="autor">
+                            BANG sanghun<br>
+                        <p style="font-size:71.8%"> 
+                            Directeur de thèse: Charles Tijus<br>
+                            Université Paris 8<br>
+                            Le 15 janvier 2021
+                        </p>
+                        <img  src="./images/paris8.png" style="position:absolute; top:10; left:0">
+                        <img  src="./images/logolutin.gif" style="position:absolute; top:10; left:10">
+                        </div>
+                </section>
+
+                <!--  ##################################################################  -->
+                <!--  #######                                ###########################  -->
+                <!--  #######     Les problèmatiques         ###########################  -->
+                <!--  #######                                ###########################  -->
+                <!--  ##################################################################  -->
+
+                <section>
+                    <h2>Plan de la présentation</h2>
+                    <hr>
+                    <ul> 
+                        <li style="background-color:#2c2f3e;"><span style="color:white;">Les problèmatiques</span></li>
+                        <li style="color:#999" >Les axes théoriques</li>
+                        <li style="color:#999" >La démarche méthodologique</li>
+                        <li style="color:#999" >Les principaux résultats</li>
+                        <li style="color:#999" >Les perspectives de recherche</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Les problèmatiques</h3>
+                    <hr>
+                    <ul> 
+                        <li>Comment se forment l'intelligence humaine et les capacités cognitives ?</li>
+                        <li>Dans le cas de la résolution de problèmes, la cognition humaine peut-elle être réalisée par l'observation du comportement humain plutôt que par l'explication des règles du jeu ?</li>
+                        <li>Basée sur la cognition incarnée, l'intelligence artificielle peut-elle immiter les capacités cognitives humaines ?</li>
+                    </ul>
+                </section>
+
+                <section>
+                        <div style="position:relative; width:800px; height: 600px; margin: 0 auto;">
+                            <!--img class="fragment" src="./images/ec01.png"  style="position:absolute; top:0; left:0">
+                            <img class="fragment" src="./images/ec02.png"  style="position:absolute; top:0; left:0">
+                            <img class="fragment" src="./images/ec03.png"  style="position:absolute; top:0; left:0">
+                            <img class="fragment" src="./images/ec04.png"  style="position:absolute; top:0; left:0"-->
+                            <img class="fragment" src="./images/ec05.png"  style="position:absolute; top:0; left:0">
+                        </div>
+                </section>
+
+                <section>
+                        <img src="./images/chess.jpg" width="300px" style="position:absolute; top:10; left:100px">
+                        <div style="position:absolute; top:85px; left:40px;font-size:0.4em;font-family:monospace;">Chess</div>
+                        <img src="./images/gogo.png" style="position:absolute; top: 280px; left: 0; width: 380px"> 
+                        <div style="position:absolute; top:530px; left:150px;font-size:0.4em;font-family:monospace;">Go</div>
+                        <img src="./images/sujet2470.png" style="position:absolute; top: 80px; left: 520px; width: 300px">
+                        <div style="position:absolute; top:260px; left:620px;font-size:0.4em;font-family:monospace;">Tower of Hanoi</div>
+                        <img src="./images/backgammon.jpg" style="position:absolute; top: 280px; left: 520px; width: 300px">
+                        <div style="position:absolute; top:500px; left:620px;font-size:0.4em;font-family:monospace;">Backgammon</div>
+                </section>
+
+                <!--  ##################################################################  -->
+                <!--  #######                                ###########################  -->
+                <!--  #######     Les axes théoriques        ###########################  -->
+                <!--  #######                                ###########################  -->
+                <!--  ##################################################################  -->
+
+                <section>
+                    <h2>Plan de la présentation</h2>
+                    <hr>
+                    <ul> 
+                        <li style="color:#999" >Les problèmatiques</li>
+                        <li style="background-color:#2c2f3e;"><span style="color:white;">Les axes théoriques</span></li>
+                        <li style="color:#999" >La démarche méthodologique</li>
+                        <li style="color:#999" >Les principaux résultats</li>
+                        <li style="color:#999" >Les perspectives de recherche</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Les axes théoriques</h3>
+                    <hr>
+                    <ul> 
+                        <li>Cognition incarnée (Embodied cognition)</li>   <!-- Thinking through bodily activities -->
+                        <li>Intelligence artificielle incarnée (Embodied Artificial Intelligence)</li>
+                        <li>Apprentissage profond (Deep learning)</li>                      <!-- Thinking by interacting with artifacts an others -->
+                    </ul>
+                </section>
+
+                <!--  ##########################################################################################  -->
+                <!--  #######                                                        ###########################  -->
+                <!--  #######     Les axes théoriques: la cognition incarnée         ###########################  -->
+                <!--  #######                                                        ###########################  -->
+                <!--  ##########################################################################################  -->
+
+                <section>
+                    <h3>La cognition incarnée</h3>
+                    <hr>
+                    <ul> 
+                        <li class="fragment">le monde est le fond naturel et l’environnement de toutes mes pensées et de toutes mes perceptions évidentes</li>   <!-- Thinking through bodily activities -->
+                        <li class="fragment">La pensée humaine est presque inconsciente</li>   <!-- Thinking through bodily activities -->
+                        <li class="fragment">La pensée huamine a une nature métaphorique</li>   <!-- Thinking through bodily activities -->
+                        <img class="fragment" src="./images/ec05.png" width="500px" >
+                    </ul>
+                </section>
+
+                <!--  #######################################################################################################################  -->
+                <!--  #######                                                                                     ###########################  -->
+                <!--  #######     Les axes théoriques: les 4 aspects de la théorie de la cognition incarnée       ###########################  -->
+                <!--  #######                                                                                     ###########################  -->
+                <!--  #######################################################################################################################  -->
+
+                <section>
+                    <h4>Quatre aspects de la théorie de la cognition incarnée</h4>
+                    <hr>
+                        
+                            <img class="fragment" src="./images/4aspect_4.png" width="800px" style="position:absolute; top:100px; left:0">
+                            <img class="fragment" src="./images/4aspect_3.png"  width="800px" style="position:absolute; top:100px; left:0">
+                            <img class="fragment" src="./images/4aspect_2.png"  width="800px" style="position:absolute; top:100px; left:0">
+                            <img class="fragment" src="./images/4aspect_1.png"  width="800px" style="position:absolute; top:100px; left:0">
+                
+                </section>
+
+                <!--  ############################################################################################  -->
+                <!--  #######                                                          ###########################  -->
+                <!--  #######     Les axes théoriques: les réseaux de neurones         ###########################  -->
+                <!--  #######                                                          ###########################  -->
+                <!--  ############################################################################################  -->
+
+                <section>
+                    <h3>Les réseaux de neurones</h3>
+                    <hr>
+                    <div style="position:relative; width:800px; height: 600px; margin: 0 auto;">
+                        <img src="./images/neuronwikipedia.png" width="600px" style="position:absolute; top:0; left:0">
+                        <div style="position:absolute; top:450px; left:0;font-size:0.4em;font-family:monospace;">Fig. 3.2 Biological neuron (source: www.wikipedia.org )</div>
+                        <img class="fragment " src="./images/neuron001.png" style="position:absolute; top: 180px; left: 520px; width: 300px">
+                        <div class="fragment" style="position:absolute; top:420px; left:520px;font-size:0.4em;font-family:monospace;">Fig. 3.1 Model of the neuron</div>
+                    </div>
+                </section>
+
+                <!--  #######################################################################  -->
+                <!--  #######                                     ###########################  -->
+                <!--  #######     Les axes théoriques: MLP        ###########################  -->
+                <!--  #######                                     ###########################  -->
+                <!--  #######################################################################  -->
+
+                <section>
+                    <h3>Le perceptron multicouche</h3>
+                    <hr>
+                    <ul> 
+                        <li>&nbsp;</li>   <!-- Thinking through bodily activities -->
+                        <img src="./images/multilayer.png" width="500px" style="position:absolute; top:10; left:0">
+                        <div style="position:absolute; top:550px; left:0;font-size:0.4em;font-family:monospace;">Fig. 3.5 Multilayer perceptron</div>
+                        <img src="./images/xorsimex.gif" style="position:absolute; top: 180px; left: 520px; width: 500px">
+                        <div style="position:absolute; top:550px; left:520px;font-size:0.4em;font-family:monospace;">XOR simulation</div>
+                    </ul>
+                </section>
+
+                <!--  ########################################################################  -->
+                <!--  #######                                      ###########################  -->
+                <!--  #######     Les axes théoriques: RNN         ###########################  -->
+                <!--  #######                                      ###########################  -->
+                <!--  ########################################################################  -->
+
+                <section>
+                    <h3>Recurrent Neural Network</h3>
+                    <hr>
+                    <ul>
+                        <img  src="./images/rnnbasic.png" width="500px" style="position:absolute; top:180px; left:0"> 
+                        <div style="position:absolute; top:450px; left:0;font-size:0.4em;font-family:monospace;">Fig. 3.6 Recurrent Neural Network Architecture(RNN)</div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/mXJhnYZbrIQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  style="position:absolute; top: 180px; left: 520px; width: 500px"></iframe>
+                        <div style="position:absolute; top:490px; left:520px;font-size:0.4em;font-family:monospace;">Tower of Hanoi simulation based on RNN</div>
+                    </ul>
+                </section>
+
+                <!--  ########################################################################  -->
+                <!--  #######                                      ###########################  -->
+                <!--  #######     Les axes théoriques: CNN         ###########################  -->
+                <!--  #######                                      ###########################  -->
+                <!--  ########################################################################  -->
+
+                <section>
+                    <h3>Convolutional neural network</h3>
+                    <hr>
+                    <ul> 
+                        <li>Convolutional neural network</li>   <!-- Thinking through bodily activities -->
+                        <img src="./images/lenet.jpg" width="500px" style="position:absolute; top:10; left:0">
+                        <div style="position:absolute; top:350px; left:0;font-size:0.4em;font-family:monospace;">Convolutional neural network structure [LeCun et al., 1998]</div>
+                        <img src="./images/cnnorigin.png" style="position:absolute; top: 180px; left: 520px; width: 500px">
+                        <div style="position:absolute; top:550px; left:520px;font-size:0.4em;font-family:monospace;">Fig. 3.8 Hubel and Wiesel Experiment</div>
+                    </ul>
+                </section>
+
+                <!--  ######################################################################################  -->
+                <!--  #######                                                    ###########################  -->
+                <!--  #######     Les axes théoriques: Deep Q-Learning 1         ###########################  -->
+                <!--  #######                                                    ###########################  -->
+                <!--  ######################################################################################  -->
+
+                <section>
+                    <h3>Deep Q-Learning</h3>
+                    <hr>
+                        <p >Alphago vs Le grand maître du jeu de go</p> 
+                        <img  src="./images/alphago.jpg" width="500px" style="position:absolute; top:10; left:0">
+                        <div style="position:absolute; top:450px; left:0;font-size:0.4em;font-family:monospace;">https://bgr.com/2016/03/15/deepmind-alphago-go-match-final/</div>
+                        <img src="https://i.makeagif.com/media/3-03-2016/n2mKcA.gif"  style="position:absolute; top: 180px; left: 520px; width: 500px" >
+                        <div style="position:absolute; top:450px; left:560px;font-size:0.4em;font-family:monospace;">https://i.makeagif.com/media/3-03-2016/n2mKcA.gif</div>
+                </section>
+
+                <!--  ######################################################################################  -->
+                <!--  #######                                                    ###########################  -->
+                <!--  #######     Les axes théoriques: Deep Q-Learning 2         ###########################  -->
+                <!--  #######                                                    ###########################  -->
+                <!--  ######################################################################################  -->
+
+                <section>
+                    <h3>Deep Q-Learning</h3>
+                    <hr>
+                    <ul> 
+                        <img src="./images/deepq1.png" width="500px" style="position:absolute; top:10; left:0">
+                        <img src="./images/maze.png" style="position:absolute; top: 280px; left: 0; width: 380px"> 
+                        <div style="position:absolute; top:585px; left:0px;font-size:0.4em;font-family:monospace;">FIGURE4.1 Labyrinthe de Tolman</div>
+                        <img src="./images/atari.gif" style="position:absolute; top: 180px; left: 520px; width: 300px">
+                        <div style="position:absolute; top:585px; left:560px;font-size:0.4em;font-family:monospace;">Playing Atari with Deep Reinforcement Learning</div>
+                        <div style="position:absolute; top:595px; left:560px;font-size:0.4em;font-family:monospace;">[Mnih et al., 2013]</div>
+                    </ul>
+                </section>
+
+                <!--  ##########################################################################  -->
+                <!--  #######                                        ###########################  -->
+                <!--  #######     La démarche méthodologique         ###########################  -->
+                <!--  #######                                        ###########################  -->
+                <!--  ##########################################################################  -->
+
+                <section>
+                    <h2>Plan de la présentation</h2>
+                    <hr>
+                    <ul> 
+                        <li style="color:#999" >Les problèmatiques</li>
+                        <li style="color:#999" >Les axes théoriques</li>
+                        <li style="background-color:#2c2f3e;"><span style="color:white;">La démarche méthodologique</span></li>
+                        <li style="color:#999" >Les principaux résultats</li>
+                        <li style="color:#999" >Les perspectives de recherche</li>
+                    </ul>
+                </section>
+
+                <!--  #####################################################################################  -->
+                <!--  #######                                                   ###########################  -->
+                <!--  #######     La démarche méthodologique:                   ###########################  -->
+                <!--  #######     Les effects du geste dans la tour de Hanoi    ###########################  -->
+                <!--  #######                                                   ###########################  -->
+                <!--  #####################################################################################  -->
+
+                <section>
+                    <h3>La démarche méthodologique</h3>
+                    <hr>
+                    <ul> 
+                        <li style="background-color:#2c2f3e;"><span style="color:white;">Les effects du geste dans la tour de Hanoi</span></li>
+                        <li style="color:#999" >Résolution de la tour de Hanoi en utilisant l'approche du réseau neuronal - Perceptron multicouche, Association neuronale, et réseau relationnel</li>
+                        <li style="color:#999" >Résolution de problèmes à l'aide du RNN</li>
+                        <li style="color:#999" >Utilisation des CNN+RNN pour la reconnaissance des gestes humains et la résolution de problèmes</li>
+                        <li style="color:#999" >Comprendre le langage naturel avec CNN pour la résolution de problèmes</li>
+                    </ul>
+                </section>
+
+                <!--  #####################################################################################  -->
+                <!--  #######                                                   ###########################  -->
+                <!--  #######     La démarche méthodologique:                   ###########################  -->
+                <!--  #######     Les effects du geste dans la tour de Hanoi    ###########################  -->
+                <!--  #######                                                   ###########################  -->
+                <!--  #####################################################################################  -->
+
+                 <section>
+                    <h3>Les effets du geste dans la tour de Hanoi</h3>
+                    <hr>
+                    <blockquote>
+                        &ldquo;Nous avons demandé aux participants de résoudre le casse-tête de la tour de Hanoi pour observer l’effet des gestes sur les processus cognitifs <br> (apprentissage, mémoire, planification,prise de décision, etc.)&rdquo;
+                    </blockquote>
+                </section>
+
+                <!--  #####################################################################################  -->
+                <!--  #######                                                   ###########################  -->
+                <!--  #######     La démarche méthodologique:                   ###########################  -->
+                <!--  #######     Les effects du geste dans la tour de Hanoi    ###########################  -->
+                <!--  #######                                                   ###########################  -->
+                <!--  #####################################################################################  -->
+
+                 <section>
+                    <h3>Les effets du geste dans la tour de Hanoi</h3>
+                    <hr>
+                    <div style="position:relative; width:600px; height: 450px; margin: 0 auto;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Group</th><th>Nombre</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>non-voyant</td><td>7</td>
+                            </tr>
+                            <tr>
+                                <td>voyant</td><td>7</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/u_ahzlVSxbk?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"   style="position:absolute; top: 350px; left: 0; width: 250px;"></iframe>   
+
+                    <!--video autoplay="true" muted="true" style="position:absolute; top: 350px; left: 0; width: 250px;background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #EEEEEE;box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);padding: 5px">
+                            <source src="./images/Sujet8-8Navec.mp4"  type="video/mp4">
+                    </video-->                    
+
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/6Ri87Vrc8E4?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"   style="position:absolute; top: 350px; left: 250px; width: 250px;"></iframe> <!-- Sujet5-5Vavec.mp4"-->
+
+                    <!--video autoplay="true" muted="true" style="position:absolute; top: 350px; left: 250px; width: 250px;background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #EEEEEE;box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);padding: 5px">
+                            <source src="./images/Sujet5-5Vavec.mp4"  type="video/mp4">
+                    </video-->
+
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/gwDBVae5YeY?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"   style="position:absolute; top: 350px; left: 500px; width: 250px;"></iframe>
+
+
+                    <!--video autoplay="true" muted="true" style="position:absolute; top: 350px; left: 500px; width: 250px;background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #EEEEEE;box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);padding: 5px">
+                            <source src="./images/Sujet8-8Vsans.mp4"  type="video/mp4">
+                    </video-->
+
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/un-gjGoJAAU?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"   style="position:absolute; top: 350px; left: 750px; width: 250px;"></iframe>
+
+                    
+                    <!--video autoplay="true" muted="true" style="position:absolute; top: 350px; left: 750px; width: 250px;background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #EEEEEE;box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);padding: 5px">
+                            <source src="./images/Sujet5-5Vsans.mp4"  type="video/mp4">
+                    </video-->
+                
+                </section>
+
+                <!--  #####################################################################################  -->
+                <!--  #######                                                   ###########################  -->
+                <!--  #######     La démarche méthodologique:                   ###########################  -->
+                <!--  #######     Les effects du geste dans la tour de Hanoi    ###########################  -->
+                <!--  #######                                                   ###########################  -->
+                <!--  #####################################################################################  -->
+
+                 <section>
+                    <h3>Les effets du geste dans la tour de Hanoi</h3>
+                    <hr>
+                    <img src="./images/exp_sighted_group.png" width="800px" >
+                </section>
+                
+                <!--  #####################################################################################  -->
+                <!--  #######                                                   ###########################  -->
+                <!--  #######     La démarche méthodologique:                   ###########################  -->
+                <!--  #######     Les effects du geste dans la tour de Hanoi    ###########################  -->
+                <!--  #######                                                   ###########################  -->
+                <!--  #####################################################################################  -->
+
+                 <section>
+                    <h3>Les effets du geste dans la tour de Hanoi</h3>
+                    <hr>
+                    <img src="./images/exp_blinded_group.png" width="800px" >
+                </section>
+
+                <!--  ############################################################################################  -->
+                <!--  #######                                                          ###########################  -->
+                <!--  #######     La démarche méthodologique:                          ###########################  -->
+                <!--  #######     Résolution de la tour de Hanoi en utilisant          ###########################  -->
+                <!--  #######     l'approche du réseau neuronal                        ###########################  -->
+                <!--  #######     - Perceptron multicouche, Association neuronale,     ###########################  -->
+                <!--  #######       et réseau relationnel                              ###########################  -->
+                <!--  #######                                                          ###########################  -->
+                <!--  ############################################################################################  -->
+
+                <section>
+                    <h3>La démarche méthodologique</h3>
+                    <hr>
+                    <ul> 
+                        <li style="color:#999" >Les effects du geste dans la tour de Hanoi</li>
+                        <li style="background-color:#2c2f3e;"><span style="color:white;">Résolution de la tour de Hanoi en utilisant l'approche du réseau neuronal - Perceptron multicouche, Association neuronale, et réseau relationnel</span></li>
+                        <li style="color:#999" >Résolution de problèmes à l'aide du RNN</li>
+                        <li style="color:#999" >Utilisation des CNN+RNN pour la reconnaissance des gestes humains et la résolution de problèmes</li>
+                        <li style="color:#999" >Comprendre le langage naturel avec CNN pour la résolution de problèmes</li>
+                    </ul>
+                </section>
+
+                <!--  ############################################################################################  -->
+                <!--  #######                                                          ###########################  -->
+                <!--  #######     La démarche méthodologique:                          ###########################  -->
+                <!--  #######     Résolution de la tour de Hanoi en utilisant          ###########################  -->
+                <!--  #######     l'approche du réseau neuronal                        ###########################  -->
+                <!--  #######     - Perceptron multicouche, Association neuronale,     ###########################  -->
+                <!--  #######       et réseau relationnel                              ###########################  -->
+                <!--  #######                                                          ###########################  -->
+                <!--  ############################################################################################  -->
+
+                <section>
+                    <h3>Les effets du geste dans la tour de Hanoi</h3>
+                    <hr>
+                    <p >Modèle de perceptron multicouche</p> 
+
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/u_ahzlVSxbk?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"   style="position:absolute; top: 350px; left: 0; width: 250px;"></iframe>  
+
+                    <img src="./images/mlpmodel.png" width="500px" >
+                    <img src="./images/mlpcoding.png"  style="position:absolute; top: 180px; left: 720px; width: 300px" >
+                </section>
+
+
+                <!--  ############################################################################################  -->
+                <!--  #######                                                          ###########################  -->
+                <!--  #######     La démarche méthodologique:                          ###########################  -->
+                <!--  #######     Résolution de la tour de Hanoi en utilisant          ###########################  -->
+                <!--  #######     l'approche du réseau neuronal                        ###########################  -->
+                <!--  #######     - Perceptron multicouche, Association neuronale,     ###########################  -->
+                <!--  #######       et réseau relationnel                              ###########################  -->
+                <!--  #######                                                          ###########################  -->
+                <!--  ############################################################################################  -->
+
+                <section>
+                    <h3>Les effets du geste dans la tour de Hanoi</h3>
+                    <hr>
+                    <p >Modèle de réseau relationnel</p> 
+                     
+                    <!--video autoplay="true" muted="true" style="position:absolute; top: 350px; left: 0; width: 250px;background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #EEEEEE;box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);padding: 5px">
+                            <source src="./images/Sujet2-2Vavec.mp4"  type="video/mp4">
+                    </video-->
+
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/KmCgpKdOnyg?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"   style="position:absolute; top: 350px; left: 0; width: 250px;"></iframe>
+
+                    <img src="./images/003.png" width="500px" >
+                    <img src="./images/mlp2model.png"  style="position:absolute; top: 280px; left: 520px; width: 600px" >
+                </section>
+
+                <!--  ############################################################################################  -->
+                <!--  #######                                                          ###########################  -->
+                <!--  #######     La démarche méthodologique:                          ###########################  -->
+                <!--  #######     Résolution de la tour de Hanoi en utilisant          ###########################  -->
+                <!--  #######     l'approche du réseau neuronal                        ###########################  -->
+                <!--  #######     - Perceptron multicouche, Association neuronale,     ###########################  -->
+                <!--  #######       et réseau relationnel                              ###########################  -->
+                <!--  #######                                                          ###########################  -->
+                <!--  ############################################################################################  -->
+
+                <section>
+                    <h3>Les effets du geste dans la tour de Hanoi</h3>
+                    <hr>
+                    <p>Modèles d’association neuronale</p>
+                    <img src="./images/causeffect.png"  style="position:absolute; top: 160px; left: 0px; width: 600px" >
+                    <div style="position:absolute; top:200px; left:700px;font-size:0.8em;font-family:monospace;">P(E2|E1) ?</div>
+                    <img src="./images/NAM.png" style="position:absolute; top: 380px; left: 400px; width: 600px"  >
+                </section>
+
+
+
+
+
+                <!--  #####################################################################################  -->
+                <!--  #######                                                   ###########################  -->
+                <!--  #######     La démarche méthodologique:                   ###########################  -->
+                <!--  #######     Résolution de problèmes à l'aide du RNN       ###########################  -->
+                <!--  #######                                                   ###########################  -->
+                <!--  #####################################################################################  -->
+
+                <section>
+                    <h3>La démarche méthodologique</h3>
+                    <hr>
+                    <ul> 
+                        <li style="color:#999" >Les effects du geste dans la tour de Hanoi</li>
+                        <li style="color:#999" >Résolution de la tour de Hanoi en utilisant l'approche du réseau neuronal - Perceptron multicouche, Association neuronale, et réseau relationnel</li>
+                        <li style="background-color:#2c2f3e;"><span style="color:white;">Résolution de problèmes à l'aide du RNN</span></li>
+                        <li style="color:#999" >Utilisation des CNN+RNN pour la reconnaissance des gestes humains et la résolution de problèmes</li>
+                        <li style="color:#999" >Comprendre le langage naturel avec CNN pour la résolution de problèmes</li>
+                    </ul>
+                </section>
+
+                <!--  #####################################################################################  -->
+                <!--  #######                                                   ###########################  -->
+                <!--  #######     La démarche méthodologique:                   ###########################  -->
+                <!--  #######     Résolution de problèmes à l'aide du RNN       ###########################  -->
+                <!--  #######                                                   ###########################  -->
+                <!--  #####################################################################################  -->
+
+                <section>
+                    <h3>Résolution de problèmes à l'aide du RNN</h3><hr><p style="font-size:0.8em;">convertir une vidéo en une séquence d'images et leur codages</p>
+
+                    <!--video autoplay="true" muted="true" style="position:absolute; top: 380px; left: 1000px; width: 250px;background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #EEEEEE;box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);padding: 5px">
+                            <source src="./images/Sujet2-2Vavec.mp4"  type="video/mp4">
+                    </video-->
+
+                    <iframe width="250" height="150" src="https://www.youtube.com/embed/KmCgpKdOnyg?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"   style="position:absolute; top: 380px; left: 1000px; width: 250px;"></iframe>
+
+                    <img src="./images/sujet21.png" width="200px" style="position:absolute; top:180px; left:0px" data-fragment-index="0">
+                    <div style="position:absolute;top:160px;left: 90px;font-size:0.8em;font-family:monospace;color:red;" data-fragment-index="1">G0</div>
+                    <div style="position:absolute;top:160px;left: 230px;font-size:0.8em;font-family:monospace;color:red;" data-fragment-index="2">→</div>
+                    <img src="./images/sujet2252.png" width="200px" style="position:absolute;top:180px;left: 250px;" data-fragment-index="3">
+                    <div style="position:absolute;top:160px;left: 340px;font-size:0.8em;font-family:monospace;color:red;" data-fragment-index="4">G1</div>
+                    <div style="position:absolute;top:160px;left: 470px;font-size:0.8em;font-family:monospace;color:red;" data-fragment-index="5">→</div>
+                    <img src="./images/sujet2268.png" width="200px" style="position:absolute;top:180px;left: 500px;" data-fragment-index="6">
+                    <div style="position:absolute;top:160px;left: 590px;font-size:0.8em;font-family:monospace;color:red;" data-fragment-index="7">G3</div>
+                    <div style="position:absolute;top:160px;left: 720px;font-size:0.8em;font-family:monospace;color:red;" data-fragment-index="8">→</div>
+                    <img src="./images/sujet2378.png" width="200px" style="position:absolute;top:180px;left: 750px;" data-fragment-index="9">
+                    <div style="position:absolute;top:160px;left: 830px;font-size:0.8em;font-family:monospace;color:red;" data-fragment-index="10">G2</div>
+                    <div style="position:absolute;top: 320px;left: 840px;font-size:0.8em;font-family:monospace;color:red;" data-fragment-index="11">↓</div>
+                    <img src="./images/sujet2388.png" width="200px" style="position:absolute;top:380px;left: 750px;" data-fragment-index="12">
+                    <div style="position:absolute;top:360px;left: 830px;font-size:0.8em;font-family:monospace;color:red;" data-fragment-index="13">G1</div>
+                    <div style="position:absolute;top:360px;left: 720px;font-size:0.8em;font-family:monospace;color:red;" data-fragment-index="14">←</div>
+                    <img src="./images/sujet2442.png" width="200px" style="position:absolute;top:380px;left: 500px;" data-fragment-index="15">
+                    <div style="position:absolute;top:360px;left: 590px;font-size:0.8em;font-family:monospace;color:red;" data-fragment-index="16">G4</div>
+                    <div style="position:absolute;top:360px;left: 470px;font-size:0.8em;font-family:monospace;color:red;" data-fragment-index="17">←</div>
+                    <img src="./images/sujet2470.png" width="200px" style="position:absolute;top:380px;left: 250px;" data-fragment-index="18">
+                    <div style="position:absolute;top:360px;left: 340px;font-size:0.8em;font-family:monospace;color:red;" data-fragment-index="19">G5</div>
+                    <div style="position:absolute;top:360px;left: 220px;font-size:0.8em;font-family:monospace;color:red;" data-fragment-index="20">←</div>
+                    <img src="./images/sujet2479.png" width="200px" style="position:absolute; top:380px; left:0px" data-fragment-index="21">
+                    <div class="fragment visible current-fragment" style="position:absolute;top:360px;left: 80px;font-size:0.8em;font-family:monospace;color:red;" data-fragment-index="22">G4</div>
+                </section>
+
+                <!--  #####################################################################################  -->
+                <!--  #######                                                   ###########################  -->
+                <!--  #######     La démarche méthodologique:                   ###########################  -->
+                <!--  #######     Résolution de problèmes à l'aide du RNN       ###########################  -->
+                <!--  #######                                                   ###########################  -->
+                <!--  #####################################################################################  -->
+
+                <section>
+                    <h3>Résolution de problèmes à l'aide du RNN</h3>
+                    <hr>
+                        <p>Modèle classique avec RNN</p> 
+                        <img  src="./images/rnnbasic.png" width="800px" >
+                        <img class="fragment" src="./images/sujet21.png" width="100px" style="position:absolute; top:500px; left:410px">
+                        <img class="fragment" src="./images/sujet2252.png" width="100px" style="position:absolute; top:500px; left:550px">
+                        <img class="fragment" src="./images/sujet2268.png" width="100px" style="position:absolute; top:500px; left:700px">  
+                        <!--img  src="./images/rnnbasic0.png" width="100px" style="position:absolute; top:10; left:0"-->
+                        <!--img src="./images/modelrnnrl.png"  style="position:absolute; top: 180px; left: 520px; width: 500px" -->
+                </section>
+
+                <!--  #####################################################################################  -->
+                <!--  #######                                                   ###########################  -->
+                <!--  #######     La démarche méthodologique:                   ###########################  -->
+                <!--  #######     Résolution de problèmes à l'aide du RNN       ###########################  -->
+                <!--  #######                                                   ###########################  -->
+                <!--  #####################################################################################  -->
+
+                <section>
+                    <h3>Résolution de problèmes à l'aide du RNN</h3>
+                    <hr>
+                        <p >Modèle étendu par l'apprentissage par renforcement </p> 
+                        <img  src="./images/rlis.png" width="400px" style="position:absolute; top:10; left:0">
+                        <img  src="./images/tohangle.png" width="500px" style="position:absolute; top:10; left:70">
+                        <img   src="./images/sujet21.png" width="100px" style="position:absolute; top:110px; left:680px">
+                        <img   src="./images/sujet2252.png" width="100px" style="position:absolute; top:180px; left:780px">
+                        <img   src="./images/sujet2578.png" width="100px" style="position:absolute; top:570px; left:880px">
+                        <!--img  src="./images/rnnbasic0.png" width="100px" style="position:absolute; top:10; left:0"-->
+                        <!--img src="./images/modelrnnrl.png"  style="position:absolute; top: 180px; left: 520px; width: 500px" -->
+                        
+                </section>
+
+                <!--  #####################################################################################  -->
+                <!--  #######                                                   ###########################  -->
+                <!--  #######     La démarche méthodologique:                   ###########################  -->
+                <!--  #######     Résolution de problèmes à l'aide du RNN       ###########################  -->
+                <!--  #######                                                   ###########################  -->
+                <!--  #####################################################################################  -->
+
+                <section>
+                    <h3>Résolution de problèmes à l'aide du RNN</h3>
+                    <hr>
+                        <p >Modèle étendu par l'apprentissage par renforcement </p> 
+                        <img src="./images/modelrnnrl.png"   >
+                        
+                </section>
+
+                <!--  #########################################################################################  -->
+                <!--  #######                                                       ###########################  -->
+                <!--  #######     La démarche méthodologique:                       ###########################  -->
+                <!--  #######     Utilisation des CNN+RNN pour la reconnaissance    ###########################  -->
+                <!--  #######     des gestes humains et la résolution de problèmes  ###########################  -->
+                <!--  #######                                                       ###########################  -->
+                <!--  #########################################################################################  -->
+
+                <section>
+                    <h3>La démarche méthodologique</h3>
+                    <hr>
+                    <ul> 
+                        <li style="color:#999" >Les effects du geste dans la tour de Hanoi</li>
+                        <li style="color:#999" >Résolution de la tour de Hanoi en utilisant l'approche du réseau neuronal - Perceptron multicouche, Association neuronale, et réseau relationnel</li>
+                        <li style="color:#999" >Résolution de problèmes à l'aide du RNN</li>
+                        <li style="background-color:#2c2f3e;"><span style="color:white;">Utilisation des CNN+RNN pour la reconnaissance des gestes humains et la résolution de problèmes</span></li>
+                        <li style="color:#999" >Comprendre le langage naturel avec CNN pour la résolution de problèmes</li>
+                    </ul>
+                </section>
+
+                <!--  #########################################################################################  -->
+                <!--  #######                                                       ###########################  -->
+                <!--  #######     La démarche méthodologique:                       ###########################  -->
+                <!--  #######     Utilisation des CNN+RNN pour la reconnaissance    ###########################  -->
+                <!--  #######     des gestes humains et la résolution de problèmes  ###########################  -->
+                <!--  #######                                                       ###########################  -->
+                <!--  #########################################################################################  -->
+
+                <section>
+                    <h3>Utilisation des CNN+RNN pour la reconnaissance des gestes humains et la résolution de problèmes</h3>
+                    <hr>
+                    <p>Étiquetage des images</p> 
+                    <img src="./images/sujet5_000122.png" width="300px" style="position:absolute; top:280px; left:0px">
+                    <div style="position:absolute;top:300px;left:400px;font-size:0.6em;border: 1px solid #EEEEEE;box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);">Il y a un disque 
+                    sur la gauche (LD1) et la colonne du milieu (MD1), et deux disques sur la colonne droite (RD2). Le participant prend d1 (TD1).</div>
+                </section>
+
+                <!--  #########################################################################################  -->
+                <!--  #######                                                       ###########################  -->
+                <!--  #######     La démarche méthodologique:                       ###########################  -->
+                <!--  #######     Utilisation des CNN+RNN pour la reconnaissance    ###########################  -->
+                <!--  #######     des gestes humains et la résolution de problèmes  ###########################  -->
+                <!--  #######                                                       ###########################  -->
+                <!--  #########################################################################################  -->
+
+                <section>
+                    <div style="position:absolute;top:0px;left:0px;font-size:0.6em;">&#8594; Étiquetage des images</div>
+                    <p>&nbsp;</p>
+                    <img src="./images/codingmultilabel.png" width="600px" style="position:absolute; top:0px;" >
+                </section>
+
+                <!--  #########################################################################################  -->
+                <!--  #######                                                       ###########################  -->
+                <!--  #######     La démarche méthodologique:                       ###########################  -->
+                <!--  #######     Utilisation des CNN+RNN pour la reconnaissance    ###########################  -->
+                <!--  #######     des gestes humains et la résolution de problèmes  ###########################  -->
+                <!--  #######                                                       ###########################  -->
+                <!--  #########################################################################################  -->
+
+                <section>
+                    <h3>Utilisation des CNN+RNN pour la reconnaissance des gestes humains et la résolution de problèmes</h3>
+                    <hr>
+                    <p > Le réseau neuronal à convolution profonde pour la classification multi-étiquettes</p> 
+                    <img src="./images/cnnarchitecture.png" width="600px" >
+                </section>
+
+                <!--  #########################################################################################  -->
+                <!--  #######                                                       ###########################  -->
+                <!--  #######     La démarche méthodologique:                       ###########################  -->
+                <!--  #######     Utilisation des CNN+RNN pour la reconnaissance    ###########################  -->
+                <!--  #######     des gestes humains et la résolution de problèmes  ###########################  -->
+                <!--  #######                                                       ###########################  -->
+                <!--  #########################################################################################  -->
+
+                <section>
+                    <p > Modèle : Résolution du puzzle de la tour de Hanoï avec CNN et LSTM-RL</p> 
+                    <img src="./images/cnnrnnmy.png" width="500px" >
+                </section>
+
+                <!--  #########################################################################################  -->
+                <!--  #######                                                       ###########################  -->
+                <!--  #######     La démarche méthodologique:                       ###########################  -->
+                <!--  #######     Comprendre le language naturel avec CNN           ###########################  -->
+                <!--  #######     pour la résolution de problèmes                   ###########################  -->
+                <!--  #######                                                       ###########################  -->
+                <!--  #########################################################################################  -->
+
+                <section>
+                    <h3>La démarche méthodologique</h3>
+                    <hr>
+                    <ul> 
+                        <li style="color:#999" >Les effects du geste dans la tour de Hanoi</li>
+                        <li style="color:#999" >Résolution de la tour de Hanoi en utilisant l'approche du réseau neuronal - Perceptron multicouche, Association neuronale, et réseau relationnel</li>
+                        <li style="color:#999" >Résolution de problèmes à l'aide du RNN</li>
+                        <li style="color:#999" >Utilisation des CNN+RNN pour la reconnaissance des gestes humains et la résolution de problèmes</li>
+                        <li style="background-color:#2c2f3e;"><span style="color:white;">Comprendre le langage naturel avec CNN pour la résolution de problèmes</span></li>
+                    </ul>
+                </section>
+
+                <!--  #########################################################################################  -->
+                <!--  #######                                                       ###########################  -->
+                <!--  #######     La démarche méthodologique:                       ###########################  -->
+                <!--  #######     Comprendre le language naturel avec CNN           ###########################  -->
+                <!--  #######     pour la résolution de problèmes                   ###########################  -->
+                <!--  #######                                                       ###########################  -->
+                <!--  #########################################################################################  -->
+
+                <section>
+                    <h3>Comprendre le langage naturel avec CNN pour la résolution de problèmes</h3>
+                    <hr>
+                    <ul> 
+                        <li>Piaget croyait que les enfants peuvent acquérir des connaissances lorsqu’ils participent activement au développement cognitif et interagissent avec le monde[Piaget, Jean, 1971, Piaget and Cook, 1952]</li>
+                        <li>La base du langage humain résidedans l’activité sensorimotrice du corps, l’approche actuelle centrée sur la linguistique deChomsky devrait être modifiée et le poids de la linguistique cognitive devrait être augmenté[Knott, 2011, Chomsky et al., 2011].</li>
+                    </ul>
+                </section>
+
+                <!--  #########################################################################################  -->
+                <!--  #######                                                       ###########################  -->
+                <!--  #######     La démarche méthodologique:                       ###########################  -->
+                <!--  #######     Comprendre le language naturel avec CNN           ###########################  -->
+                <!--  #######     pour la résolution de problèmes                   ###########################  -->
+                <!--  #######                                                       ###########################  -->
+                <!--  #########################################################################################  -->
+
+                <section>
+                    <h3>Comprendre le langage naturel avec CNN pour la résolution de problèmes</h3>
+                    <hr>
+                    <p style="font-size:0.7em;">Une architecture de modèle CNN-CNN combinée pour le traitement du langagenature</p>
+                    <img src="./images/combined_CNN_CNN.png" width="800px" >
+                </section>
+
+                <!--  #########################################################################  -->
+                <!--  #######                                       ###########################  -->
+                <!--  #######     Les princinpaux résultats         ###########################  -->
+                <!--  #######                                       ###########################  -->
+                <!--  #########################################################################  -->
+
+                <section>
+                    <h2>Plan de la présentation</h2>
+                    <hr>
+                    <ul> 
+                        <li style="color:#999" >Les problèmatiques</li>
+                        <li style="color:#999" >Les axes théoriques</li>
+                        <li style="color:#999" >La démarche méthodologique</li>
+                        <li style="background-color:#2c2f3e;"><span style="color:white;">Les principaux résultats</span></li>
+                        <li style="color:#999" >Les perspectives de recherche</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Les principaux résultats</h3>
+                    <hr>
+                    <p>Les effets du geste dans la tour de Hanoi</p>
+                    <img src="./images/gestured.png" width="600px" >
+                </section>
+
+                <section>
+                    <h3>Les principaux résultats</h3>
+                    <hr> 
+                    <h4>Les effets du geste dans la tour de Hanoi</h4>
+                    <ul> 
+                        <li>Lorsque <b style="color:red;">les participants voyants</b> ont résolu le problème de la tour de Hanoi sans disque, ils ont utilisé <u>leurs gestes déictiques</u> quel que soit le nombre de tentatives.</li>
+                        <li>Les participants qui avaient du mal à trouver des réponses ont tenté de <u>communiquer avec l’environnement (disques, colonnes) par leurs gestes</u></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Les principaux résultats</h3>
+                    <hr>
+                    <p>Les effets du geste dans la tour de Hanoi</p> 
+                    <img src="./images/gesturei.png" width="600px" >
+                </section>
+
+                <section>
+                    <h3>Les principaux résultats</h3>
+                    <hr> 
+                    <h4>Les effets du geste dans la tour de Hanoi</h4>
+                    <ul> 
+                        <li><b style="color:red;">les participants non-voyants</b> interagissent avec l’environnement non par avec leurs yeux, mais <u>avec leurs mains</u>.</li>
+                        <li><u>Les gestes interactifs</u> qui touchent ou font pivoter les disques fournissent des informations d’action à leurs représentations mentales.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Plan de la présentation</h2>
+                    <hr>
+                    <ul> 
+                        <li style="color:#999" >Les problèmatiques</li>
+                        <li style="color:#999" >Les axes théoriques</li>
+                        <li style="color:#999" >La démarche méthodologique</li>
+                        <li style="background-color:#2c2f3e;"><span style="color:white;">Les principaux résultats</span></li>
+                        <li style="color:#999" >Les perspectives de recherche</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Les principaux résultats</h3>
+                    <hr>
+                    <p>Résolution de la tour de Hanoi en utilisant l'approche du réseau neuronal - Perceptron multicouche</p> 
+                    <img src="./images/mlpmodel.png" width="300px" style="position:absolute; top:200px; left:0px">
+                    <img src="./images/mlp_performance.png" width="700px" style="position:absolute; top:200px; left:350px" >
+                </section>
+
+                <section>
+                    <h3>Les principaux résultats</h3>
+                    <hr>
+                    <p>Résolution de la tour de Hanoi en utilisant l'approche du réseau neuronal - Association neuronale</p> 
+                    <img src="./images/NAM.png" width="380px" style="position:absolute; top:200px; left:0px">
+                    <img src="./images/NAM2.png" width="380px" style="position:absolute; top:350px; left:0px">
+                    <div style="position:absolute;top:300px;left:400px;width:500px;font-size:0.6em;border: 1px solid #EEEEEE;box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);">La moyenne de la précision de la formation était de 91% et la moyenne de laprécision des données de test était de 82%.</div>
+                </section>
+
+                <section>
+                    <h3>Les principaux résultats</h3>
+                    <hr>
+                    <p>Résolution de la tour de Hanoi en utilisant l'approche du réseau neuronal - Réseau relationnel</p> 
+                    <img src="./images/003.png" width="300px" style="position:absolute; top:200px; left:0px">
+                    <img src="./images/mlprelation3.png" width="700px" style="position:absolute; top:200px; left:350px" >
+                </section>
+
+                <section>
+                    <h2>Plan de la présentation</h2>
+                    <hr>
+                    <ul> 
+                        <li style="color:#999" >Les problèmatiques</li>
+                        <li style="color:#999" >Les axes théoriques</li>
+                        <li style="color:#999" >La démarche méthodologique</li>
+                        <li style="background-color:#2c2f3e;"><span style="color:white;">Les principaux résultats</span></li>
+                        <li style="color:#999" >Les perspectives de recherche</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Les principaux résultats</h3>
+                    <hr>   
+                    <p>Résolution de problèmes à l'aide du RNN</p> 
+                    <img src="./images/rnnbasic.png" width="300px" style="position:absolute; top:200px; left:0px">
+                    <img src="./images/rnnproba.png" width="450px" style="position:absolute; top:200px; left:350px" >
+                </section>
+
+                <section>
+                    <h3>Les principaux résultats</h3>
+                    <hr>
+                    <p>Résolution de problèmes à l'aide du RNN</p> 
+                    <img src="./images/result14persons.png" width="300px" style="position:absolute; top:200px; left:0px">
+                    <img src="./images/rnnproba.png" width="450px" style="position:absolute; top:200px; left:350px" >
+                    <div style="position:absolute;top:300px;left:900px;width:300px;font-size:0.6em;border: 1px solid #EEEEEE;box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);"> G1,G3,G2,G1,G4,G5,G4,G1,G3,<br>G2,G5,G4,G3,G5,G1,G6,G5,G2,<br>G1,G3,G2 (21 movements)</div>
+                </section>
+
+                <section>
+                    <h3>Les principaux résultats</h3>
+                    <hr>   
+                    <p>Résolution de problèmes à l'aide du RNN+RL</p> 
+                    <img src="./images/modelrnnrl.png" width="300px" style="position:absolute; top:200px; left:0px">
+                    <img src="./images/outputrnnrl.png" width="500px" style="position:absolute; top:200px; left:350px" >
+                </section>
+
+                <section>
+                    <h2>Plan de la présentation</h2>
+                    <hr>
+                    <ul> 
+                        <li style="color:#999" >Les problèmatiques</li>
+                        <li style="color:#999" >Les axes théoriques</li>
+                        <li style="color:#999" >La démarche méthodologique</li>
+                        <li style="background-color:#2c2f3e;"><span style="color:white;">Les principaux résultats</span></li>
+                        <li style="color:#999" >Les perspectives de recherche</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Les principaux résultats</h3>
+                    <hr>   
+                    <p>Utilisation des CNN+RNN pour la reconnaissance des gestes humains et la résolution de problèmes</p> 
+                    <img src="./images/sujet1_000096.png" width="300px" style="position:absolute; top:200px; left:0px">
+                    <img src="./images/predictionhistto1.png" width="450px" style="position:absolute; top:200px; left:350px" >
+                    <div style="position:absolute; top:545px; left:50px;font-size:0.4em;font-family:monospace;">Fig. 8.8 The predicted result based on Convolution Neural Network (Participant1)</div>
+                    
+                </section>
+
+                <section>
+                    <h3>Les principaux résultats</h3>
+                    <hr>   
+                    <p>Utilisation des CNN+RNN pour la reconnaissance des gestes humains et la résolution de problèmes</p> 
+                    <img src="./images/sujet6_000084.png" width="300px" style="position:absolute; top:200px; left:0px">
+                    <img src="./images/predictionhistto3.png" width="450px" style="position:absolute; top:200px; left:350px" >
+                    <div style="position:absolute; top:545px; left:50px;font-size:0.4em;font-family:monospace;">Fig. 8.10 The predicted result based on Convolution Neural Network(Participant6)</div>
+                    
+                </section>
+
+                <section>
+                    <h3>Les principaux résultats</h3>
+                    <hr>   
+                    <p>Utilisation des CNN+RNN pour la reconnaissance des gestes humains et la résolution de problèmes</p> 
+                    <img src="./images/sujet1_000029.png" width="300px" style="position:absolute; top:200px; left:0px">
+                    <img src="./images/predictionhistto4.png" width="450px" style="position:absolute; top:200px; left:350px" >
+                    <div style="position:absolute; top:545px; left:50px;font-size:0.4em;font-family:monospace;">Fig. 8.11 The predicted result based on Convolution Neural Network(Participant2-secondeimage)</div>
+                    
+                </section>
+
+                <section>
+                    <h3>Les principaux résultats (CNN+RNN)</h3>
+                    <hr>   
+                    <img src="./images/accuracy_200_04.png" width="300px" style="position:absolute; top:100px; left:0px">
+                    <img src="./images/cnnrllp.png" width="450px" style="position:absolute; top:100px; left:350px" >                   
+                </section>
+
+                <section>
+                    <h3>Les principaux résultats (CNN+RNN)</h3>
+                    <hr>   
+                    <img src="./images/cnnrnnmy.png" width="300px" style="position:absolute; top:100px; left:0px">
+                    <img src="./images/sequenceimages.png" width="550px" style="position:absolute; top:100px; left:350px" >
+                </section>
+
+                <section>
+                    <h2>Plan de la présentation</h2>
+                    <hr>
+                    <ul> 
+                        <li style="color:#999" >Les problèmatiques</li>
+                        <li style="color:#999" >Les axes théoriques</li>
+                        <li style="color:#999" >La démarche méthodologique</li>
+                        <li style="background-color:#2c2f3e;"><span style="color:white;">Les principaux résultats</span></li>
+                        <li style="color:#999" >Les perspectives de recherche</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Les principaux résultats</h3>
+                    <hr>   
+                    <p style="font-size:0.8em">Comprendre le langage naturel avec CNN pour la résolution de problèmes</p> 
+                    <img src="./images/codingmultilabel.png" width="450px" style="position:absolute; top:150px; left:0px">
+                    <img src="./images/codingcnncnn.png" width="450px" style="position:absolute; top:150px; left:480px" >
+                </section>
+
+                <section>
+                    <h3>Les principaux résultats</h3>
+                    <hr>   
+                    <p style="font-size:0.8em">Comprendre le langage naturel avec CNN pour la résolution de problèmes</p> 
+                    <img src="./images/cnnsentence.png" width="450px" style="position:absolute; top:150px; left:0px">
+                    <img src="./images/cnnresultis.png" width="450px" style="position:absolute; top:150px; left:480px" >
+                    
+                </section>
+
+                <section>
+                    <h3>Les principaux résultats</h3>
+                    <hr>   
+                    <p style="font-size:0.8em">Comprendre le langage naturel avec CNN pour la résolution de problèmes</p> 
+                    <img src="./images/combined_CNN_CNN.png" width="600px" >
+                    <img src="./images/unnamed.png" width="40px" style="position:absolute; top:170px; left:602px; height:50px;">
+                    <div style="position:absolute; top:195px; left:602px;width:50px;height:10px;font-size:0.4em; line-height:1.3em;font-family:monospace;back-ground:white;color:black;">MD1<br>RD3</div>
+                    <img src="./images/sujet1008.png" width="150px" style="position:absolute; top:190px; left:90px">
+                    <img src="./images/unnamed.png" width="50px" style="position:absolute; top:320px; left:220px; height:220px;">
+                    <div style="position:absolute; top:340px; left:230px;width:50px;height:10px;font-size:0.4em; line-height:1.3em;font-family:monospace;back-ground:white;color:black;">There are three disks on <br> the right. One disk is<br> in <br>the middle</div>
+                    <div style="position:absolute; top:285px; left:780px;width:150px;height:10px;font-size:0.4em; line-height:1.3em;font-family:monospace;back-ground:white;color:black;">Corrélation probabiliste entre les deux Pr(E2|E1)</div>
+                    <div style="position:absolute; top:303px; left:900px;width:150px;height:10px;font-size:0.4em; line-height:1.3em;font-family:monospace;back-ground:white;color:red;">91.6%</div>
+
+
+                </section>
+
+
+
+                <!--  ##############################################################################  -->
+                <!--  #######                                            ###########################  -->
+                <!--  #######     Les perspectives de recherche          ###########################  -->
+                <!--  #######                                            ###########################  -->
+                <!--  ##############################################################################  -->
+
+                <section>
+                    <h2>Plan de la présentation</h2>
+                    <hr>
+                    <ul> 
+                        <li style="color:#999" >Les problèmatiques</li>
+                        <li style="color:#999" >Les axes théoriques</li>
+                        <li style="color:#999" >La démarche méthodologique</li>
+                        <li style="color:#999" >Les principaux résultats</li>
+                        <li style="background-color:#2c2f3e;"><span style="color:white;">Les perspectives de recherche</span></li>
+                    </ul>
+                </section>
+
+                <!--  ##################################################################  -->
+                <!--  #######                                ###########################  -->
+                <!--  #######     Les axez         ###########################  -->
+                <!--  #######                                ###########################  -->
+                <!--  ##################################################################  -->
+
+                <section>
+                    <h3>Embodied cognition</h3>
+                    <hr>
+                    <ul> 
+                        <li class="fragment">Connaissances générées par des contextes sociaux, culturels et physiques</li>   <!-- Thinking through bodily activities -->
+                        <img class="fragment" src="./images2/cartoon-groundwater_1_ground.png" width="600px" style="position:absolute; top:10; left:10">
+                    </ul>
+                </section>
+
+                <!--  ##################################################################  -->
+                <!--  #######                                ###########################  -->
+                <!--  #######     Les axez         ###########################  -->
+                <!--  #######                                ###########################  -->
+                <!--  ##################################################################  -->
+
+                <section>
+                    <h3>Embodied cognition</h3>
+                    <hr>
+                    <ul> 
+                        <li class="fragment">La connaissance se constitue à travers les interactions dans les environnements</li>   <!-- Thinking through bodily activities -->
+                        <img class="fragment" src="./images2/cartoon-groundwater_1_ground.png" width="600px" style="position:absolute; top:10; left:10">
+                    </ul>
+                </section>
+
+                <!--  ##################################################################  -->
+                <!--  #######                                ###########################  -->
+                <!--  #######     Les axez         ###########################  -->
+                <!--  #######                                ###########################  -->
+                <!--  ##################################################################  -->
+
+                <section>
+                    <h2>Plan de la présentation</h2>
+                    <hr>
+                    <ul> 
+                        <li style="color:#999" >Les problèmatiques</li>
+                        <li style="color:#999">Les axes théoriques</li>
+                        <li >La démarche méthodologique</li>
+                        <li style="color:#999" >Les principaux résultats</li>
+                        <li style="color:#999" >Les perspectives de recherche</li>
+                    </ul>
+                </section>
+
+                <!--  ##################################################################  -->
+                <!--  #######                                ###########################  -->
+                <!--  #######     Title of presentation      ###########################  -->
+                <!--  #######                                ###########################  -->
+                <!--  ##################################################################  -->
+
+                 <section>
+                    <h3>Clever Quotesdd</h3>
+                    <p>
+                        Comment se forment l'intelligence <br>humaine et les capacités cognitives ?
+                    </p>
+                    <p>
+                        These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">The nice thing about standards is that there are so many to choose from</q> and block:
+                    </p>
+                    <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+                        &ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
+                        reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+                    </blockquote>
+                    <div>
+                    <p class="bottom" style="bottom: 10px;    color: #000;margin: 0;right:25%;left: 25%;z-index: 3;position: fixed;">La problèmatique</p>
+                    </div>
+                </section>
+
+                <!--  ##################################################################  -->
+                <!--  #######                                ###########################  -->
+                <!--  #######     Les axez         ###########################  -->
+                <!--  #######                                ###########################  -->
+                <!--  ##################################################################  -->
+
+                <section>
+                    <h2>Plan de la présentation</h2>
+                    <hr>
+                    <ul> 
+                        <li style="color:#999" >Les problèmatiques</li>
+                        <li style="color:#999" >Les axes théoriques</li>
+                        <li style="color:#999" >La démarche méthodologique</li>
+                        <li >Les principaux résultats</li>
+                        <li style="color:#999" >Les perspectives de recherche</li>
+                    </ul>
+                </section>
+
+                <!--  ##################################################################  -->
+                <!--  #######                                ###########################  -->
+                <!--  #######     Title of presentation      ###########################  -->
+                <!--  #######                                ###########################  -->
+                <!--  ##################################################################  -->
+
+                <section data-state="img-left" data-background-size="contain">
+                    <div style="position:relative; width:600px; height: 450px; margin: 0 auto;">
+                        <video class="fragment fade-out"  autoplay="true" muted="true" style="position:absolute; top: 50px; left: 400px; width: 300px;background: none repeat scroll 0 0 #FFFFFF;border: 1px solid #EEEEEE;box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);padding: 5px">
+                            <source src="./images/Sujet8-8Navec.mp4"  type="video/mp4">
+                        </video>
+                    </div>
+                </section>
+
+                <!--  ##################################################################  -->
+                <!--  #######                                ###########################  -->
+                <!--  #######     Title of presentation      ###########################  -->
+                <!--  #######                                ###########################  -->
+                <!--  ##################################################################  -->
+
+                <section>
+                        <h3>Pasos a seguir</h3>
+                        <ul>
+                            <li>Descargar el paquete OVA con la máquina virtual desde <a href="https://miservidor.com/files/Aula_Tegnix.ova"><code style="font-size: 60%;">https://miservidor.com/files/Aula_Tegnix.ova</code></a>
+                            <li class="fragment">Instalar VirtualBox (u otro) desde <a href="http://www.virtualbox.org"><code>www.virtualbox.org</code></a>
+                            <li class="fragment">Importar el servicio virtualizado
+                            <li class="fragment">Arrancar la máquina e iniciar sesión con el usuario <em>estudiante</em> y clave <em>estudiante</em>
+                        </ul>
+                </section>
+
+                <!--  ##################################################################  -->
+                <!--  #######                                ###########################  -->
+                <!--  #######     Title of presentation      ###########################  -->
+                <!--  #######                                ###########################  -->
+                <!--  ##################################################################  -->
+
+                <section data-state="img-left" data-background-size="contain">
+                        <div style="position:relative; width:600px; height: 450px; margin: 0 auto;">
+                            <img class="fragment" src="./images2/cartoon-groundwater_1_ground.png" width="600px" style="position:absolute; top:0; left:0">
+                            <img class="fragment" src="./images2/cartoon-groundwater_2_rain.png" width="600px" style="position:absolute; top:0; left:0">
+                            <img class="fragment" src="./images2/cartoon-groundwater_3_gwtable.png" width="600px" style="position:absolute; top:0; left:0">
+                            <img class="fragment" src="./images2/cartoon-groundwater_4_flow.png" width="600px" style="position:absolute; top:0; left:0">
+                        <div class="fragment fade-in">
+                            <img class="fragment fade-out" src="./images2/stream_flip.gif" style="position:absolute; top: 50px; left: 400px; width: 300px">
+                        </div>
+                            <img class="fragment" src="./images2/cartoon-groundwater_5_growthdir.png" width="600px" style="position:absolute; top:0; left:0">
+                        </div>
+                </section>
+
+                <!--  ##################################################################  -->
+                <!--  #######                                ###########################  -->
+                <!--  #######     Title of presentation      ###########################  -->
+                <!--  #######                                ###########################  -->
+                <!--  ##################################################################  -->
+
+                <section>
+                        <h3>Pasos a seguir</h3>
+                        <ul>
+                            <li>Descargar el paquete OVA con la máquina virtual desde <a href="https://miservidor.com/files/Aula_Tegnix.ova"><code style="font-size: 60%;">https://miservidor.com/files/Aula_Tegnix.ova</code></a>
+                            <li class="fragment">Instalar VirtualBox (u otro) desde <a href="http://www.virtualbox.org"><code>www.virtualbox.org</code></a>
+                            <li class="fragment">Importar el servicio virtualizado
+                            <li class="fragment">Arrancar la máquina e iniciar sesión con el usuario <em>estudiante</em> y clave <em>estudiante</em>
+                        </ul>
+                </section>
+
+                <!--  ##################################################################  -->
+                <!--  #######                                ###########################  -->
+                <!--  #######     Title of presentation      ###########################  -->
+                <!--  #######                                ###########################  -->
+                <!--  ##################################################################  -->
+
+                <section>
+                        <h3>Notas para el uso de la máquina virtualizada</h3>
+                        <ul>
+                            <li>Con la teclas <em>CTRL derecha + f</em> se activa/desactiva la pantalla completa
+                            <li>Con el comando <strong>sudo</strong> se ejecutan órdenes como <em>root</em>
+                        </ul>
+                        <p style="font-size: smaller;">Convertirnos en <em>root</em></p>
+                        <pre><code>sudo su -</code></pre>
+                        <p style="font-size: smaller;">Abrir una nueva terminal</p>
+                        <pre><code>sudo gnome-terminal</code></pre>
+                </section>
+
+                
+
+                </div>
+            </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+        
+        <!-- Cargamos JQuery -->
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <!-- Opciones de configuración -->
+        <script src="js/configuration.js"></script>
+        <!-- Centered page with flexbox CSS3 new properties, as proposed by millermedeiros in issue 563
+        https://github.com/hakimel/reveal.js/issues/563 -->
+        <script src="js/align_vertical.js"></script>
+        <!-- Cargamos la barra superior con el título y el logotipo -->
+        <script src="js/topbar.js"></script>
+
+	</body>
+</html>
