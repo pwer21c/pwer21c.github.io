@@ -406,6 +406,7 @@ signals, not having any self-consciousness of who it is.<br>But for the , embodi
                         ANOVA est utilisée pour analyser les données obtenues à partir des résultats expérimentaux des groupes non-voyants et voyants.<br>
                     </p>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        In this experiment, 
                         We asked participants to solve a TOH with 4 disks and we recorded everything in the process.
 After the first experiment, the participants were asked to solve the TOH problem without the disk. <br><br>
 the data obtained from the experiment consists of two qualitative and 16 quantitative variables. <br>Two qualitative variables consist of conditions and groups.<br>
@@ -419,7 +420,8 @@ ANOVA is used to analyze the data obtained from the experimental results of the 
                     <h3 style="position:absolute; top: -150px;left:50px; ">the methodological approach. MLP</h3>
                     <h4 style="position:absolute; top: -80px;left:50px; ">불어로</h4>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
-                        Nous avons souhaité présenter le processus de résolution du problème de la tour de Hanoi à l’aide d’un réseau neuronal perceptron multicouche.<br><br>
+                        Pour la deuxème méthodologie, elle est divisée par trois mdèles qui sont le modèle de perceptron multicouche, modèle d'association neuronale, et le modèle de réseau relationnel. <br>br>
+                        Voici le modèle de perceptron multicouche.<br><br>
 Ceci est un exemple d’ensemble de données d’entrainement pour le modèle de MLP<br>
 Chaque donné se compose de 4 disques et de trois colonnes. Le premier vecteur d’entrée (1111 0000 0000) signifie que les quatre disques sont dans la première colonne.<br><br>
 Si ce vecteur d'entrée est présenté, le modèle du perceptron multicouche apprendra le vecteur de sortie (100 010) <br>Ce que ce vecteur de sortie signifie est de déplacer le disque situé en haut de la colonne de gauche vers la milieu.<br> 
@@ -438,11 +440,13 @@ If this input vector is presented, the model of multilayer perceptron will learn
                     <h3 style="position:absolute; top: -150px;left:50px; ">methode, relation network model</h3>
                     <h4 style="position:absolute; top: -80px;left:50px; ">영어로</h4>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+
                         notre modèle déduit les règles du jeu en fonction de la relation R entre les objets. <br>Sur la base des données que nous avons obtenues, nous avons construit la relation entre les objets à l’emplacement des objets et les relations d’inclusion entre eux. <br><br>Par exemple, dans l’état initial t = 0, le plus petit disque est en contact avec le deuxième plus petit disque, le plus petit disque est au-dessus du plus grand disque et le plus grand disque est en dessous.<br>
 Tout d'abord, nous formons uniquement le boîtier avec trois disques dans ce modèle. Et avec un échantillon de quatre disques, j'ai testé si les règles pouvaient être déduites par ces données d'entraînement avec 3 disques.
                     </p>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
-our model infers the rules of the game based on the relationship R between objects. <br>Based on the data we obtained, we constructed the relationship between objects (including R, r elements) to the location of the objects and the inclusion relations between them. <br><br>For example, in the initial state of t = 0, the smallest disk is in contact with the second smallest disk, the smaller disk is above the larger disk, and the larger disk is below.<br> First we only train the case with three disks in this model. And with a sample of four disks, I tested whether the rules could be inferred by this training data with 3 disks.
+                        The second model is relational network model.
+this model infers the rules of the game based on the relationship R between objects. <br>Based on the data we obtained, we constructed the relationship between objects (including R, r elements) to the location of the objects and the inclusion relations between them. <br><br>For example, in the initial state of t = 0, the smallest disk is in contact with the second smallest disk, the smaller disk is above the larger disk, and the larger disk is below.<br> First we only train the case with three disks in this model. And with a sample of four disks, I tested whether the rules could be inferred by this training data with 3 disks.
                     </p>
                 </section>
 
@@ -450,10 +454,11 @@ our model infers the rules of the game based on the relationship R between objec
                     <h3 style="position:absolute; top: -150px;left:50px; ">methode - association neuronale</h3>
                     <h4 style="position:absolute; top: -80px;left:50px; ">불어로</h4>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
-                        Les modèles de relations neuronales se concentrent sur l’association avec des objets.<br><br> Si nous voyons de la pluie à travers la fenêtre, la probabilité de porter un parapluie augmente à mesure que nous sortons. <br>suposons que l’événement E1 est le fait d’avoir trois disques empilés à gauche à l’état initial t = 0. Et  E2 est le cas qui soulève le plus petit disque et le déplace vers la droite. <br> Étant donné une paire d’entrées, E1 = (ei ,rk), E1,  nous trouvons la probabilité conditionnelle Pr(E2|E1).<br>La probabilité conditionnelle de E2 sachant que E1.
+                        La 3ème est le model de association neuronale.
+                        Ce model se concentrent sur l’association avec des objets.<br><br> Si nous voyons de la pluie à travers la fenêtre, la probabilité de porter un parapluie augmente à mesure que nous sortons. <br>suposons que l’événement E1 est le fait d’avoir trois disques empilés à gauche à l’état initial t = 0. Et  E2 est le cas qui soulève le plus petit disque et le déplace vers la droite. <br> Étant donné une paire d’entrées, E1 = (ei ,rk), E1,  nous trouvons la probabilité conditionnelle Pr(E2|E1).<br>La probabilité conditionnelle de E2 sachant que E1.
                     </p>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
-                        Neural relationship models also focus on the association with objects. Take the example of the image mentioned earlier.<br><br> If we see rain through the window, the probability of carrying an umbrella increases as we go out. <br> let us say event E1 is three disks being stacked on the left at the initial state t = 0. Let us say E2 is the case that lifts the smallest disk and moves it to the right.<br> Given a pair of inputs, E1, we find the conditional probability Pr(E2|E1).
+                        Neural association models also focus on the association with objects. Take the example of the image mentioned earlier.<br><br> If we see rain through the window, the probability of carrying an umbrella increases as we go out. <br> let us say event E1 is three disks being stacked on the left at the initial state t = 0. Let us say E2 is the case that lifts the smallest disk and moves it to the right.<br> Given a pair of inputs, E1, we find the conditional probability Pr(E2|E1).
                     </p>
                 </section>
 
@@ -464,6 +469,7 @@ our model infers the rules of the game based on the relationship R between objec
                     <h3 style="position:absolute; top: -150px;left:50px; ">RNN - 36 page</h3>
                     <h4 style="position:absolute; top: -80px;left:50px; ">영어로</h4>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+
                         Grâce à ces expériences de recherche, nous avons obtenu les données séquentielles concernant la solution de la tour de Hanoi. <br>Et puis, nous avons montré comment le modèle de réseau neuronal récurrent(RNN) peut être utilisé pour résoudre le problème de TOH.<br><br>
                         Le mouvement du disque à partir de la vidéo a été codé.<br>
 Si nous déplaçons un disque de la colonne à droite vers la colonne en milleu, nous l'avons alors encodé en G1.<br><br>
@@ -478,12 +484,13 @@ Par conséquent, nous avons construit un nouveau modèle qui combine ce modèle 
 
                     </p>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
-                        Through these research experiments, we have obtained the sequential data concerning about the solution of Tower of Hanoi.<br> And then, we have showed how the Recurrent Neural Network(RNN) model can be used to solve the problem of TOH.<br><br>
-                        The movement of the disc from the video has been encoded.<br>
-If we move a disk from right peg  to middle peg , we then encoded as G1.<br><br>
+                        the third methodological approach is to use Recurrent neural network to solve the TOH base on the effects of gestures.
+                        After getting research experiments, we have obtained the sequential data concerning about the solution of Tower of Hanoi.<br> And then, we have showed how the Recurrent Neural Network(RNN) model can be used to solve the problem of TOH.<br><br>
+                        The movement of the disc from the video has been encoded. For example<br><br>
+If we move a disk from right peg  to middle peg , we then encoded as G1. 페이지넘겨서<br><br>
 
-First, we simulated on the basis of this RNN model.<br>
-However, the Rnn model did not provide an optimal solution. That is to say, the shortest way.<br>
+따라서 First, we simulated on the basis of this RNN model. 넘기고<br>
+However, the Rnn model did not provide an optimal solution. That is to say, the shortest solution.<br>
 Therefore, we have built a new model which combines this RNN and RL model.<br>
 
 
@@ -494,12 +501,14 @@ Therefore, we have built a new model which combines this RNN and RL model.<br>
                     <h3 style="position:absolute; top: -150px;left:50px; ">CNN+RNN, 41페이지</h3>
                     <h4 style="position:absolute; top: -80px;left:50px; ">영어로</h4>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+Plus précisément, dans cette quatrième méthodologie, nous avons essayé d'interpréter des images, en particulier des images continues, à l'aide de cnn.<br>>br>
 Les données vidéo de la Tour de Hanoi avec disque ont été converties en une série d’images. <br>De plus, pour chaque image, une classification multi-étiquettes a été effectuée pour toutes les informations sur les actions du participant, les mouvements de la main, la tenue du disque et le changement d’emplacement.<br>
 Des exemples de données de codage pour les images continues sont présentés ici<br>
 
 
                     </p>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        Specifically, in this fourth methodology, we tried to interpret images, especially continuous images, using cnn.<br><br>
 The video data of the Tower of Hanoi with disc was converted into a series of images.<br> In addition, for each image, a multi-label classification was performed for all the information on the participant’s actions, hand movements, holding the disk, and changing the location. <br>Sample coding data for continuous images are presented here.<br>
 <br> 그리고 옆에것 읽고
 
@@ -511,10 +520,9 @@ The video data of the Tower of Hanoi with disc was converted into a series of im
                     <h3 style="position:absolute; top: -150px;left:50px; ">CNN+RNN 43page</h3>
                     <h4 style="position:absolute; top: -80px;left:50px; ">불어로 마지막줄 설명하면서 44페이지로</h4>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
-                        Le CNN se composent d’une couche de convolution et d’une couche de pooling, contrairement à la structure utilisée dans le perceptron multicouche général.<br><br>En particulier, Les réseaux de neurones convolutifs sont un modèle de réseau de neurones très célèbre utilisé pour la classification d’images. 
-
+                        L'achitecture de CNN se composent d’une couche de convolution et d’une couche de pooling, contrairement à la structure utilisée dans le perceptron multicouche général.<br>
 <br><br>
-Et comme le précédent RNN-RL, nous avons combiné LSTM-RL avec CNN pour trouver la solution optimale.
+En particulier, nous avons combiné RNN(LSTM)+RL avec CNN pour trouver la solution optimale.
                         
                     </p>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
@@ -536,28 +544,44 @@ nous avons voulu simuler la reconnaissance de la langue basée sur CNN. En parti
 
                     </p>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
-                        Piaget’s theory of cognitive development serves as a starting point.<br><br>그리고 읽자 46페이지 영어<br><br>
+                        The last methodoglical approach is about the analysis of natural language  base on CNN.<br><br>
+                        Early in my research<br>Piaget’s theory of cognitive development serves as a starting point for my research.<br><br>그리고 읽자 46페이지 영어<br><br>
 In addition, a new approach has been proposed in the field of cognitive linguistics, which has recently developed a theory related to conceptual fusion centering on the metaphorical meaning of language.<br><br>That it to say<br>47페이지 영어 읽고 <br>
 we want to simulate language recognition based on cnn. In particular, learning of concepts and categories was studied in the previous.<br> We also want to compare and analyze how previous learning CNN is helpful for long sentence learning.
                     </p>
                 </section>
 
                 <section>
-                    <h3 style="position:absolute; top: -150px;left:50px; ">Resultat, 56page</h3>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">Resultat, 50 - 54 pages 실험결과</h3>
                     <h4 style="position:absolute; top: -80px;left:50px; ">영어</h4>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
-                        Dans le cas du deuxième modèle 12-10-7, la précision de l’entraînement est de 87 % et la précision des données de test atteint 86 %.
+
+                        blabal ..Dans le cas du deuxième modèle 12-10-7, la précision de l’entraînement est de 87 % et la précision des données de test atteint 86 %.
                     </p>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        this slide shows a result of our expérience about two groups.<br><br>
+                        After geeting this result of anova (50 page), we concluded that when  <br>
+                        Après avoir obtenu le résultat d'anovo (52 et 53 pages), Nous avons conclu que<br>
+                        In summary (54page ) 영어로<br>
                         the training accuracy is about 87% and the accuracy of the test data reaches 86%.
                     </p>
                 </section>
 
                 <section>
-                    <h3 style="position:absolute; top: -150px;left:50px; ">Resultat, 58page</h3>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">Resultat, 56,57,58 pages</h3>
                     <h4 style="position:absolute; top: -80px;left:50px; ">불어</h4>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
-                        Pour le 1 et 4 eme modle, la précision du test avec 3 disques est de 95,24 % et 100 %, respectivement. Lorsque nous essayons de déduire la règle du jeu pour La tour de Hanoi avec 4 disques, nous constatons que notre modèle de raisonnement atteint une précision de prédiction de 75 % pour le premier modèle et de 96,67 % pour le quatrième modèle.
+                        Ceci est un résultat pour la deuxième démarche méthodologie.<br>
+                        Ce tableau montre les performances du modèle MLP: la précision de l’entraînement est de 87 % et la précision des données de test atteint 86 %.<br>
+                        <br>
+                        Avec le modèle association neuonale (57 page), la moyenne ..<br><br>
+                        Ce tableau montre les performances de model relation neuronale. <br><br>
+
+
+                        Pour le 1 et 4 eme modle, la précision du test avec 3 disques est de 95,24 % et 100 %, respectivement. Lorsque nous essayons de déduire la règle du jeu pour La tour de Hanoi avec 4 disques, nous constatons que notre modèle de raisonnement atteint une précision de prédiction de 75 % pour le premier modèle et de 96,67 % pour le quatrième modèle.<br><br>
+                        59page<br>
+                        En résumé, comme nous l'expérimentons, le raisonnement et la pensée humains ne nécessitent pas bcp de données d'apprentissage. <br>
+                        Nous pouvos déduire certains des régles du jeu simplement en regardant les jeux.
 
 
                     </p>
@@ -570,21 +594,27 @@ we want to simulate language recognition based on cnn. In particular, learning o
                     <h3 style="position:absolute; top: -150px;left:50px; ">RNN main result, 62 et 63,64 pages</h3>
                     <h4 style="position:absolute; top: -80px;left:50px; ">영어불어로</h4>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
-                        Après entraînement pour le modèle RNN, nous avons obtenu le chemin le plus court suivant : G1,G3,G2,G1,G4,G5,G4, G1,G3,G2,G5,G4,G3,G5,G1,G6,G5,G2,G1,G3,G2(21 mouvements). <br><br>ce modèle RNN montre une bonne amélioration des performances.w<br> Néanmoins, ce résultat n’est pas la solution la plus rapide. nous pouvons voir que ce modèle combiné (RNN + RL) améliore les performances par rapport au modèle RNN.
+                        Cette diapositive montre les résultats de la troisième méthode basée sur RNN<br><br>
+                        Après entraînement pour le modèle RNN, nous avons obtenu le chemin le plus court suivant : G1,G3,G2,G1,G4,G5,G4, G1,G3,G2,G5,G4,G3,G5,G1,G6,G5,G2,G1,G3,G2(21 mouvements). <br><br>ce modèle RNN montre une bonne performances.w<br> Néanmoins, ce résultat n’est pas la solution la plus rapide. Après avoir combiné le RNN et RL, nous pouvons donc améliorer la performance.
 
                     </p>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
-                        After training for the model RNN, we obtained the following shortest path : G1,G3,G2,G1,G4,G5,G4, G1,G3,G2,G5,G4,G3,G5,G1,G6,G5,G2,G1,G3,G2(21 movements). <br><br>this RNN model shows good performance improvement. <br>Nevertheless, this result is not the fastest solution. we can see that this combined model(RNN+RL) improves the performance compared with RNN model
+                        This slide shows the results for the third méthode base on RNN<br><br>
+                        After training for the model RNN, we obtained the following shortest path : G1,G3,G2,G1,G4,G5,G4, G1,G3,G2,G5,G4,G3,G5,G1,G6,G5,G2,G1,G3,G2(21 movements). <br><br>this RNN model shows good performance. <br>Nevertheless, this result is not the fastest solution. that'why with this combined model(RNN+RL) we can improve the performance compared with RNN model<br><br>
+                        결과요약 영어로만, 화면은 불어보여주고 66 page<br>
+                        We propose a new approach that combines recurrent neural network and reinforcement learning to solve the toh task throuogh observing the mouvement of the hand and objects. Finally, our combined modle finds the optimal solution.
+
                     </p>
                 </section>
                 <section>
                     <h3 style="position:absolute; top: -150px;left:50px; ">CNN RNN</h3>
                     <h4 style="position:absolute; top: -80px;left:50px; ">불어</h4>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        Cette dispositive montre les résultat pour l'utilisation des CNN+RNN<br><br>
                         Le MODdel CNN a été optimisé en divisant 1186 images originales en 90 % d’images de formation (1067 images) et 10 % d’images de validation (119 images).<br> Nous avons ensuite testé la précision du modèle avec 300 données de test.<br><br>
 Dans cette image, un participant tient le plus petit disque, c'est-à-dire le disque 1.<br>
 Et cela montre la probabilité d'avoir deux disques à gauche, un au milieu et un à droite avec une probabilité de 100%.<br>
-il existe également une probabilité de 0,08% de placer le disque 1 dans la colonne de gauche.
+il existe également une probabilité de 0,08% de placer le disque 1 dans la colonne de gauche.<br><br>
                     </p>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
                         The classifier was optimized by splitting 1186 original images into 9% training images (1067 images) and 10% validation images(119 images).<br> We then tested the accuracy of the model with 300 test data.<br><br>
@@ -603,7 +633,7 @@ Interestingly, there is also a 0.08 percent probability of putting Disk 1 on the
 
                     </p>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
-                        According to the table 8.8, the resulting F1 values for status labels(LD1-4,MD1-4,RD1-4) , which represented the model accuracy for multi-label prediction of CNN Model, were high(>0.9) ith the exception of LD3,LD4, and RD1 (0.8570,0.4979, and 0.8650, respectively).<br><br> For the action’s labels(TD1-4,PD1-4), a low degree of F1 value was found for TD4,PD3, and PD4 (0.4936, 0.4958, 0.4978 respetiveley)
+                        According to the table 8.8, the resulting F1 values for status labels(LD1-4,MD1-4,RD1-4) , which represented the model accuracy for multi-label prediction of CNN Model, were high(>0.9) with the exception of LD3,LD4, and RD1 (0.8570,0.4979, and 0.8650, respectively).<br><br> For the action’s labels(TD1-4,PD1-4), a low degree of F1 value was found for TD4,PD3, and PD4 (0.4936, 0.4958, 0.4978 respetiveley)
                     </p>
                 </section>
 
@@ -617,7 +647,9 @@ Comme nous l'avons précédemment codé dans une série d'images, nous obtenons 
                     </p>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
 This Table  shows the successive images and predictable probabilities for each classification.<br><br> For the first image, there is a 100 percent chance that there are four disks on the right, and a 45 percent chance that the participant will grab disk 1.<br><br>
-As we previously coded in a series of images, we get the G4 value from the 6th and 7th images. <br><br>In this way, we programmed to obtain probability values from successive images and to obtain coding values from predictions of participants' actions.<br><br> And once again, we tried to obtain an optimal solution by combining it with the RNN model.
+As we previously encoded in a series of images, we get the G4 value from the 6th and 7th images. <br><br>In this way, we programmed to obtain probability values from successive images and to obtain coding values from predictions of participants' actions.<br><br> And once again, we tried to obtain an optimal solution by combining it with the RNN model.
+<br><br>
+Pour la conclution, ....프랑스버전 마지막 73페이지
                     </p>
                 </section>
 
@@ -628,6 +660,7 @@ As we previously coded in a series of images, we get the G4 value from the 6th a
                         Étant donné une phrase, notre modèle a montré une précision de 94,12 % avec le disque à gauche. Il a également montré une forte probabilité de précision dans l’apprentissage de la langue liée au comportement des participants. <br><br>La probabilité de décision de saisir le disque était de 68,91 % et la précision de la libération du disque était de 71,43 %. Cependant, lorsque le disque est situé au centre et à droite, il n’a pas montré une telle probabilité de précision
                     </p>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        This slide show the result for understanding natural language with convolutional neural networks for problem solving<br><br> 
                         Given a sentence, our model showed 94.12 % accuracy with the disk on the left. It also showed a high probability of accuracy in learning language related to the participants’ behavior. <br><br>The probability of judging to grasp the disc was 68.91 % and the accuracy of the disc releasing was 71.43 %. However, when the disk is located in the center and on the right, it did not show such high probability of accuracy.
                     </p>
                 </section>
@@ -641,7 +674,7 @@ As we previously coded in a series of images, we get the G4 value from the 6th a
 
                     </p>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
-                        we tried to map the results of the five text CNNs thus obtained and the data obtained from the images of the previous presentation page<br> This methodology calculated the correlation between event 1 and event 2 as a probability measure, as in the Neural Association Model<br><br>. E1 is the predicted value based on the sentence analysis model, and E2 is the predicted value based on the image analysis model.<br><br> Therefore, we tried to find a probabilistic correlation between the two Pr(E2|E1). <br><br>The data predicting multi-category from the test data images were compared with the values of five text CNNs. When the values match, a predictable sentence was derived from the test image. Our learning model showed 91.6 % accuracy in predicting the learned sentences.
+                        we tried to map the results of the five text CNNs thus obtained and the data obtained from the images of the previous presentation <br> This methodology calculated the correlation between event 1 and event 2 as a probability measure, as shown in the Neural Association Model<br><br>. E1 is the predicted value based on the sentence analysis model, and E2 is the predicted value based on the image analysis model.<br><br> Therefore, we tried to find a probabilistic correlation , Pr(E2|E1). <br><br>The data predicting multi-category from the test data images were compared with the values of five text CNNs. When the values match, a predictable sentence was derived from the test image. Our learning model showed 91.6 % accuracy in predicting the learned sentences.
                     </p>
                 </section>
 
@@ -649,9 +682,10 @@ As we previously coded in a series of images, we get the G4 value from the 6th a
                     <h3 style="position:absolute; top: -150px;left:50px; ">last</h3>
                     <h4 style="position:absolute; top: -80px;left:50px; ">둘다</h4>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        영어로 83페이지 읽고 그리고 이걸 We were able to confirm meaningful results.<br>br>
                         Notre expérience nous a fait réfléchir à une variété de nouveaux problèmes.<br>
 Les participants au processus de résolution de problèmes réfléchissent beaucoup tout en raisonnant le problème.<br>
-Nous pouvons voir les préoccupations des participants à travers cette vidéo.<br>
+Nous pouvons voir les introspections des participants, cad l'éta mantale et une affect, à travers cette vidéo.<br>
 Comment pouvons-nous déduire les préoccupations du participant à travers les mouvements de la main du participant?<br>
 <br>
 Peut-on juger qu'il y a des difficultés dans le processus de résolution de problèmes en écoutant les rires des participants?<br>
@@ -660,8 +694,8 @@ Peut-on juger qu'il y a des difficultés dans le processus de résolution de pro
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
                         Our experiment made us think about a variety of new problems.<br>
 Participants in the problem solving process think a lot while reasoning the problem.<br>
-We can see the participants' concerns through this video.<br>
-How can we infer the participant's concerns through the participant's hand movements?<br><br>
+We can see the participants' introspections, for example mental state and affect, through this video.<br>
+How can we infer the participant's introspection through the participant's hand movements?<br><br>
 Can we judge that there are difficulties in the problem-solving process by listening to the laughter of the participants?
                     </p>
                 </section>
@@ -670,12 +704,14 @@ Can we judge that there are difficulties in the problem-solving process by liste
                     <h3 style="position:absolute; top: -150px;left:50px; ">last</h3>
                     <h4 style="position:absolute; top: -80px;left:50px; ">86페이지</h4>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
-                        This video allows you to see immediate feedback on wrong behavior.
-Can artificial intelligence infer the correct and wrong game rules through this?
-                    </p>
+                        This video allows you to see immediate feedback on wrong behavior.<br><br>
+I asked a question to solve this prolem.<br>
+How can artificial intelligence know the rules of the game while correcting its own mistakes?                    </p>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
-                        Cette vidéo vous permet de voir immédiatement des commentaires sur un mauvais comportement.
-L'intelligence artificielle peut-elle en déduire les règles du jeu correctes et erronées?
+                        Cette vidéo vous permet de voir immédiatement des feedback sur un mauvais comportement.<br><br>
+                        Donc, je me suis posé une question. <br>
+Comment l'intelligence artificielle peut-elle connaître les règles du jeu tout en corrigeant ses propres erreurs?<br><br>
+
                     </p>
                 </section>
 
@@ -683,16 +719,18 @@ L'intelligence artificielle peut-elle en déduire les règles du jeu correctes e
                     <h3 style="position:absolute; top: -150px;left:50px; ">last</h3>
                     <h4 style="position:absolute; top: -80px;left:50px; ">87 page 영어로 </h4>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+
                         Vous pouvez entendre une voiture venant de loin. Les enfants se sont arrêtés lorsque la voiture est passée et que le feu rouge était allumé.
 Voitures arrêtées et sons de moteur. Et la lumière bleue.<br>
 C'est un feu rouge, mais les gens traversent la route lorsqu'aucune voiture ne s'approche.<bd>
 L'intelligence artificielle basée sur la cognition incarnée pose la question de savoir si nous pouvons trouver les règles que nous expérimentons dans la vie réelle.
                     </p>
                     <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+Furthermore, we will discover rules in our daily lives in the future<br>For exameme<br>
                         You can hear a car coming from far away. The children stopped when the car passed and the red light was on.<br><br>
-Cars stopped and engine sounds. And the blue light.<bd>
-It's a red light, but people are crossing the road when no car is approaching.<br><br>
-Artificial intelligence based on embodied cognition begs the question of whether we can find the rules that we experience in real life.
+The childrens are wating stopped Cars  and hearing engine sounds. And the blue light. They are starting to cross the road.<bd>
+It's a red light, but people are crossing the road when no car is approaching. This is exceptional case for crosisng the road. etc.<br><br>
+based on embodied cognition, we will expand our research area in order to find the rules that we experience in real life.
                     </p>
                 </section>
                 <section>
