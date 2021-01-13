@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Development framework for language acquisition based on the embodied cognition - sanghun BANG</title>
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="BANG sanghun">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<!-- Custom modifications of sky theme -->
+        <link rel="stylesheet" href="css/theme/sky_custom2.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+                <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+                <script>
+                        if ( window.location.search.match( /print-pdf/gi ) ) {
+                            document.write( '<link rel="stylesheet" href="css/print/pdf.css" type="text/css">' );
+                            document.write( '<link rel="stylesheet" href="css/print/pdf_custom.css" type="text/css">' );
+                        }
+                </script>		
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<script>
+                    // Título que se muestra en la barra superior
+                    var titulo = "Development framework for language acquisition based on the embodied cognition";
+		</script>
+	</head>
+
+	<body>
+            <div class="reveal">
+                <div class="slides">
+
+ 
+ 
+
+                <!--  ##################################################################  -->
+                <!--  #######                                ###########################  -->
+                <!--  #######     Les problématiques         ###########################  -->
+                <!--  #######                                ###########################  -->
+                <!--  ##################################################################  -->
+                
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">인사말</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px;color:orange; ">0 페이지에서 시작한다.</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        Bonjour,<br>
+                        <br>
+                        Madame la présidente,<br>
+                        Mesdames et Messieurs les membres de jury,<br>
+                        Mesdames et Messieurs les membres du public audience,<br>
+                        <br>
+                        Je veux d’abord vous remercier d’avoir consacré un temps que je sais précieux pour lire ce travail et pour avoir accepté de m’aider à le poursuivre, d’une meilleure manière et avec plus de clarté, par vos rapports, par vos remarques et par la discussion que nous nous apprêtons à avoir.
+                        <br>
+                        <br>
+
+                        Je souhaite aussi mon directeur de thèse, M. Charles Tijus pour m'avoir accueilli au sein de son équipe. J’ai beaucoup appris à ses côtés et je lui adresse ma gratitude pour tout cela.
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                    <br>
+                    Madame President,<br>
+                    Ladies and Gentlemen of the jury,<br>
+                    Ladies and gentlemen of the audience,<br>
+                    <br>
+                    First of all, I want to thank you for having devoted what I know to be precious time to read this work and for having agreed to help me to continue it, in a better way and with more clarity, through your reports. , by your remarks and by the discussion we are about to have.<br>
+                    <br>
+
+                    I would like to express my sincere gratitude to my advisor Prof. Charles Tijus for the continuous support of my Ph.D study and research, for his patience, motivation, enthusiasm, and immense knowledge. His guidance helped me in all the time of research and writing of this thesis
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">목차설명</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">불어로</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                    Aujourd'hui, je souhaite présenter ma thèse de doctorat sur Développement d’un framework pour une acquisition du langage basée sur la cognition incarnée<br><br>
+                    Voici le contenu de cette présentation.<br>
+                    Je commencerai par la problématique, les axes théoriques, l'approche méthodologique et les principaux résultats.<br>
+                    À la fin, je terminerai par la conclusion et la discussion.
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                    Today I’d like to introduce my doctoral thesis about development framework for language acquisition based on the embodied cognition.<br><br>
+                    Here are the contents of this presentation.<br>
+                    I will start with the problematics, the theoretical axes, the methodological approach, and the main results.<br>
+                    At the end, I will finish up with the conclusion and discussion. 
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">Les problématiques</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">첫번째에서 영어</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                    J’ai soulevé trois problématiques ici.<br>
+                    I have raised three issues here.<br>
+                    <br>
+                    Selon Descartes<br>
+                    Alors que l'esprit est une entité pensante sans extension,<br>
+                    le corps est une entité avec une extension qui peut être définie géométriquement dans l'espace physique.<br>
+                    <br>
+                    Mais Spinoza et Merlot Ponty<br>
+                    Ils ont essayé d'aller au-delà de ce dualisme esprit-corps.<br>
+                    En étendant l'esprit et la conscience au-delà du cerveau et du corps, ils ont cherché à comprendre le cerveau, le corps et l'environnement comme une unité entière unique et inséparable.<br>
+                    <br>
+                    Par conséquent, la curiosité quant à la construction de l'intelligence et à la construction des capacités cognitives humaines a été le point de départ de l’étude.
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+
+                    According to Descartes<br>
+                    While the mind is a thinking entity which has no extension,<br>
+                    the body is an entity with an extension that can be defined geometrically in physical space.<br>
+                    <br>
+
+                    But Spinoza and Merlot Ponty<br>
+                    They tried to go beyond this mind-body dualism.<br>
+                    By expanding the mind and consciousness beyond the brain and body, they sought to understand the brain, body, and environment as a single, inseparable whole unit.<br>
+                    <br>
+                    Therefore, curiosity about the construction of intelligence and the human cognitive abilities was the starting point of the study.
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">les problématiques, 체스그림등</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">불어</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        체스의 경우<br>
+                    처음 게임을 접하는 사람에게 <br>
+                    비숍의 움직임. 나이트의 움직임을 설명하기 보다는  사람의 행동과 게임을 함께 관찰하게 한다면 게임의 규칙을 더잘 이해할 수 있지 않을까 생각했습니다.<br>
+                    <br>
+                    Prenons le cas des échecs.<br>
+                    Je pensais qu'il serait possible de mieux comprendre les règles du jeu en laissant quelqu'un de nouveau dans le jeu observer les actions et les jeux des gens ensemble plutôt que d'expliquer les mouvements de Bishop et les mouvements de Knight.<br><br>
+                    
+                    <b>두번째와 세번째 문제제기는 그냥 읽는다. 그걸 보여 주면서 </b>
+                    <br><br>
+                    La deuxième problématique est de sovir si Dans le cas de la résolution de problèmes, la cognition humaine peut être réalisée par l'observation du comportement humain (savoir-faire) plutôt que par l'explication des règles du jeu (savoir).
+
+                    <br><br>
+                    The last question is whether artificail intelligence can mimic human cognitive abilities based on embodied cogntion.
+                    </p>
+
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        Take the case of chess.<br>
+                    I thought that it would be possible to better understand the rules of the game by letting someone new to the game observe people's actions and games together rather than explaining Bishop's moves and Knight's moves.<br><br>
+                    
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">목차 이론적배경에서</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">nous avons 하면서 페이지 넘긴다, 불어</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        Pour répondre à ces questions, nous avons analysé et exploré la cognition incarnée, Réseaux de neurones et apprentissage profond sont les arrière-plans théoriques de la thèse.<br><br>
+                        이론적 배경 리스트를 직접 보여준다.
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        To answer these questions, we have analyzed and explored embodied cognition, Neural Networks and Deep Learning are the theoretical backgrounds of the thesis.
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">La cognition incarnée</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">영어로 읽고 </h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        The first background theory is about the embodied cogntion. 
+                        Embodied Cognition is a theory of cognitive science stating that people’s cognitive processes and decisions are influenced by sensory movements such as touch and gesutre that are experienced in everyday life.
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        Embodied Cognition is a theory of cognitive science stating that people’s cognitive processes and decisions are influenced by sensory movements such as touch and gesture that are experienced in everyday life.
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">Quatre aspects</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">불어로만</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        저는 체화된 인지의 네가지 이론적 측면을 규몀해 봄으로써 체화인지를 보다 더 구체적으로 이해하고자 하였습니다.<br><br>
+                   En particuler,  j'ai essayé de comprendre plus concrètement la cognition incarnée en examinant les quatre aspects théoriques de la cognition incarnée.
+
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        I have tried to understand embodied cognition more concretely by examining the four theoretical aspects of embodied cognition.
+
+                    </p>
+                </section>
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">Quatre aspects - 1</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">영어</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        Supposons qu’un neuroscientifique sépare un cerveau du corps de quelqu’un et le garde séparé. <br>Une cuve qui connecte les neurones aux fils et reçoive tous les signaux que les humains ont reçus. Nous pouvons poser une question, "Je suis le cerveau dans la cuve? »<br><br>
+                        En effet, le cerveau dans la cuve ne reçoit que des signaux, n’ayant aucune conscience de qui il est.<br> Pour les cognitivistes incarnés <br>
+                        Cette cuve est comprise comme une sorte de corps de substitution car elle satisfait les attributs et les fonctions du corps.<br><br> La théorie cognitive incarnée soutient ainsi qu’il est certain que nos expériences cognitives sont formées ou construites par le cerveau somatisé, que le cerveau en cuve soit réellement possible ou non.
+
+
+
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        The first theoreticla aspect of embodied cogntion is in the narrow sense(au sens strict du terme) the embodied cogntion. 
+                        Let us suppose a neuroscientist separates a brain from someone’s body and keeps it separate. a vat that connects neurons to wires and receives all the signals that humans have received. <br><br>Indeed, the brain in the vat only receives
+signals, not having any self-consciousness of who it is.<br>But for the , embodied cognitivists, This vat is understood as a kind of substitute body because it satisfies the body’s attributes and functions. <br><br>The embodied cognitive theory thus argues that it is certain that our cognitive experiences are formed or constructed by the somatized brain, whether or not the brain in vat is actually possible.
+                    </p>
+                </section>
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">Quatre aspects - 2 embedded cognition</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">불어</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        La deuxilème apsect est sur la cognition intégrée
+                        Elle souligne que l’activité intellectuelle humaine dépend non seulement de la représentation cognitive de l’individu, mais aussi des indices d’outils et d’environnements, et des interactions avec les gens<br>
+                        
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        Embedded cognition emphasizes that human intellectual activity depends not only on the individual’s cognitive representation but also on the clues of tools and environments, and on interactions with people.
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">Quatre aspects - 3 enactive cognition</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">영어로</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        
+                        Les principales caractéristiques de cette théorie sont le corps et l’autonomie. L’une des caractéristiques fondamentales du corps vivant est l’auto-individualisation qui permet au  corps de se distinguer de l’environnement à travers le processus d’individualisation.
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        the third theoretical aspect of embodied cogntion is enactive cogntion<br>
+                        The key features in this theory are the body and autonomy. One of the fundamental characteristics of the living body is self-individuation which allows the body to distinguish itself from the surroundings through the individualization process.<br><br>In other words, selfgeneration or autopoiesis (self-production) maintains self through structural and functional endless changes of self-individuation.
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">Quatre aspects - 4 extended cogntion</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">불어로</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        La dernière est la cogntion étendue. <br><br>
+                        Prenons l’exemple du célèbre jeu Tetris. <br>
+                        La forme suivante de Tetris doit être tournée de 90 degrés pour remplir l’espace vide sur la ligne horizontale. Et nous devons réfléchir à l’endroit où la placer. Nous pouvons imaginer dans notre tête à quoi ressemblerait la forme si nous la faisions pivoter, mais nous pouvons également la faire pivoter et la voir à l’écran.<br><br>
+                        Dans la théorie cognitive étendue, il n’y a pas de différence de cognition entre la perception directement dans la tête et le jeu consistant à observer le schéma de rotation tout en vérifiant sur l’écran de l’ordinateur. 
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        Let us take the famous game Tetris as an example.<br> The next Tetris shape should be rotated 90 degrees to fill in the empty space on the horizontal line. And we have to think about where to put the next shape. We can imagine in our head what the shape would look like if we rotate it, but we can also rotate it and see it on the screen.<br><br>
+                        In the extended cognitive theory, there is no difference in cognition between the perception directly into the head and the game of watching the rotation pattern while checking on the computer screen.
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">Quatre aspects - 정리</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">영어,불어로</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        Par conséquent, cette étude a essayé d'utiliser quatre aspects théoriques.<br><br>
+                        Activités du corps.<br>
+                        Interagir avec les artefacts.<br>
+                        Changements sans fin d'individuation de soi.<br>
+                        relations de dépendance constitutives avec le cerveau, le corps, les processus environnementaux.
+
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        Therefore, this study tried to use four theoretical aspects.<br><br>
+                        Body’s activities <br> Interacting with artifacts. <br>  Endeless changes of self-individuation.<br>
+                        constitutive dependency relations with brain, body, environmental processes.
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">RNN AP</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">뉴런 도입부에서 시작하고 불어로</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        Nous avons introduit le concept de cognition incarnée. Ensuite, J’aimerais examiner comment la cognition peut être combiné à IA pour comprendre l’inférence et la cognition humaine.<br><br>
+                        Nous avons l’intention de simuler ce processus d’inférence à travers les réseaux de neurones et l’apprentissage profond.
+
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        we introduced the concept of embodied cognition. we will look at how humanized cognition can be combined with artificial intelligence to understand human inference and cognition.<br><br>
+                        We intend to simulate this process of inference through neural networks and deep learning.
+                        
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">RNN AP</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">멀티꾸쉬 직전까지 하다가 바꾼다. 영어</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        C'est un algorithme d'apprentissage statistique inspiré des réseaux neuronaux de la biologie<br><br>
+                        Le perceptron multicouche (multilayer perceptron MLP) est un type de réseau neuronal artificiel organisé en plusieurs couches au sein desquelles une information circule de la couche d'entrée vers la couche de sortie uniquement <br><br>
+                        J'ai essayer de simuler le pb de xor base sur le MLP.<br>
+                        Ça fonctionne bien
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        Neural network is a statistical learning algorithm inspired by the neural networks of biology<br><br>
+                        Among the many theories, we have focused on four theories. The first is MLP.
+                        A multilayer perceptron (MLP) is a class of feedforward artificial neural network. It consists of at least three layers of nodes: an input layer, a hidden layer and an output layer. <br><br>
+                        Base on the MLP, I have tried to simulate the xor problème.<br>
+                        It works fine
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">RNN</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">불어로만</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        Deuxièmement, Nous avons activement utilisé le modèle RNN dans le processus de résolution de problèmes.<br><br>
+                        Les modèles de réseaux neuronaux récurrents (RNN) conviennent au traitement d’informations séquentielles, telles que les données de séries chronologiques  ainsi que la reconnaissance de la langue et de la parole.
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        We have actively used the RNN model in the problem solving process.<br><br>
+                        Recurrent neural network(RNN) models are suitable for processing sequential information, like time series data such as stock market and macroeconomic analysis, as well as language and speech recognition.
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">CNN 처음것 14페이지</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">영어로</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        Hubel et Wiesel ont mené une expérience sur le chat qui a fourni des informations cruciales sur la structure du cortex visuel. Ils ont montré que de nombreux neurones du cortex visuel ont de petits champs récepteurs locaux. Cela signifie que les neurones ne répondent qu’aux stimuli visuels situés dans une certaine plage de vision.<br><br>
+                        Visual Cortex est la partie du cortex cérébral du cerveau qui traite les informations visuelles. Les nerfs visuels des yeux vont directement au cortex visuel primaire. Basé sur les caractéristiques structurelles et fonctionnelles, il est divisé en différentes zones.<br><br>
+                        Zone visuelle principale (17), zone d'associations visuelles (18,19) Association visuelle supérieure (39)
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        Thirdly, I troduce the CNN theory, which is another theoretical background for my research.<br><br>
+                        David H. Hubel and Torsten Wiesel conducted a cat experiment that provided crucial insights into the structure of the visual cortex. <br><br>They have shown that many neurons in the visual cortex have small local receptive fields. This means that neurons respond only to visual stimuli that are within some range of vision.<br><br>
+                        Primary visual area( 17), visual associados area (18,19) Higher visual association (39)
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">CNN 15페이지</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">불어</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        Le cortex visuel précédent agit comme des couches du CNN. <br>En utilisant l'opération de convolution sur l'image avec matrice, nous pouvons détecter les bords.
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        The previoous visual cortex acts as layers of the CNN. <br>Using convolution operation on image with kernel matrix we can detect the edges. (sobel kernel)
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">deep learning</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">불어로</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        Nous nous souvenons que le programme AIphaGo développé par DeepMind de Google a remporté une victoire historique contre le grand maître sud-coréen de Go Lee Sédol en avril 2016.<br> 
+                        Parmis les algorithmes de AlphaGo, je m'intéressais à l'apprentissage par renforcement.
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        We remember that the AIphaGo program developed by Google’s DeepMind had a historic victory against South Korean Go grandmaster Lee Sedol in April 2016. AlphaGo used machine learning to learn Go’s rules and strategies.<br>
+                        AlphaGo used deep learning, and among them, I was interested in reinforcement learning.
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">deep learning</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">영어로</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+
+                        Le psychologue Edward Tolman a mené une expérience dans laquelle un rat a traversé un labyrinthe
+                        Une fois récompensés, les souris ont montré qu’ils pouvaient utiliser les cartes cognitives qu’ils avaient déjà créées pour traverser le labyrinthe plus rapidement. Le conditionnement opérant de cette psychologie comportementale ressemble à l’apprentissage par renforcement de l’intelligence artificielle.
+
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        Therefore, I troduce the theory of reinforcement learning.
+                        Psychologist Edward Tolman conducted an experiment in which a rat went through a maze.<br><br> In the early learning period, that is, the latent learning stage, it was observed that the mice draw their own cognitive maps while exploring the maze and learning the structure without being rewarded. <br><br>Once rewarded, the rats showed that they could use the cognitive maps they had already created to get through the maze faster. This behavioral psychology’s Operant conditioning resembles artificial intelligence’s reinforcement learning.
+
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">메또드 리스트에서</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">불어로만</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        Notre méthodologie de recherche est largement divisée en deux parties.<br>
+                        Le premier partie est une expérience et le deuxième partie est la simulation.<br><br>
+                        Et la partie de simulation est aussi divisée en quatre parties.<br><br>
+                        Dans cette expérience, j'ai voulu observer l'effet des gestes sur la cognition dans la résolution de problèmes.<br><br>
+                        Et les deuxième à cinquième sont des simulations basées sur ces données expérimentales.<br><br>
+                        Le second est le processus d'apprentissage du superviseur<br>
+                        Le troisième est un exemple d'application de rnn en prêtant attention au processus de résolution de problèmes.<br>
+                        La quatrième tentative consistait à analyser la situation et le comportement en convertissant la vidéo enregistrée dans le processus de résolution de problèmes en une image et en extrayant les caractéristiques de l'image.<br>
+                        Et enfin, nous avons essayé d'examiner si l'apprentissage des langues est possible en combinant l'analyse de mots de phrase avec cette analyse d’image.<br>
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        Our research methodology is broadly divided into two parts.<br>
+                        The first part is an experiment and the second is simulations.<br>
+                        And the simulation of cognition is divided into four parts.<br>
+                        <br>
+                        In this experiment, I wanted to observe the effect of gestures on cognition in problem solving.<br>
+                        And the second to fifth are simulations based on this experimental data.<br>
+                        The second is the supervisor learning process<br>
+                        The third is an example of applying rnn by paying attention to the problem solving process.<br>
+                        The fourth attempt was to analyze the situation and behavior by converting the video saved in the problem solving process into an image and extracting the characteristics of the image.<br>
+                        And finally, we tried to examine whether language learning is possible by combining sentence word analysis with this image analysis.
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">The effects of gestures</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">영어로만, 24페이지 영어 읽고 살짝 25,26으로 </h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        Nous avons demandé aux participants de résoudre un TOH avec 4 disques et nous avons tout enregistré dans le processus<br>
+                        Après la première expérience, les participants ont été invités à résoudre le problème de la TOH sans le disque.<br><br>
+                        les données issues de l’expérience se composent de deux variables qualitatives et de 16 variables quantitatives. Deux variables qualitatives sont constituées de conditions et de groupes.<br>
+                        la variable de condition est divisée selon que le disque est utilisé ou non.<br>
+                        La variable de groupe est divisée en groupe non-voyants et voyants.<br>
+                        ANOVA est utilisée pour analyser les données obtenues à partir des résultats expérimentaux des groupes non-voyants et voyants.<br>
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        In this experiment, 
+                        We asked participants to solve a TOH with 4 disks and we recorded everything in the process.
+After the first experiment, the participants were asked to solve the TOH problem without the disk. <br><br>
+the data obtained from the experiment consists of two qualitative and 16 quantitative variables. <br>Two qualitative variables consist of conditions and groups.<br>
+the condition variable is divided into whether the disk is used or not. <br>
+The group variable is divided into blind groupe, sighted group<br><br>
+ANOVA is used to analyze the data obtained from the experimental results of the blind and sighted groups. <br>
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">the methodological approach. MLP</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">불어로</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        Pour la deuxème méthodologie, elle est divisée par trois mdèles qui sont le modèle de perceptron multicouche, modèle d'association neuronale, et le modèle de réseau relationnel. <br>br>
+                        Voici le modèle de perceptron multicouche.<br><br>
+Ceci est un exemple d’ensemble de données d’entrainement pour le modèle de MLP<br>
+Chaque donné se compose de 4 disques et de trois colonnes. Le premier vecteur d’entrée (1111 0000 0000) signifie que les quatre disques sont dans la première colonne.<br><br>
+Si ce vecteur d'entrée est présenté, le modèle du perceptron multicouche apprendra le vecteur de sortie (100 010) <br>
+옆에 아래 봐. 불어<br> 
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        we would like to present the process of solving the Hanoi Tower problem using a multi-layer perceptron neural network.<br>
+One example of training data set for multi-layer neural network model.<br><br>
+Each sample consists of 12 elements of vectors. It consists of three discs and three columns. The first input vector (1111 0000 0000) means that all four disks are in the first peg.<br><br>
+If this input vector is presented, the model of multilayer perceptron will learn the output vector (100 010) for the initial input vector.<br><br> What this output vector means is to move the disk located at the top of the left peg to the middle peg. This model trains repeatedly the pairs of input and output practice data. <br><br>
+Ce que ce vecteur de sortie signifie est de déplacer le disque situé en haut de la colonne de gauche vers la milieu.
+                    </p>
+                </section>
+
+                
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">methode, relation network model</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">영어로</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+
+                        notre modèle déduit les règles du jeu en fonction de la relation R entre les objets. <br>Sur la base des données que nous avons obtenues, nous avons construit la relation entre les objets à l’emplacement des objets et les relations d’inclusion entre eux. <br><br>Par exemple, dans l’état initial t = 0, le plus petit disque est en contact avec le deuxième plus petit disque, le plus petit disque est au-dessus du plus grand disque et le plus grand disque est en dessous.<br>
+Tout d'abord, nous formons uniquement le boîtier avec trois disques dans ce modèle. Et avec un échantillon de quatre disques, j'ai testé si les règles pouvaient être déduites par ces données d'entraînement avec 3 disques.<br><br><br>For example, in the initial state of t = 0, the smallest disk is in contact with the second smallest disk, the smaller disk is above the larger disk, and the larger disk is below.<br> First we only train the case with three disks in this model. And with a sample of four disks, I tested whether the rules could be inferred by this training data with 3 disks.
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        The second model is relational network model.
+this model infers the rules of the game based on the relationship R between objects. <br>Based on the data we obtained, we constructed the relationship between objects (including R, r elements) to the location of the objects and the inclusion relations between them. <br>영어 설명 옆에 봐.
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">methode - association neuronale</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">불어로</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        La 3ème est le model de association neuronale.
+                        Ce model se concentrent sur l’association avec des objets.<br><br> Si nous voyons de la pluie à travers la fenêtre, la probabilité de porter un parapluie augmente à mesure que nous sortons. <br>suposons que l’événement E1 est le fait d’avoir trois disques empilés à gauche à l’état initial t = 0. Et  E2 est le cas qui soulève le plus petit disque et le déplace vers la droite. <br> Étant donné une paire d’entrées, E1 = (ei ,rk), E1,  nous trouvons la probabilité conditionnelle Pr(E2|E1).<br>La probabilité conditionnelle de E2 sachant que E1.
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        Neural association models also focus on the association with objects. Take the example of the image mentioned earlier.<br><br> If we see rain through the window, the probability of carrying an umbrella increases as we go out. <br> let us say event E1 is three disks being stacked on the left at the initial state t = 0. Let us say E2 is the case that lifts the smallest disk and moves it to the right.<br> Given a pair of inputs, E1, we find the conditional probability Pr(E2|E1).
+                    </p>
+                </section>
+
+               
+
+                
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">RNN - 31 page</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">영어로</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+
+                        Grâce à ces expériences de recherche, nous avons obtenu les données séquentielles concernant la solution de la tour de Hanoi. <br>Et puis, nous avons montré comment le modèle de réseau neuronal récurrent(RNN) peut être utilisé pour résoudre le problème de TOH.<br><br>
+                        Le mouvement du disque à partir de la vidéo a été codé.<br>
+Si nous déplaçons un disque de la colonne à droite vers la colonne en milleu, nous l'avons alors encodé en G1.<br><br>
+
+
+
+Tout d'abord, nous avons simulé sur la base du ce model RNN.<br>
+Cependant, le modèle Rnn n'a pas fourni de solution optimale. C'est à dire, le plus court chemin.<br>
+Par conséquent, nous avons construit un nouveau modèle qui combine ce modèle RNN et RL.<br>
+
+
+
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        the third methodological approach is to use Recurrent neural network to solve the TOH base on the effects of gestures.
+                        After getting research experiments, we have obtained the sequential data concerning about the solution of Tower of Hanoi.<br> And then, we have showed how the Recurrent Neural Network(RNN) model can be used to solve the problem of TOH.<br><br>
+                        The movement of the disc from the video has been encoded. For example<br><br>
+If we move a disk from right peg  to middle peg , we then encoded as G1. 페이지넘겨서<br><br>
+
+따라서 First, we simulated on the basis of this RNN model. 넘기고<br>
+However, the Rnn model did not provide an optimal solution. That is to say, the shortest solution.<br>
+Therefore, we have built a new model which combines this RNN and RL model.<br>
+
+
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">CNN+RNN, 35페이지</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">영어로</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+Plus précisément, dans cette quatrième méthodologie, nous avons essayé d'interpréter des images, en particulier des images continues, à l'aide de cnn.<br><br>
+Les données vidéo de la Tour de Hanoi avec disque ont été converties en une série d’images. <br>De plus, pour chaque image, une classification multi-étiquettes a été effectuée pour toutes les informations sur les actions du participant, les mouvements de la main, la tenue du disque et le changement d’emplacement.<br>
+Des exemples de données de codage pour les images continues sont présentés ici<br>
+
+
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        Specifically, in this fourth methodology, we tried to interpret images, especially continuous images, using cnn.<br><br>
+The video data of the Tower of Hanoi with disc was converted into a series of images.<br> In addition, for each image, a multi-label classification was performed for all the information on the participant’s actions, hand movements, holding the disk, and changing the location. <br>Sample coding data for continuous images are presented here.<br>
+<br> 그리고 옆에것 읽고
+
+
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">CNN+RNN 43page</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">불어로 마지막줄 설명하면서 37페이지로</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        L'achitecture de CNN se composent de plusieurs couches de convolution et plusieurs couche de pooling, contrairement à la structure utilisée dans le perceptron multicouche général.<br>
+<br><br>
+
+                        
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+
+CNN consists of a convolution layer and a pooling layer, unlike the structure used in general multilayer perceptron. <br><br>Convolutional Neural Networks are a very famous neural network model used of image classification.
+<br><br>
+And like the previous RNN-RL, we combined LSTM-RL with CNN to find the optimal solution.
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">Langue CNN</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">영어로, 38페이지</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        la théorie du développement cognitif de Piaget sert de point de départ.<br><br>그리고 읽자 46페이지 영어<br><br>
+une nouvelle approche a été proposée dans le domaine de la linguistique cognitive, qui a récemment développé une théorie liée à la fusion conceptuelle centrée sur la signification métaphorique du langage. <br><br>
+nous avons voulu simuler la reconnaissance de la langue basée sur CNN. En particulier, l’apprentissage des concepts et des catégories a été étudié dans la méthode précédente.<br> Nous avons souhaité également comparer et analyser comment l’apprentissage antérieur (CNN) est utile pour l’apprentissage de longues phrases.
+
+
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        The last methodoglical approach is about the analysis of natural language  base on CNN.<br><br>
+                        Early in my research<br>Piaget’s theory of cognitive development serves as a starting point for my research.<br><br>그리고 읽자 38페이지 영어<br><br>
+In addition, a new approach has been proposed in the field of cognitive linguistics, which has recently developed a theory related to conceptual fusion centering on the metaphorical meaning of language.<br><br>That it to say<br>39 40페이지 영어 읽고 <br>
+we want to simulate language recognition based on cnn. In particular, learning of concepts and categories was studied in the previous.<br> We also want to compare and analyze how previous learning CNN is helpful for long sentence learning.
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">Resultat, 42 - 46 pages 실험결과</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">영어</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+
+                        blabal ..Dans le cas du deuxième modèle 12-10-7, la précision de l’entraînement est de 87 % et la précision des données de test atteint 86 %.
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        this slide shows a result of our expérience about two groups.<br><br>
+                        After geeting this result of anova (50 page), we concluded that when  <br><br>그다음 불어 45페이지 <BR>
+                        Après avoir obtenu le résultat d'anovo (52 et 53 pages), Nous avons conclu que<br>
+                        In summary (46page ) 영어로<br>
+                        
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">Resultat, 48,49,50 pages</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">불어</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        Ceci est un résultat pour la deuxième démarche méthodologie.<br>
+                        Ce tableau montre les performances du modèle MLP: la précision de l’entraînement est de 87 % et la précision des données de test atteint 86 %.<br>
+                        <br>
+                        Avec le modèle association neuonale (49 page), la moyenne ..<br><br>
+                        Ce tableau montre les performances de model relation neuronale. <br><br>
+
+
+                        Pour le 1 et 4 eme modle, la précision du test avec 3 disques est de 95,24 % et 100 %, respectivement. Lorsque nous essayons de déduire la règle du jeu pour La tour de Hanoi avec 4 disques, nous constatons que notre modèle de raisonnement atteint une précision de prédiction de 75 % pour le premier modèle et de 96,67 % pour le quatrième modèle.<br><br>
+                        51페이지 펼치고 불어로 읽고<br>
+                        En résumé, comme nous l'expérimentons, le raisonnement et la pensée humains ne nécessitent pas bcp de données d'apprentissage. <br>
+                        Nous pouvos déduire certains des régles du jeu simplement en regardant les jeux.
+
+
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        the test accuracy with 3 disks for the first and fourth model are 95.24% and 100%, respectively. When we try to infer the rule of game for The tower of Hanoi with 4 disks, we find our reasoning model achieves 75% prediction accuracy for the first model and 96.67% for the fourth model.
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">RNN main result, 53 et 54,55 pages</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">영어</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        Cette diapositive montre les résultats de la troisième méthode basée sur RNN<br><br>
+                        Après entraînement pour le modèle RNN, nous avons obtenu le chemin le plus court suivant : G1,G3,G2,G1,G4,G5,G4, G1,G3,G2,G5,G4,G3,G5,G1,G6,G5,G2,G1,G3,G2(21 mouvements). <br><br>ce modèle RNN montre une bonne performances.w<br> Néanmoins, ce résultat n’est pas la solution la plus rapide. Après avoir combiné le RNN et RL, nous pouvons donc améliorer la performance.
+
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        This slide shows the results for the third méthode base on RNN<br><br>
+                        After training for the model RNN, we obtained the following shortest path : G1,G3,G2,G1,G4,G5,G4, G1,G3,G2,G5,G4,G3,G5,G1,G6,G5,G2,G1,G3,G2(21 movements). <br><br>this RNN model shows good performance. <br>Nevertheless, this result is not the fastest solution. that'why with this combined model(RNN+RL) we can improve the performance compared with RNN model<br><br>
+                        결과요약 영어로만, 화면은 불어보여주고 56 page<br>
+                        We propose a new approach that combines recurrent neural network and reinforcement learning to solve the toh task throuogh observing the mouvement of the hand and objects. Finally, our combined modle finds the optimal solution.
+
+                    </p>
+                </section>
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">CNN RNN</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">불어</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        Ce dispositive montre les résultat pour l'utilisation des CNN+RNN<br><br>
+Dans cette image, un participant tient le plus petit disque, c'est-à-dire le disque, 1 avec une probabilité de 31%.<br>
+Et cela montre la probabilité d'avoir deux disques à gauche, un au milieu et un à droite avec une probabilité de 100%.<br>
+il existe également une probabilité de 0,08% de placer le disque 1 dans la colonne de gauche.<br><br>
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        The classifier was optimized by splitting 1186 original images into 9% training images (1067 images) and 10% validation images(119 images).<br> We then tested the accuracy of the model with 300 test data.<br><br>
+In this image, a participant is holding the smallest disk, that is, disk 1.<br>
+And it shows the probability of having two disks on the left, one in the middle and one on the right with a 100% probability.<br>
+Interestingly, there is also a 0.08 percent probability of putting Disk 1 on the left column.<br>
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">CNN RNN 61 page</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">영어</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        les valeurs F1 pour les étiquettes d’état (LD1-4, MD1-4, RD1-4), qui représentaient la précision du modèle pour la prédiction multi-étiquettes du modèle CNN, étaient élevées (> 0,90) à l’exception de LD3, LD4 et RD1 (0,8570, 0,4979 et 0,8650, respectivement). <br><br>Pour les étiquettes de l’action (TD1-4, PD1-4), un faible degré de valeur F1 a été trouvé pour TD4, PD3 et PD4 (0,4936, 0,4958 et 0,4979, respectivement).
+
+
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        According to the table 8.8, the resulting F1 values for status labels(LD1-4,MD1-4,RD1-4) , which represented the model accuracy for multi-label prediction of CNN Model, were high(>0.9) with the exception of LD3,LD4, and RD1 (0.8570,0.4979, and 0.8650, respectively).<br><br> For the action’s labels(TD1-4,PD1-4), a low degree of F1 value was found for TD4,PD3, and PD4 (0.4936, 0.4958, 0.4978 respetiveley)
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">CNN RNN 62 pages</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">영어</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        Le tableau  montre les images successives et les probabilités prévisibles pour chaque classification. <br><br>Pour la première image, il y a 100% de chances qu’il y ait quatre disques à droite et 45% de chances que le participant prend le disque 1.<br><br>
+Comme nous l'avons précédemment codé dans une série d'images, nous obtenons la valeur G4 0 à partir des 6ème et 7ème images. <br><br>De cette manière, nous avons programmé pour obtenir des valeurs de probabilité à partir d'images successives et pour obtenir des valeurs de codage à partir des prédictions des actions.<br><br> Et encore une fois, nous avons essayé d'obtenir une solution optimale en la combinant avec le modèle RNN.
+
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+This Table  shows the successive images and predictable probabilities for each classification.<br><br> For the first image, there is a 100 percent chance that there are four disks on the right, and a 45 percent chance that the participant will grab disk 1.<br><br>
+As we previously encoded in a series of images, we get the G4 value from the 6th and 7th images. <br><br>In this way, we programmed to obtain probability values from successive images and to obtain coding values from predictions of participants' actions.<br><br> And once again, we tried to obtain an optimal solution by combining it with the RNN model.
+<br><br>
+Pour la conclution, ....프랑스버전 마지막 63페이지
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">CNN langue 65,66</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">영어</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        Étant donné une phrase, notre modèle a montré une précision de 94,12 % avec le disque à gauche. Il a également montré une forte probabilité de précision dans l’apprentissage de la langue liée au comportement des participants. <br><br>La probabilité de décision de saisir le disque était de 68,91 % et la précision de la libération du disque était de 71,43 %. Cependant, lorsque le disque est situé au centre et à droite, il n’a pas montré une telle probabilité de précision
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        This slide shows the result for understanding natural language with convolutional neural networks for problem solving<br><br> 
+                        Given a sentence, our model showed 94.12 % accuracy with the disk on the left. It also showed a high probability of accuracy in learning language related to the participants’ behavior. <br><br>The probability of judging to grasp the disc was 68.91 % and the accuracy of the disc releasing was 71.43 %. However, when the disk is located in the center and on the right, it did not show such high probability of accuracy.
+                    </p>
+                </section>
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">CNN langue</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">영어로 67페이지</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        Cette méthodologie a calculé la corrélation entre l’événement 1 et l’événement 2 comme une mesure de probabilité, comme dans le modèle d’association neurale présenté. <br><br>E1 est la valeur prédite basée sur le modèle d’analyse de phrase et E2 est la valeur prédite basée sur le modèle d’analyse d’image. Par conséquent, nous avons essayé de trouver une corrélation probabiliste E2 schant que E1. <br><br>Les données prédisant la multi-catégorie à partir des images de données de test ont été comparées aux valeurs de 5 CNN textuels. Lorsque les valeurs correspondent, une phrase prévisible a été dérivée de l’image de test. <br><br>Notre modèle d’apprentissage a montré une précision de 91,6 % dans la prédiction des phrases apprises.
+
+
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        we tried to map the results of the five text CNNs thus obtained and the data obtained from the images of the previous presentation <br> This methodology calculated the correlation between event 1 and event 2 as a probability measure, as shown in the Neural Association Model<br><br>. E1 is the predicted value based on the sentence analysis model, and E2 is the predicted value based on the image analysis model.<br><br> Therefore, we tried to find a probabilistic correlation , Pr(E2|E1) probability of E2 given E1. <br><br>The data predicting multi-category from the test data images were compared with the values of five text CNNs. When the values match, a predictable sentence was derived from the test image. Our learning model showed 91.6 % accuracy in predicting the learned sentences.
+                    </p>
+                </section>
+
+                <!--section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">last</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">불어</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        영어로 70페이지 읽고 그리고 나서<br><br> We were able to confirm meaningful results for these simulations..<br><br>
+                        Notre expérience nous a fait réfléchir à une variété de nouveaux problèmes.<br>
+Les participants au processus de résolution de problèmes réfléchissent beaucoup tout en raisonnant le problème.<br>
+Nous pouvons voir les introspections des participants, cad l'éta mantale et une affect, à travers cette vidéo. <br><br> 두번째 소리틀고 소리동영상<br><br>Donc je me suis posé des questions. 
+Comment pouvons-nous déduire les introspections du participant à travers les mouvements de la main du participant?<br>
+<br>
+Peut-on juger qu'il y a des difficultés dans le processus de résolution de problèmes en écoutant les rires des participants?<br>
+
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        Our experiment made us think about a variety of new problems.<br>
+Participants in the problem solving process think a lot while reasoning the problem.<br>
+We can see the participants' introspections, for example mental state and affect, through this video.<br>
+How can we infer the participant's introspection through the participant's hand movements?<br><br>
+Can we judge that there are difficulties in the problem-solving process by listening to the laughter of the participants?
+                    </p>
+                </section-->
+
+                <!--section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">last</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">불어로 86페이지</h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+                        This video allows you to see immediate feedback on wrong behavior.<br><br>
+From this video, I asked  anothor question<br>
+How can artificial intelligence know the rules of the game while correcting its own mistakes?                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+                        Cette vidéo vous permet de voir immédiatement des feedback sur un mauvais comportement.<br><br>
+                        Donc, je me suis posé une question. <br>
+Comment l'intelligence artificielle peut-elle connaître les règles du jeu tout en corrigeant ses propres erreurs?<br><br>
+
+                    </p>
+                </section-->
+
+                <section>
+                    <h3 style="position:absolute; top: -150px;left:50px; ">last</h3>
+                    <h4 style="position:absolute; top: -80px;left:50px; ">87 page 영어로 </h4>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 50px; width: 600px;text-align:left;">
+
+                        Vous pouvez entendre une voiture venant de loin. Les enfants se sont arrêtés lorsque la voiture est passée et que le feu rouge était allumé.
+Voitures arrêtées et sons de moteur. Et la lumière bleue.<br>
+C'est un feu rouge, mais les gens traversent la route lorsqu'aucune voiture ne s'approche.<bd>
+L'intelligence artificielle basée sur la cognition incarnée pose la question de savoir si nous pouvons trouver les règles que nous expérimentons dans la vie réelle.
+                    </p>
+                    <p style="font-size:0.6em;position:absolute; top: 0px; left: 750px; width: 600px;text-align:left;">
+Furthermore, we will discover rules in our daily lives in the future<br>For exameme<br>
+                        We can hear a car coming from far away. The children stopped when the car passed and the red light was on.<br><br>
+The childrens are wating stopped Cars  and hearing engine sounds. And the blue light. They are starting to cross the road.<bd>
+It's a red light, but people are crossing the road when no car is approaching. This is exceptional case for crosisng the road. etc.<br><br>
+based on embodied cognition, we will expand our research area in order to find the rules that we experience in real life.
+                    </p>
+                </section>
+                
+                
+
+
+                <section>
+                    <img src="./images/fin.jpg" width="800px;" >
+                </section>
+
+                </div>
+            </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+        
+        <!-- Cargamos JQuery -->
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <!-- Opciones de configuración -->
+        <script src="js/configuration.js"></script>
+        <!-- Centered page with flexbox CSS3 new properties, as proposed by millermedeiros in issue 563
+        https://github.com/hakimel/reveal.js/issues/563 -->
+        <script src="js/align_vertical.js"></script>
+        <!-- Cargamos la barra superior con el título y el logotipo -->
+        <script src="js/topbar.js"></script>
+
+	</body>
+</html>
