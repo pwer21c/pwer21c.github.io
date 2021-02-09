@@ -1,0 +1,1 @@
+jupyter-nbconvert --to html 3_preview_list_10022021.ipynb 
