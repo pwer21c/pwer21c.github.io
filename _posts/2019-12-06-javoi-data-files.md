@@ -72,6 +72,8 @@ group: jamovi
 <li><a href="/jamovidatafiles/awesome.csv"> awesome.csv</a></li>
 <li><a href="/jamovidatafiles/clinicaltrial2.omv"> clinicaltrial2.omv</a></li>
 <li><a href="/jamovidatafiles/chico2.omv"> chico2.omv</a></li>
+<li><a href="/jamovidatafiles/fraisepoids.omv"> fraisepoids.omv</a></li>
+
  </ul>
    </li>
   </ul>
