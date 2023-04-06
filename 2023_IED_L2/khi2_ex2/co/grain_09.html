@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="x-ua-compatible" content="IE=EDGE">
+		<title>Jamovi : valeur du khi-deux [Le test d'indépendance du khi-deux]</title>
+		<meta charset="UTF-8">
+		<meta name="generator" content="SCENARI 6.0.4 / Opale 4.0.0">
+		<meta name="revision" content="2023-04-06 09:30">
+		<link rel="start" href="module_.html" title="Le test d'ind&eacute;pendance du khi-deux">
+		<meta name="author" content>
+		<meta name="keywords" content>
+		<meta name="date" content>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css">
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_tePlayer/tePlayer.css">
+		<script>
+/*0*/ var scServices = {id:"lg4x3pge"};
+/*1*/ window.scLoadParams = {destUri:"/co/grain_09.html", pathToRoot:"../"};
+</script>
+		<script src="../lib-sc/scCoLib.js"></script>
+		<script src="../lib-md/w_teMgr/teMgr.js"></script>
+		<script src="../lib-md/w_teMgr/teSubControllers.js"></script>
+		<script src="../lib-sc/scTiLib.js"></script>
+		<script src="../lib-sc/scSiLib.js"></script>
+		<script src="../lib-sc/scPaLib.js"></script>
+		<script src="../lib-sc/scTooltipMgr.js"></script>
+		<script src="../lib-sc/scDynUiMgr.js"></script>
+		<script src="../lib-sc/scMapMgr.js"></script>
+		<script src="../lib-md/s_assmnt.js"></script>
+		<script src="../lib-sc/scDragMgr.js"></script>
+		<script src="../lib-sc/scAssmntMgr.js"></script>
+		<script src="../lib-md/w_mediaelement/mediaelement.min.js"></script>
+		<script src="../lib-md/w_tePlayer/tePlayer.js"></script>
+		<script src="../lib-md/w_tePlayer/TESettingsFromTracks.js"></script>
+		<script src="../lib-md/w_mathjax/mathjaxMgr.js"></script>
+		<script src="../lib-md/s_scSearch/scSearch.js"></script>
+		<script src="../lib-md/w_tplMgr/tplMgr.js"></script>
+		<script src="../lib-md/w_searchMgr/searchMgr.js"></script>
+		<script src="../lib-md/w_scImageMgr/scImageMgr.js"></script>
+		<script src="../lib-md/w_scCodeMgr/scCodeMgr.js"></script>
+		<script src="../lib-md/w_outMgr/outMgr.js"></script>
+		<script src="../lib-md/w_teMgr/fullscreen-api-polyfill.min.js"></script>
+		<script src="../lib-md/w_teMgr/vtt.min.js"></script>
+		<script src="../lib-md/w_vttTranscript/vttTranscriptMgr.js"></script>
+		<script>
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImageMgr.registerAdaptedImage("ide:content/des:figure/des:img");
+
+scImageMgr.registerGallery("des:div.galFra");
+
+scImageMgr.registerSequence("des:div.seqFra");
+
+scImageMgr.registerSvg("des:svg");
+scImageMgr.registerZoom("des:a.svgZoom",{type:"svg",svgMax:1,toolbar:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+scImageMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+tePlayerMgr.init();
+vttTranscriptMgr.init()
+</script>
+		<link rel="shortcut icon" type="image/png" href="../skin/img/favicon.png">
+		<meta name="robots" content="index,follow">
+		<link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all">
+		<link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all">
+		<link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+		<script>
+outMgr.declareOutline("module_.txt");
+	</script>
+</head>
+	<body class="default module expUc">
+		<div id="root"><header id="header"><h1><span>Le test d'indépendance du khi-deux</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>outils</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden"><section class="hBk article expUc"><h2 class="hBk_ti"><span>Jamovi : valeur du khi-deux</span></h2><div class="hBk_co "><div class="example pBk noTitle"><h3 class="example_ti pBk_ti"><span><i class="type"><span>Exemple</span></i><span class="hidden"> : </span><span class="title"></span></span></h3><div class="example_co pBk_co"><div class="rBk "><ul class="txt_il "><li class="txt_ili "><p><a href="#footnotesN67" class="txt_ul resLnk infoAnc" id="i0" data-sctooltip="{&quot;ttId&quot;:&quot;footnotesN67&quot;,&quot;trigger&quot;:&quot;onclick&quot;,&quot;class&quot;:&quot;txt tooltip&quot;,&quot;classRoot&quot;:&quot;&quot;,&quot;options&quot;:{&quot;STICKY&quot;:true,&quot;FOCUS&quot;:true,&quot;MAXWIDTH&quot;:650,&quot;MAXHEIGHT&quot;:650,&quot;CLSBTN&quot;:true,&quot;CLSBTNCAP&quot;:&quot;✖&quot;,&quot;CLSBTNTI&quot;:&quot;Fermer&quot;}}" title="(Infobulle)"><span class="lnkBin jpeg">Ouvrir les données dans Jamovi</span></a><sup class="txt_ref tooltip_ref"><a href="#footnotesN67"><span>[</span>1<span>]</span></a></sup></p></li><li class="txt_ili "><p><a href="#footnotesN7a" class="txt_ul resLnk infoAnc" id="i1" data-sctooltip="{&quot;ttId&quot;:&quot;footnotesN7a&quot;,&quot;trigger&quot;:&quot;onclick&quot;,&quot;class&quot;:&quot;txt tooltip&quot;,&quot;classRoot&quot;:&quot;&quot;,&quot;options&quot;:{&quot;STICKY&quot;:true,&quot;FOCUS&quot;:true,&quot;MAXWIDTH&quot;:650,&quot;MAXHEIGHT&quot;:650,&quot;CLSBTN&quot;:true,&quot;CLSBTNCAP&quot;:&quot;✖&quot;,&quot;CLSBTNTI&quot;:&quot;Fermer&quot;}}" title="(Infobulle)"><span class="lnkBin jpeg">Choisissez le menu « independent samples »</span></a><sup class="txt_ref tooltip_ref"><a href="#footnotesN7a"><span>[</span>2<span>]</span></a></sup></p></li><li class="txt_ili "><p><a href="#footnotesN8d" class="txt_ul resLnk infoAnc" id="i2" data-sctooltip="{&quot;ttId&quot;:&quot;footnotesN8d&quot;,&quot;trigger&quot;:&quot;onclick&quot;,&quot;class&quot;:&quot;txt tooltip&quot;,&quot;classRoot&quot;:&quot;&quot;,&quot;options&quot;:{&quot;STICKY&quot;:true,&quot;FOCUS&quot;:true,&quot;MAXWIDTH&quot;:650,&quot;MAXHEIGHT&quot;:650,&quot;CLSBTN&quot;:true,&quot;CLSBTNCAP&quot;:&quot;✖&quot;,&quot;CLSBTNTI&quot;:&quot;Fermer&quot;}}" title="(Infobulle)"><span class="lnkBin jpeg">Compléter le tableau de contingence</span></a><sup class="txt_ref tooltip_ref"><a href="#footnotesN8d"><span>[</span>3<span>]</span></a></sup></p></li><li class="txt_ili "><p><a href="#footnotesNa1" class="txt_ul resLnk infoAnc" id="i3" data-sctooltip="{&quot;ttId&quot;:&quot;footnotesNa1&quot;,&quot;trigger&quot;:&quot;onclick&quot;,&quot;class&quot;:&quot;txt tooltip&quot;,&quot;classRoot&quot;:&quot;&quot;,&quot;options&quot;:{&quot;STICKY&quot;:true,&quot;FOCUS&quot;:true,&quot;MAXWIDTH&quot;:650,&quot;MAXHEIGHT&quot;:650,&quot;CLSBTN&quot;:true,&quot;CLSBTNCAP&quot;:&quot;✖&quot;,&quot;CLSBTNTI&quot;:&quot;Fermer&quot;}}" title="(Infobulle)"><span class="lnkBin jpeg">Choisissez le menu "des effectifs théoriques"</span></a><sup class="txt_ref tooltip_ref"><a href="#footnotesNa1"><span>[</span>4<span>]</span></a></sup></p></li><li class="txt_ili "><p><a href="#footnotesNb4" class="txt_ul resLnk infoAnc" id="i4" data-sctooltip="{&quot;ttId&quot;:&quot;footnotesNb4&quot;,&quot;trigger&quot;:&quot;onclick&quot;,&quot;class&quot;:&quot;txt tooltip&quot;,&quot;classRoot&quot;:&quot;&quot;,&quot;options&quot;:{&quot;STICKY&quot;:true,&quot;FOCUS&quot;:true,&quot;MAXWIDTH&quot;:650,&quot;MAXHEIGHT&quot;:650,&quot;CLSBTN&quot;:true,&quot;CLSBTNCAP&quot;:&quot;✖&quot;,&quot;CLSBTNTI&quot;:&quot;Fermer&quot;}}" title="(Infobulle)"><span class="lnkBin jpeg">Résultat</span></a><sup class="txt_ref tooltip_ref"><a href="#footnotesNb4"><span>[</span>5<span>]</span></a></sup></p></li></ul></div></div></div></div></section><aside class=" footnotes"><h2>
+									Notes
+								</h2><ol class="footnotes_li" data-titled-basket="true"><li class="footnotes_it" id="footnotesN67"><div class="footnotes_itti">Ouvrir les données dans Jamovi</div><div class="footnotes_itco"><figure role="group" class="resInFlow jpeg"><div class="resInFlow_co "><img src="../res/Capture_d3eMcran_2023-04-06_aL_09_43_51.png" width="315" height="554" alt></div></figure></div></li><li class="footnotes_it" id="footnotesN7a"><div class="footnotes_itti">Choisissez le menu « independent samples »</div><div class="footnotes_itco"><figure role="group" class="resInFlow jpeg"><div class="resInFlow_co "><img src="../res/Capture_d3eMcran_2023-04-06_aL_09_44_04.png" width="355" height="137" alt></div></figure></div></li><li class="footnotes_it" id="footnotesN8d"><div class="footnotes_itti">Compléter le tableau de contingence</div><div class="footnotes_itco"><figure role="group" class="resInFlow jpeg"><div class="resInFlow_co "><a href="../res/Capture_d3eMcran_2023-04-06_aL_09_44_23.png" class="imgZoom" target="_blank" onclick="scImageMgr.loading(); return false;" title="Cliquez pour agrandir (nouvelle fen&ecirc;tre)"><img src="../res/Capture_d3eMcran_2023-04-06_aL_09_44_23_1.png" width="630" height="427" alt></a></div></figure></div></li><li class="footnotes_it" id="footnotesNa1"><div class="footnotes_itti">Choisissez le menu "des effectifs théoriques"</div><div class="footnotes_itco"><figure role="group" class="resInFlow jpeg"><div class="resInFlow_co "><img src="../res/Capture_d3eMcran_2023-04-06_aL_09_44_45.png" width="630" height="226" alt></div></figure></div></li><li class="footnotes_it" id="footnotesNb4"><div class="footnotes_itti">Résultat</div><div class="footnotes_itco"><figure role="group" class="resInFlow jpeg"><div class="resInFlow_co "><img src="../res/Capture_d3eMcran_2023-04-06_aL_09_44_52.png" width="333" height="327" alt></div></figure></div></li></ol></aside></div></div><div id="navigation" tabindex="-1"><hr class="hidden"><nav class="pageTurner" role="navigation"><ul><li><a rel="prev" target="_self" href="grain_04.html" class="btnNav prev" title="Pr&eacute;c&eacute;dent (Calcul du khi-deux)"><span>Précédent</span></a></li><li><a rel="next" target="_self" href="grain_05.html" class="btnNav next" title="Suivant (R&egrave;gle de d&eacute;cision)"><span>Suivant</span></a></li></ul></nav></div></div><div id="toolbox"><nav aria-label="menu principal" class="pageSelector" id="menu" role="navigation" tabindex="-1"><hr class="hidden"><ul class="mnu static" data-totalPages="10"><li class="sel_no anc_yes type_b  dpt_0 courseUa"><div class="lbl type_b" id="activiteapprentissage.html"><a href="activiteapprentissage.html" target="_self" class="item" type="up"><span>Enoncé</span></a></div><ul class="sub mnu_open"><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="grain.html"><a href="grain.html" target="_self" class="item"><span>Enoncé</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="grain_02.html"><a href="grain_02.html" target="_self" class="item"><span>Formulation des hypothèses</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="grain_03.html"><a href="grain_03.html" target="_self" class="item"><span>Calcul des effectifs théoriques selon l'hypothèse nulle</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="court.html"><a href="court.html" target="_self" class="item"><span>Exercice : Petite question</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="grain_04.html"><a href="grain_04.html" target="_self" class="item"><span>Calcul du khi-deux</span></a></div></li><li class="sel_yes anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="grain_09.html"><span class="item"><span>Jamovi : valeur du khi-deux</span></span></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="grain_05.html"><a href="grain_05.html" target="_self" class="item"><span>Règle de décision</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 quiz"><div class="lbl type_l" id="qcmImage_03.html"><a href="qcmImage_03.html" target="_self" class="item"><span>Exercice : Comment trouver la valeur de khi-deux critique ?</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="grain_06.html"><a href="grain_06.html" target="_self" class="item"><span>Conclusion</span></a></div></li></ul></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden"><nav class="headingSelector" role="navigation"><ul class="mnu"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="module_.html" target="_self" class="item" type="index" title="Page d'accueil du module"><span>Accueil</span></a></div></li><li class="anc_yes module" data-position="ancestor"><div class="lbl"><span class="item"><span>Module</span></span></div></li></ul></nav></div></div></main><footer id="footer" tabindex="-1"><hr class="hidden"><a id="linkSp" target="_blank" href="https://doc.scenari.software/Opale/" title="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)"><span><img alt="R&eacute;alis&eacute; avec Scenari (nouvelle fen&ecirc;tre)" src="../skin/img/tpl/scBtn.png"></span></a></footer></div>
+		<script src="../skin/js/skin.js"></script>
+		<script type="text/javascript">tplMgr.init();scCodeMgr.init();scImageMgr.init();outMgr.init();scTooltipMgr.registerTooltips();</script>
+	</body>
+</html>
