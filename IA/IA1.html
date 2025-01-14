@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>1. Introduction to Natural Language Processing in Python</title>
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="BANG sanghun">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<!-- Custom modifications of sky theme -->
+        <link rel="stylesheet" href="css/theme/sky_custom.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+                <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+                <script>
+                        if ( window.location.search.match( /print-pdf/gi ) ) {
+                            document.write( '<link rel="stylesheet" href="css/print/pdf.css" type="text/css">' );
+                            document.write( '<link rel="stylesheet" href="css/print/pdf_custom.css" type="text/css">' );
+                        }
+                </script>		
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<script>
+                    // Título que se muestra en la barra superior
+                    var titulo = "1. Introduction to Natural Language Processing in Python";
+		</script>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+	</head>
+
+	<body>
+            <div class="reveal">
+                <div class="slides">
+
+ 
+                <section  style="top: -550px; display: block;">  <!-- O page -->
+                    <p style="font-size:0.7em;margin-bottom:20px;">
+                        UNIVERSITE PARIS VIII - VINCENNES-SAINT-DENIS<br>
+DIRECTION DES SYSTEMES D'INFORMATION ET DU NUMERIQUE (DSIN)<br>
+                    </p>
+                        <br>
+                        <h4 style="color:red;font-size:1.2em;">Atelier IA</h4>
+                        <h4 style="color:red;">1. Introduction to Natural Language Processing in Python</h4>
+                        <br>
+                        <p >sanghun BANG</p>
+                        <div class="autor" >
+                        <p style="font-size:0.8em;"> 
+                            
+                            <b>Le 14 janvier 2025</b>
+                        </p>
+                       
+                        
+                        </div>
+                </section>
+
+                <!--  ##################################################################  -->
+                <!--  #######                                ###########################  -->
+                <!--  #######     Les problématiques         ###########################  -->
+                <!--  #######                                ###########################  -->
+                <!--  ##################################################################  -->
+
+                <section>
+                    <h2>Sommaire</h2>
+                    <hr>
+                    <ul> 
+                        <li>Le traitement du langage naturel (NLP)</li>
+                        <li>Tokenisation des mots</li>
+                        <li>Identification simple des sujets</li>
+                        <li>L'apprentissage automatique</li>
+                        <li>Créer un classificateur de "fake news"</li>
+                        <li>Prochain atelier</li>
+            </ul>
+                </section>
+
+                <section>
+                    <h3>Le traitement du langage naturel (NLP)</h3>  
+                    <hr>
+                    <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+                        &ldquo;C'est un domaine d'étude qui se concentre sur la compréhension du langage à l'aide de statistiques et d'ordinateurs. &rdquo;
+                    </blockquote>
+                    <ul>            
+                        <li>Applications du NLP : chatbots, traduction, analyse des sentiments, etc.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Tokenisation des mots</h3>  
+                    <hr>
+                    <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+                        &ldquo;Qu'est-ce que la tokenisation ?
+                        Transformer une chaîne de caractères ou un document en tokens (petits morceaux). &rdquo;
+                    </blockquote>
+           
+                </section>
+
+                <section>
+                        <h3>Tokenisation des mots</h3>  
+                    <hr>
+                        <img src="./images/003_bis1_img.png" width="600px" style="position:absolute; top:10; left:10px">
+                        <div style="position:absolute; top:185px; left:740px;"><a href="http://localhost:8888/notebooks/tokenize001.ipynb" target="_blank">Exercice</a></div>           
+                </section>
+
+
+
+                <section>
+                    <h3>Identification simple des sujets<br><span class="plan4">Sac de mots (Bag-of-words)</span></h3>
+
+                    <hr>
+                    <ul> 
+                        <li>Méthode de base pour trouver les sujets dans un texte</li>
+                        <li>Il faut d'abord créer des jetons (tokens) en utilisant la tokenisation, puis compter tous les jetons.</li>
+                        <li>Plus un mot est fréquent, plus il peut être important.</li>
+                        <li>Cela peut être un excellent moyen de déterminer les mots significatifs dans un texte.</li>
+                        <li><a href="http://localhost:8888/notebooks/bag-of-words.ipynb" target="_blank">Exercice</a></li> 
+                        
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Identification simple des sujets<br><span class="plan4">Simple text preprocessing</span></h3>
+                    <hr>
+                    <ul> 
+                        <li>Aide à améliorer les données d'entrée -> lors de l'application de l'apprentissage automatique (machine learning) ou d'autres méthodes statistiques</li> 
+                        <li>Exemple : Tokenisation pour créer un sac de mots, Conversion des mots en minuscules</li> 
+                        <li>Lemmatisation/Racinisation(stemming) -> Réduction des mots à leurs racines</li> 
+                        <li>Suppression des mots vides, de la ponctuation ou des tokens indésirables</li> 
+                        
+                        <li><a href="http://localhost:8888/notebooks/nlp002.ipynb" target="_blank">Exercice</a></li> 
+                    </ul>
+                </section>
+
+                <section>
+                        <h3>Identification simple des sujets<br><span class="plan4">Qu'est-ce qu'un vecteur de mots ?</span></h3>  
+                    <hr>
+                        <img src="./images/word_vector.png" width="900px" style="position:absolute; top:10; left:10px">
+                        <div style="position:absolute; top:585px; left:40px;font-size:0.4em;font-family:monospace;">Représentation numérique</div>
+                        <div style="position:absolute; top:565px; left:240px;font-size:0.4em;font-family:monospace;">Dimensionalité</div>
+                        <div style="position:absolute; top:585px; left:440px;font-size:0.4em;font-family:monospace;">Similarité sémantique</div>
+                        <div style="position:absolute; top:565px; left:640px;font-size:0.4em;font-family:monospace;">Relations contextuelles</div>
+                </section>
+
+
+                 <section>
+                    <h3>Identification simple des sujets<br><span class="plan4">Gensim</span></h3>
+                    <hr>
+                    <ul> 
+                        <li>Bibliothèque NLP open-source populaire</li> 
+                        <li>Utilise des modèles académiques de pointe pour réaliser des tâches complexes</li> 
+                        <ul> 
+                            <li>Construction de vecteurs de documents ou de mots</li> 
+                            <li>Identification des sujets et comparaison de documents</li> 
+                        </ul>
+                        <li><a href="http://localhost:8888/notebooks/gensim.ipynb" target="_blank">Exercice</a></li> 
+                    </ul>
+                </section>
+
+                
+
+                <section>
+                    <h3>Identification simple des sujets<br><span class="plan4">Fréquence du Terme (TF)</span></h3>  
+                    <hr>
+                    <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+                        &ldquo;La fréquence du terme (TF) mesure à quel point un mot apparaît fréquemment dans un document donné. 
+                        Elle est souvent utilisée pour quantifier l'importance d'un mot au sein d'un document spécifique. &rdquo;
+                    </blockquote>
+                    <img src="./images/001/tfbis.png" width="600px" >
+
+           
+                </section>
+
+                <section>
+                    <h3>Identification simple des sujets<br><span class="plan4">Fréquence du Terme (TF)</span></h3>
+                    <p>Exemple</p>  
+                    <hr>
+                    <div>Si un document 𝑑 est ["le", "chat", "est", "sur", "le", "tapis"] et que le mot le apparaît 2 fois dans un document de 6 mots :</div>
+                    <br>
+                    <div><span class="fragment">TF(le,d)=</span><span class="fragment">2/6=0,33</span></div>
+                </section>
+
+                
+
+
+                <section>
+                    <h3>Identification simple des sujets<br><span class="plan4">Inverse de la Fréquence des Documents (IDF)</span></h3>  
+                    <hr>
+                    <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+                        &ldquo;L'IDF mesure l'importance d'un terme dans l'ensemble des documents. 
+                        Plus un mot apparaît dans de nombreux documents, moins il est considéré comme important, car il est trop courant. L'IDF permet donc de réduire l'importance des termes fréquents. &rdquo;
+                    </blockquote>
+                    <img src="./images/001/idfbis.png" width="600px" >
+           
+                </section>
+
+                <section>
+                    <h3>Identification simple des sujets<br><span class="plan4">Inverse de la Fréquence des Documents (IDF)</span></h3>
+                    <p>Exemple</p>  
+                    <hr>
+                    <div>Si l'ensemble des documents est constitué de 1000 documents, et que le mot chat apparaît dans 50 documents :</div>
+                    <br>
+                    <div><span class="fragment">IDF(chat)=</span><span class="fragment">log(1000/50)=log(20) = environ 1,30</span></div>
+                </section>
+
+                <section>
+                    <h3>Identification simple des sujets<br><span class="plan4">TF-IDF</span></h3>  
+                    <hr>
+                    <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+                        &ldquo;Le TF-IDF combine les deux valeurs précédentes pour évaluer l'importance d'un mot dans un document tout en tenant compte de sa fréquence dans l'ensemble des documents. &rdquo;
+                    </blockquote>
+                    <img src="./images/001/tfidf.png" width="600px" >
+                </section>
+
+                <section>
+                    <h3>Identification simple des sujets<br><span class="plan4">TF-IDF</span></h3>
+                    <hr>
+                    <ul> 
+                        <li>Si la TF de "le" est 0.33 et que l'IDF de "le" est 0, alors </li>
+                        <ul>
+                            <li>TF-IDF(le,d) = 0,33 * 0 = 0</li>
+                            <li>Cela signifi que le mot "le" est peu important, car il apparait fréquemment dans tous les documents.</li>
+                        </ul>
+                        <li>Si la TF de "chat" est 0,33 et l'IDF de "chat" est 1,30, alors</li>
+                        <ul>
+                            <li>TF-IDF(chat,d) = 0,33 * 1,30 = 0,429</li>
+                            <li>Cela montre que le mot "chat" est plus important dans le document, car il est plus rare dans l'ensemble des documents.</li>
+                        </ul>
+                        
+                    </ul>
+                    <br>           
+                </section>
+
+                <section>
+                        <h3>L'apprentissage automatique<br><span class="plan4">L'apprentissage supervisé/non-supervisé</span></h3>  
+                    <hr>
+                        <img src="./images/001/supervised.webp" width="400px" style="position:absolute; top:10; left:10px">
+                        <img src="./images/001/unsupervised.webp" width="400px" style="position:absolute; top:10; left:510px">
+                </section>
+
+                <section>
+                        <h3>L'apprentissage automatique<br><span class="plan4">Par renforcement</span></h3>  
+                    <hr>
+                        <img src="./images/atari.gif" style=" width: 300px">
+                        <div style="font-size:0.4em;font-family:monospace;">Playing Atari with Deep Reinforcement Learning [Mnih et al., 2013]</div>
+                </section>
+
+                <section>
+                        <h3>Créer un classificateur de "fake news"</h3>  
+                    
+
+                </section>
+
+
+                <section>
+                        <h3>Créer un classificateur de "fake news"<br><span class="plan4">Charger les données</span></h3>  
+                    <hr>
+                    <img src="./images/001/fake001.png" width="400px" >
+                        <ul>
+                            <li>Charge un fichier CSV contenant les données d'articles de presse avec leurs labels</li>
+                            <li>Données attendues : text, label(fake, real) par exemple</li>
+                        </ul>
+
+                </section>
+
+                <section>
+                        <h3>Créer un classificateur de "fake news"<br><span class="plan4">Préparer les données</span></h3>  
+                    <hr>
+                    <img src="./images/001/fake002.png" width="800px" >
+                    <br>
+                        <ul>
+                            
+                                <li>X: contient le texte des artilces</li>
+                                <li>y: contien les labels</li>
+                                <li>Entrainement(80%), test(20%)</li>
+                          
+                        </ul>
+                </section>
+
+                <section>
+                        <h3>Créer un classificateur de "fake news"<br><span class="plan4">Pipeline NLP</span></h3>  
+                    <hr>
+                    <img src="./images/001/fake003.png" width="800px" >
+                    <br>
+                            <ul>
+                                <li>CountVectoriser: Convertit les textes en vecteurs numériques en comptant la fréquence des mots</li>
+                                <li>TifdfTransformer: Calcul les poids TF-IDF pour chaque mot, ce qui réduit l'importance des mots fréquents</li>
+                                <li>LogisticRegression: Utilise la régression logistique comme modèle de classification</li>
+                            </ul>
+                </section>
+
+                <section>
+                        <h3>Créer un classificateur de "fake news"<br><span class="plan4">Entrainer/test le model</span></h3>  
+                    <hr>
+                    <img src="./images/001/fake004.png" width="400px" >
+                    <br>
+                        <ul>
+                                <li>La matrice de confusion donne un aperçu détaillé des performances du modèle
+                                    <ul>
+<li>Les lignes représentent les classes réelles.</li>
+<li>Les colonnes représentent les classes prédites.</li>
+</ul>
+     
+                            </ul>
+                     
+                </section>
+
+                <section>
+                        <h3>Créer un classificateur de "fake news"<br><span class="plan4">La matrice de confusion</span></h3>  
+                    <hr>
+                    <img src="./images/001/confusion.png" width="300px" style="position:absolute; top:10; left:100px" >
+
+                    <table style="position:absolute; top:10; left:430px;font-size:0.4em;font-family:monospace;">
+        
+        <thead>
+            <tr>
+                <th></th>
+                <th>Prédit(Positif)</th>
+                <th>Prédit(Négatif)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Réel(Positif)</td>
+                <td>VP (601)</td>
+                <td>FN (32)</td>
+            </tr>
+            <tr>
+                <td>Réel(Négatif)</td>
+                <td>FP (63)</td>
+                <td>VN (571)</td>
+            </tr>
+        </tbody>
+    </table>
+                    
+                        <!--ul style="position:absolute; top:10; left:430px;font-size:0.4em;font-family:monospace;">
+                                
+<li>601 : Le nombre de fois où le modèle a correctement prédit "FAKE" (vrai négatif).</li>
+<li>32 : Le nombre de fois où le modèle a incorrectement prédit "REAL" alors que l'article était "FAKE" (faux positif).</li>
+<li>63 : Le nombre de fois où le modèle a incorrectement prédit "FAKE" alors que l'article était "REAL" (faux négatif).</li>
+<li>571 : Le nombre de fois où le modèle a correctement prédit "REAL" (vrai positif).</li>
+
+     
+                            </ul-->
+                     
+                </section>
+
+                <section>
+                        <h3>Créer un classificateur de "fake news"<br><span class="plan4">L'accuracy (précision) </span></h3>  
+                    <hr>
+                    <img src="./images/001/accuracy.png" width="400px" ><br>
+                    <img src="./images/001/accuracy_resultat.png" width="400px" >
+                    
+                     
+                </section>
+
+                <section>
+                        <h3>Créer un classificateur de "fake news"<br><span class="plan4">Entrainer/test le model</span></h3>  
+                    <hr>
+                    <img src="./images/001/fake006.png" width="600px" >
+                    <br>
+                    <img src="./images/001/precision.png" width="300px" style="position:absolute; top:10; left:10px" >
+                    <img src="./images/001/rappel.png" width="300px" style="position:absolute; top:370px; left:10px" >
+                    <img src="./images/001/f1.png" width="300px" style="position:absolute; top:460px; left:10px" >
+                                    <ul style="position:absolute; top:10; left:340px;font-size:0.8em;">
+<li>Précision (Precision) : Proportion de prédictions correctes pour chaque classe.</li>
+<li>Rappel (Recall) : Capacité du modèle à identifier correctement les exemples d'une classe donnée.</li>
+<li>F1-score : Moyenne harmonique de la précision et du rappel.</li>
+</ul>
+     
+                      
+                     
+                </section>
+
+                <section>
+                        <h3>Créer un classificateur de "fake news"<br><span class="plan4">Code</span></h3>  
+                    <hr>
+                        <div ><a href="http://localhost:8888/notebooks/fake-news.ipynb" target="_blank">Code</a></div>           
+                </section>
+
+                <section>
+            <h3>Prochain atelier</h3>
+            <hr>
+            <ul style="font-size:0.9em;"> 
+                <li style="color:gray;">1. Introduction to Natural Language Processing in Python</li>
+                <li style="font-weight:bold;">2. Introduction to LLMs in Python</li>
+                <li>3. Working with Hugging Face</li>
+                <li>4. Intermediate Deep Learning with PyTorch</li>
+                <li>5. Deep Learning for Text with PyTorch</li>
+                <li>6. Building Chatbots in Python</li>
+                <li>7. Working with Llama 3</li>
+                <li>8. Transformer Models with PyTorch</li>
+                <li>9. Developing LLM Applications with LangChain</li>
+                <li>10. Retrieval Augmented Generation (RAG) with LangChain</li>
+            </ul>
+        </section>
+
+
+                <section>
+                    <img src="./images/fin.jpg" width="800px;" >
+                </section>
+
+
+                </div>
+            </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+        
+        <!-- Cargamos JQuery -->
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <!-- Opciones de configuración -->
+        <script src="js/configuration.js"></script>
+        <!-- Centered page with flexbox CSS3 new properties, as proposed by millermedeiros in issue 563
+        https://github.com/hakimel/reveal.js/issues/563 -->
+        <script src="js/align_vertical.js"></script>
+        <!-- Cargamos la barra superior con el título y el logotipo -->
+        <script src="js/topbar.js"></script>
+
+	</body>
+</html>
