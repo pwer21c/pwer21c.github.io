@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>2. Introduction to LLMs in Python</title>
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="BANG sanghun">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<!-- Custom modifications of sky theme -->
+        <link rel="stylesheet" href="css/theme/sky_custom.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+                <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+                <script>
+                        if ( window.location.search.match( /print-pdf/gi ) ) {
+                            document.write( '<link rel="stylesheet" href="css/print/pdf.css" type="text/css">' );
+                            document.write( '<link rel="stylesheet" href="css/print/pdf_custom.css" type="text/css">' );
+                        }
+                </script>		
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<script>
+                    // Título que se muestra en la barra superior
+                    var titulo = "2. Introduction to LLMs in Python";
+		</script>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+	</head>
+
+	<body>
+            <div class="reveal">
+                <div class="slides">
+
+ 
+                <section  style="top: -550px; display: block;">  <!-- O page -->
+                    <p style="font-size:0.7em;margin-bottom:20px;">
+                        UNIVERSITE PARIS VIII - VINCENNES-SAINT-DENIS<br>
+DIRECTION DES SYSTEMES D'INFORMATION ET DU NUMERIQUE (DSIN)<br>
+                    </p>
+                        <br>
+                        <h4 style="color:red;font-size:1.2em;">Atelier IA</h4>
+                        <h4 style="color:red;">2. Introduction to LLMs in Python</h4>
+                        <br>
+                        <p >sanghun BANG</p>
+                        <div class="autor" >
+                        <p style="font-size:0.8em;"> 
+                            
+                            <b>Le 21 janvier 2025</b>
+                        </p>
+                       
+                        
+                        </div>
+                </section>
+
+                <!--  ##################################################################  -->
+                <!--  #######                                ###########################  -->
+                <!--  #######     Les problématiques         ###########################  -->
+                <!--  #######                                ###########################  -->
+                <!--  ##################################################################  -->
+
+                <section>
+    <h2>Sommaire</h2>
+    <hr>
+    <ul> 
+        <li>LLM</li>
+        <li>Utilisation des LLM pré-entraînés</li>
+        <li>Comprendre le transformer</li>
+        <li>Préparer le fine-tuning</li>
+        <li>Fine-tuning par entraînement</li>
+        <li>Prochain atelier</li>
+    </ul>
+</section>
+
+
+                <section>
+                    <h3>LLM</h3>  
+                    <hr>
+                    <img src="./images/002/llm_base.png" width="400px" >
+                       
+
+                    <ul>            
+                        <li>Basé sur des architectures d'apprentissage profond,</li>
+                        <li>Le plus souvent des transformers,</li>
+                        <li>D'énormes réseaux neuronaux avec de nombreux paramètres et des données textuelles abondantes.</li>
+                        <li><a href="http://localhost:8888/notebooks/llm001.ipynb" target="_blank">Exercice (llm001.ipynb)</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>LLM <br><span class="plan4">Réseaux de neurones et apprentissage profond</span></h3>
+                    <hr>
+                    <div style="position:relative; width:800px; height: 600px; margin: 0 auto;">
+                        <img src="./images/neuronwikipedia.png" width="600px" style="position:absolute; top:0; left:0">
+                        <div style="position:absolute; top:450px; left:0;font-size:0.4em;font-family:monospace;">Biological neuron (source: www.wikipedia.org )</div>
+                        <img class="fragment " src="./images/neuron001.png" style="position:absolute; top: 180px; left: 520px; width: 300px">
+                        <div class="fragment" style="position:absolute; top:420px; left:520px;font-size:0.4em;font-family:monospace;">Model of the neuron</div>
+                    </div>
+                </section>
+
+                <!--  #######################################################################  -->
+                <!--  #######                                     ###########################  -->
+                <!--  #######     Les axes théoriques: MLP        ###########################  -->
+                <!--  #######                                     ###########################  -->
+                <!--  #######################################################################  -->
+
+                <section>
+                    <h3>LLM <br><span class="plan4">Réseaux de neurones et apprentissage profond</span></h3>
+                    <hr>
+                    <h4>Le perceptron multicouche<span class="plan4">Multilayer perceptron</span></h4>
+                    <ul> 
+                        <img src="./images/multilayer.png" width="500px" style="position:absolute; top:250px; left:0">
+                        <div style="position:absolute; top:600px; left:130px;font-size:0.4em;font-family:monospace;">Multilayer perceptron</div>
+                        <img src="./images/xorsimex.gif" style="position:absolute; top: 250px; left: 520px; width: 500px">
+                        <div style="position:absolute; top:600px; left:720px;font-size:0.4em;font-family:monospace;">XOR simulation</div>
+                    </ul>
+                </section>
+
+                <section>
+                        <h3>LLM</h3>  
+                    <hr>
+                    <img src="./images/002/tree.png" width="600px" >
+                    <div style="position:absolute; top:630px; left:300px;font-size:0.4em;font-family:monospace;">Arbre évolutif des LLM modernes. Image de Yang et al. </div> 
+
+                </section>
+
+
+                
+                <section>
+                    <h3>Utilisation des LLM pré-entrainés<br><span class="plan4">Génération de texte</span></h3>  
+                    <hr>
+                    <img src="./images/002/llm_generation.png" width="600px" >
+                    <h3><a href="http://localhost:8888/notebooks/llm_generation.ipynb" target="_blank">Exercice (llm_generation.ipynb)</a></h3>
+                    
+                </section>
+
+                <section>
+                    <h3>Utilisation des LLM pré-entrainés<br><span class="plan4">Traduction</span></h3>  
+                    <hr>
+                    <img src="./images/002/llm_traduction.png" width="600px" >
+                    <h3><a href="http://localhost:8888/notebooks/llm_traduction.ipynb" target="_blank">Exercice (llm_traduction.ipynb)</a></h3>
+                </section>
+
+            
+                 <section>
+                        <h3>Comprendre le transformer</h3>  
+                    <hr>
+                    <img src="./images/002/transformer_origin.png" width="350px" >
+                    <div style="position:absolute; top:630px; left:260px;font-size:0.4em;font-family:monospace;">L'architecture "Transformer" initialement publiée par Vaswani et al.</div> 
+                    
+                </section>
+
+                <section>
+                        <h3>Comprendre le transformer</h3>  
+                    <hr>
+                    <img src="./images/002/encoder_decoder.png" width="200px" >
+                    <ul> 
+                        <li>Architectures d'apprentissage profond</li> 
+                        <li>Traitement, compréhension et génération de texte</li> 
+                        <li>Utilisées dans la plupart des LLMs</li> 
+                        <li>Gèrent des séquences de texte longues en parallèle</li> 
+                    </ul>
+                </section>
+
+                 <section>
+                        <h3>Comprendre le transformer</h3>  
+                    <hr>
+                    <img src="./images/002/tree.png" width="600px" >
+                    
+                </section>
+
+                <section>
+                        <h3>Comprendre le transformer</h3>  
+                    <hr>
+                    <img src="./images/002/tree_001.png" width="600px" >
+                    
+                </section>
+
+                <section>
+                        <h3>Comprendre le transformer</h3>  
+                    <hr>
+                    <img src="./images/002/tree_002.png" width="600px"  >
+                    
+                </section>
+
+                <section>
+                        <h3>Comprendre le transformer</h3>  
+                    <hr>
+                    
+                    <img src="./images/002/tree_003.png" width="600px" >
+                </section>
+
+
+               
+                
+
+                 <section>
+                        <h3>Comprendre le transformer<br><span class="plan4">Encoder-only</span></h3>  
+                    <hr>
+                    <img src="./images/002/encoder.png" width="200px" style="position:absolute; left:10px" >
+                    <ul style="position:absolute; left:250px"> 
+                        <li>Compréhension du texte d'entrée</li> 
+                        <li>Pas de sortie séquentielle</li> 
+                        <li>Tâches courantes (classification de texte, analyse de sentiment, questions-réponses extractives)</li> 
+                        <li>Modèles BERT (<b>B</b>idirectional <b>E</b>ncoder <b>R</b>epresentations from <b>T</b>ransformers)</li> 
+                        <li>Exemple : <a href="https://huggingface.co/distilbert/distilbert-base-uncased-distilled-squad" target="_blank">distilbert-base-uncased-distilledsquad"</a></li> 
+                        <li><a href="http://localhost:8888/notebooks/encoder.ipynb" target="_blank">Exercice (encoder.ipynb)</a>
+                    </ul>
+                </section>
+
+                 <section>
+                        <h3>Comprendre le transformer<br><span class="plan4">Decoder-only</span></h3>  
+                    <hr>
+                    <img src="./images/002/decoder.png" width="200px" style="position:absolute; left:10px" >
+                    <ul style="position:absolute; left:250px"> 
+                        <li>L'accent est mis sur la sortie</li>
+                        <li>Tâches courantes (génération de texte, questions-réponses génératives)</li>
+                        <li>Modèles GPT (<b>G</b>enerative <b>P</b>re-trained <b>T</b>ransformer)</li>
+                        <li>Exemple : <a href="https://huggingface.co/Xenova/gpt-3.5-turbo" target="_blank">gpt-3.5-turbo</a></li>
+                        <li><a href="http://localhost:8888/notebooks/decoder.ipynb" target="_blank">Exercice (decoder.ipynb)</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                        <h3>Comprendre le transformer<br><span class="plan4">Encoder-decoder</span></h3>  
+                    <hr>
+                    <img src="./images/002/encoder_decoder.png" width="300px" style="position:absolute; left:10px" >
+                    <ul style="position:absolute; left:350px"> 
+                        <li>Understand and process the input and output</li>
+                        <li>Common tasks (Translation, summarization)</li>
+                        <li>T5 (Text-to-Text Transfer Transformer), BART (Bidirectional and Auto-Regressive Transformers) models</li>
+                    </ul>
+                </section>
+
+               
+
+
+                <section>
+                    <h3>Préparer le fine-tuning<br><span class="plan4">Pipelines and auto classes</span></h3>
+                    <hr>
+                    
+                    <ul style="position:absolute; left:0px;font-size:0.9em;"  > 
+                        <li>Pipelines: pipeline()</li>
+                        <li>Streamlines tasks</li>
+                        <li>Automatic model and <br>tokenizer selection</li>
+                        <li>Limited controle</li>
+                    </ul>
+                    <img src="./images/002/pipeline.png" width="200px" style="position:absolute; top:400px;left:50px" >
+                   <!--p> Le pipeline est un outil spécifique à la bibliothèque Hugging Face Transformers, conçu pour simplifier les tâches de NLP (Natural Language Processing).</p-->
+                    
+                    <ul style="position:absolute; left:500px;font-size:0.9em;"> 
+                        <li>Auto classes (AutoModel class)</li>
+                        <li>Customization</li>
+                        <li>Manual adjustments</li>
+                        <li>Supports fine-tuning</li>
+                    </ul>
+                    <img src="./images/002/auto_classe.png" width="200px" style="position:absolute; top:400px;left:550px" >
+                </section>
+
+                <section>
+                    <h3>Préparer le fine-tuning<br><span class="plan4">LLM lifecycle</span></h3>
+                    <hr>
+                    <img src="./images/002/llm_lifecycle.png" width="700px"  >
+                    <ul > 
+                        <li>Pré-entraînement<span>&nbsp;&nbsp;<a href="http://localhost:8888/notebooks/prepare_fine_tuning.ipynb" target="_blank">Exercice (pepare_fine_tuning.ipynb)</a></span></li>
+                        <ul>
+                            <li>Données générales, Apprentissage de modèles génétaux</li>
+                        </ul>
+                        <li>Affinage <span>&nbsp;<a href="hhttp://localhost:8888/notebooks/fine_tuning_training.ipynb" target="_blank">Exercice (fine_tuning_training.ipynb)</a></span></li>
+                       <ul>
+                            <li>Domaine spécifique, Tâches spécialisées</li>
+                        </ul>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Préparer le fine-tuning<br><span class="plan4">Subword tokenization</span></h3>
+                    <hr>
+                    <img src="./images/002/modern_tokenization1.png" width="700px">
+                </section>
+
+                <section>
+                    <h3>Préparer le fine-tuning<br><span class="plan4">Subword tokenization</span></h3>
+                    <hr>
+                    <img src="./images/002/modern_tokenization2.png" width="700px">
+                    <h3><a href="http://localhost:8888/notebooks/subword.ipynb" target="_blank">Exercice (ubword.ipynb)</a></h3>
+                    
+                </section>
+
+                
+
+
+                <section>
+            <h3>Prochain atelier</h3>
+            <hr>
+            <ul style="font-size:0.8em;"> 
+                <li style="color:gray;">1. Introduction to Natural Language Processing in Python</li>
+                <li style="color:gray;">2. Introduction to LLMs in Python</li>
+                <li style="font-weight:bold;">3. Working with Hugging Face</li>
+                <li>4. Intermediate Deep Learning with PyTorch</li>
+                <li>5. Deep Learning for Text with PyTorch</li>
+                <li>6. Building Chatbots in Python</li>
+                <li>7. Working with Llama 3</li>
+                <li>8. Transformer Models with PyTorch</li>
+                <li>9. Developing LLM Applications with LangChain</li>
+                <li>10. Retrieval Augmented Generation (RAG) with LangChain</li>
+                <li>11. Beyond LLMs: Test Time Training, Differential transformer, Titans</li>
+            </ul>
+        </section>
+
+
+                <section>
+                    <img src="./images/fin.jpg" width="800px;" >
+                </section>
+
+
+                </div>
+            </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+        
+        <!-- Cargamos JQuery -->
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <!-- Opciones de configuración -->
+        <script src="js/configuration.js"></script>
+        <!-- Centered page with flexbox CSS3 new properties, as proposed by millermedeiros in issue 563
+        https://github.com/hakimel/reveal.js/issues/563 -->
+        <script src="js/align_vertical.js"></script>
+        <!-- Cargamos la barra superior con el título y el logotipo -->
+        <script src="js/topbar.js"></script>
+
+	</body>
+</html>
