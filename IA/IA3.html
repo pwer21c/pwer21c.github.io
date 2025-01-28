@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>3. Working with Hugging Face</title>
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="BANG sanghun">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<!-- Custom modifications of sky theme -->
+        <link rel="stylesheet" href="css/theme/sky_custom.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+                <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+                <script>
+                        if ( window.location.search.match( /print-pdf/gi ) ) {
+                            document.write( '<link rel="stylesheet" href="css/print/pdf.css" type="text/css">' );
+                            document.write( '<link rel="stylesheet" href="css/print/pdf_custom.css" type="text/css">' );
+                        }
+                </script>		
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<script>
+                    // Título que se muestra en la barra superior
+                    var titulo = "3. Working with Hugging Face";
+		</script>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+	</head>
+
+	<body>
+            <div class="reveal">
+                <div class="slides">
+
+ 
+                <section  style="top: -550px; display: block;">  <!-- O page -->
+                    <p style="font-size:0.7em;margin-bottom:20px;">
+                        UNIVERSITE PARIS VIII - VINCENNES-SAINT-DENIS<br>
+DIRECTION DES SYSTEMES D'INFORMATION ET DU NUMERIQUE (DSIN)<br>
+                    </p>
+                        <br>
+                        <h4 style="color:red;font-size:1.2em;">Atelier IA</h4>
+                        <h4 style="color:red;">3. Working with Hugging Face</h4>
+                        <br>
+                        <p >sanghun BANG</p>
+                        <div class="autor" >
+                        <p style="font-size:0.8em;"> 
+                            
+                            <b>Le 28 janvier 2025</b>
+                        </p>
+                       
+                        
+                        </div>
+                </section>
+
+                <!--  ##################################################################  -->
+                <!--  #######                                ###########################  -->
+                <!--  #######     Les problématiques         ###########################  -->
+                <!--  #######                                ###########################  -->
+                <!--  ##################################################################  -->
+
+                <section>
+    
+    <h2>Sommaire</h2>
+    <hr>
+    <ul > 
+    <li>Qu'est-ce que Hugging Face</li>
+    <li>Reconnaissance d'entités nommées (NER)</li>
+    <li>Similarité de phrases</li>
+    <li>Texte en audio</li>
+    <li>Modèles de reconnaissance automatique de la parole (ASR) dans Hugging Face</li>
+    <li>Image vers texte</li>
+    <li>Détection d'objets</li>
+</ul>
+
+</section>
+
+
+                <section>
+                    <h3>Qu'est-ce que Hugging Face </h3>  
+                    <hr>                       
+                    <ul>            
+                        <li>Bibliothèque Transformers</li>
+                        <li>Plateforme collaborative</li>
+                        <li>Facilité d'utilisation</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Qu'est-ce que Hugging Face<br><span class="plan4">Moddels</span></h3>
+                    <hr>
+                    <a href="https://huggingface.co/models" target="_blank"><img src="./images/003/h_model.png" width="600px" ></a>
+                    <ul>
+                        <li><a href="http://localhost:8888/notebooks/hugging_model.ipynb" target="_blank">Exercice (hugging_model.ipynb)</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Qu'est-ce que Hugging Face<br><span class="plan4">Datasets</span></h3>
+                    <hr>
+                    <a href="https://huggingface.co/datasets" target="_blank"><img src="./images/003/h_datasets.png" width="600px" ></a>
+                    <ul>
+                        <li><a href="http://localhost:8888/notebooks/hugging_datasets.ipynb" target="_blank">Exercice (hugging_datasets.ipynb)</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Reconnaissance d'entités nommées (NER)</h3>  
+                    <hr>                       
+                    <ul>            
+                        <li>La Reconnaissance d'Entités Nommées (NER) consiste à identifier et à classer les entités nommées dans un texte en catégories prédéfinies.</li>
+                        <li>Ex : Par exemple, "Apple a été fondée par Steve Jobs", "Apple" et "Steve Jobs" sont des entités qui doivent être identifiées.</li>
+                        <ul>
+
+                        <li>Lieu (LOC) / organisations (ORG) /inidivus (PER)</li>
+                    </ul>
+                        <li><a href="http://localhost:8888/notebooks/hugging002.ipynb" target="_blank">Exercice (hugging002.ipynb)</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Similarité de phrases<br><span class="plan4">La similarité cosinus</span></h3>  
+                    <hr>
+                    <img src="./images/003/h_sim1.png" width="600px" >
+                   <img src="./images/003/h_sim2.png" width="600px" >
+                </section>
+
+                <section>
+                    <h3>Similarité de phrases<br><span class="plan4">La similarité cosinus</span></h3>  
+                    <hr>
+                    <h3><a href="http://localhost:8888/notebooks/hugging_sentence.ipynb" target="_blank">Exercice (hugging_sentence.ipynb)</a></h3>
+                    
+                </section>
+
+                <section>
+                        <h3>Texte en audio</h3> 
+                    <hr>
+                    <h3><a href="http://localhost:8888/notebooks/hugging_speech_rec.ipynb" target="_blank">Exercice (hugging_speech_rec.ipynb)</a></h3>
+                    
+                </section>
+
+                <section>
+                        <h3>Modèles de reconnaissance automatique de la parole (ASR) dans Hugging Face</h3> 
+                    <hr>
+                    <h3><a href="http://localhost:8888/notebooks/hugging_speech.ipynb" target="_blank">Exercice (hugging_speech.ipynb")</a></h3>
+                   
+                    <audio controls>
+  
+  <source src="./images/003/test.mp3" type="audio/mpeg">
+</audio>
+                </section>
+        
+
+
+
+                <section>
+                    <h3>Image ver texte</h3>  
+                    <hr>
+                    <img src="./images/003/test1.webp" width="300px" ><br>
+                    <a href="http://localhost:8888/notebooks/hugging_img_txt1.ipynb" target="_blank">Conversion des informations visuelles d'une image en données textuelles. <br>(hugging_img_txt1.ipynb)</a>
+
+                </section>
+
+                <section>
+                    <h3>Image ver texte<br><span class="plan4">OCR</span></h3>  
+                    <hr>
+                    <img src="./images/003/les_miserables.png" width="300px" ><br>
+                    <a href="http://localhost:8888/notebooks/hugging_img_txt2.ipynb" target="_blank">Conversion des images contenant du texte en texte numérique modifiable et consultable.<br>(hugging_img_txt2.ipynb)</a>
+
+                </section>
+
+                <section>
+                    <h3>Detection d'objets</h3>  
+                    <hr>
+                    <img src="./images/003/detection.png" width="600px" ><br>
+                    <a href="http://localhost:8888/notebooks/hugging_object_detection.ipynb" target="_blank">Exercice (hugging_object_detection.ipynb)</a>
+
+                </section>
+
+            
+
+
+                <section>
+            <h3>Prochain atelier</h3>
+            <hr>
+            <ul style="font-size:0.8em;"> 
+                <li style="color:gray;">1. Introduction to Natural Language Processing in Python</li>
+                <li style="color:gray;">2. Introduction to LLMs in Python</li>
+                <li style="color:gray;">3. Working with Hugging Face</li>
+                <li style="font-weight:bold;">4. Intermediate Deep Learning with PyTorch</li>
+                <li>5. Deep Learning for Text with PyTorch</li>
+                <li>6. Building Chatbots in Python</li>
+                <li>7. Working with Llama 3</li>
+                <li>8. Transformer Models with PyTorch</li>
+                <li>9. Developing LLM Applications with LangChain</li>
+                <li>10. Retrieval Augmented Generation (RAG) with LangChain</li>
+                <li>11. Beyond LLMs: Test Time Training, Differential transformer, Titans</li>
+            </ul>
+        </section>
+
+
+                <section>
+                    <img src="./images/fin.jpg" width="800px;" >
+                </section>
+
+
+                </div>
+            </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+        
+        <!-- Cargamos JQuery -->
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <!-- Opciones de configuración -->
+        <script src="js/configuration.js"></script>
+        <!-- Centered page with flexbox CSS3 new properties, as proposed by millermedeiros in issue 563
+        https://github.com/hakimel/reveal.js/issues/563 -->
+        <script src="js/align_vertical.js"></script>
+        <!-- Cargamos la barra superior con el título y el logotipo -->
+        <script src="js/topbar.js"></script>
+
+	</body>
+</html>
