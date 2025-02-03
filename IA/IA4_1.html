@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>4. Intermediate Deep Learning with PyTorch (1)</title>
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="BANG sanghun">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<!-- Custom modifications of sky theme -->
+        <link rel="stylesheet" href="css/theme/sky_custom.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+                <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+                <script>
+                        if ( window.location.search.match( /print-pdf/gi ) ) {
+                            document.write( '<link rel="stylesheet" href="css/print/pdf.css" type="text/css">' );
+                            document.write( '<link rel="stylesheet" href="css/print/pdf_custom.css" type="text/css">' );
+                        }
+                </script>		
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<script>
+                    // Título que se muestra en la barra superior
+                    var titulo = "4. Intermediate Deep Learning with PyTorch (1)";
+		</script>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+	</head>
+
+	<body>
+            <div class="reveal">
+                <div class="slides">
+
+ 
+                <section  style="top: -550px; display: block;">  <!-- O page -->
+                    <p style="font-size:0.7em;margin-bottom:20px;">
+                        UNIVERSITE PARIS VIII - VINCENNES-SAINT-DENIS<br>
+                        DIRECTION DES SYSTEMES D'INFORMATION ET DU NUMERIQUE (DSIN)<br>
+                    </p>
+                        <br>
+                        <h4 style="color:red;font-size:1.2em;">Atelier IA</h4>
+                        <h4 style="color:red;">4. Intermediate Deep Learning with PyTorch (1)</h4>
+                        <br>
+                        <p >sanghun BANG</p>
+                        <div class="autor" >
+                        <p style="font-size:0.8em;"> 
+                            
+                            <b>Le 4 février 2025</b>
+                        </p>
+                       
+                        
+                        </div>
+                </section>
+
+                <!--  ##################################################################  -->
+                <!--  #######                                ###########################  -->
+                <!--  #######     Les problématiques         ###########################  -->
+                <!--  #######                                ###########################  -->
+                <!--  ##################################################################  -->
+
+                <section>
+                    <h2>Sommaire</h2>
+                    <hr>
+                    <ul > 
+                        <li>L'approche POO pour définir l'architecture du modèle.</li>
+                        <li>Optimiseurs et entraînement</li>
+                        <li>Disparition et explosion des gradients</li>
+
+                        <li>Traitement des images avec PyTorch</li>
+                        <li>Réseaux neuronaux convolutifs</li>
+                        <li>Entraînement de classificateurs d'images</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>L'approche POO pour définir l'architecture du modèle.</h3>
+                    <hr>
+                    <img src="./images/004/nn.png" width="600px" data-fragment-index="0">
+                    <img class="fragment current-visible" src="./images/004/herite.png" width="300px" style="position:absolute; top:220px; left:440px" data-fragment-index="1" >
+                    <img class="fragment current-visible" src="./images/004/layer_layer.png" width="100px" style="position:absolute; top:220px; left:540px" data-fragment-index="2">
+                    <img class="fragment current-visible" src="./images/004/layer_layer2.png" width="300px" style="position:absolute; top:220px; left:540px" data-fragment-index="3">
+                    <img class="fragment current-visible" src="./images/004/flow.png" width="300px" style="position:absolute; top:220px; left:540px" data-fragment-index="4">
+                    <!--p class="fragment">Fade in</p>
+                    <p class="fragment fade-out">Fade out</p>
+                    <p class="fragment highlight-red">Highlight red</p>
+                    <p class="fragment current-visible">Fade in, then out</p>
+                    <p class="fragment fade-up">Slide up while fading in</p-->
+                </section>
+
+                <section>
+                    <h3>L'approche POO pour définir l'architecture du modèle.</h3>
+                    <hr>
+                    <img  src="./images/004/nn1.png" width="600px" data-fragment-index="1">
+                    <p  data-fragment-index="2" style="position:absolute; top:370px; left:540px;font-size:16px;"  >= 9 X 16 + 16(biais) = 160</p> 
+                    
+                </section>
+
+                <section>
+                    <h3>L'approche POO pour définir l'architecture du modèle.</h3>
+                    <hr>
+                    <img  src="./images/004/nn2.png" width="600px" data-fragment-index="1">
+                    <p  data-fragment-index="2" style="position:absolute; top:390px; left:540px;font-size:16px;"  >= 16 X 8 + 8(biais) = 136</p> 
+                    
+                </section>
+
+                <section>
+                    <h3>L'approche POO pour définir l'architecture du modèle.</h3>
+                    <hr>
+                    <img  src="./images/004/nn3.png" width="600px" data-fragment-index="1">
+                    <p  data-fragment-index="2" style="position:absolute; top:420px; left:540px;font-size:16px;"  >= 8 X 1 + 1 (biais) = 9</p> 
+                    
+                </section>
+
+
+                <section>
+                    <h3>L'approche POO pour définir l'architecture du modèle.</h3>
+                    <hr>
+                    <img  src="./images/004/nnall.png" width="600px" data-fragment-index="1">
+                    <p  data-fragment-index="2" style="position:absolute; top:440px; left:540px;font-size:16px;"  >= 160 + 136 + 9 = 305 paramètres</p> 
+                </section>
+
+                <section>
+                    <h3>Optimiseurs et entraînement</h3>
+                    <hr>
+                    <ul>            
+                        <li>Objectif : L'optimiseur ajuste les poids (weights) du modèle pour minimiser la fonction de perte (loss function).</li>
+                        <li>Fonction : L'optimiseur utilise principalement l'algorithme de descente de gradient (Gradient Descent) pour mettre à jour les poids. Il peut aussi ajuster des hyperparamètres comme le taux d'apprentissage, le momentum et le taux d'apprentissage adaptatif.</li>
+                    </ul>
+                    <img class="fragment current-visible" src="./images/004/gd.jpg" width="400px" style="position:absolute; top:200px; left:240px" data-fragment-index="1" >
+                </section>
+
+                <section>
+                    <h3>Optimiseurs et entraînement<br><span class="plan4">Stochastic Gradient Descent (SGD)</span></h3>
+                    <hr>
+                    <img src="./images/004/sgd.png" width="500px" data-fragment-index="0">
+                    <br>
+                    <ul>            
+                        <li>La mise à jour dépend du taux d'apprentissage.</li>
+                        <li>Simple et efficace, pour des modèles de base.</li>
+                        <li>Rarement utilisé en pratique.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Optimiseurs et entraînement<br><span class="plan4">Adaptive Gradient (Adagrad)</span></h3>
+                    <hr>
+                    <img src="./images/004/adagrad.gif" width="350px">
+                    <br>
+                    <ul>            
+                        <li>Adapte le taux d'apprentissage pour chaque paramètre</li>
+                        <li>Bon pour les données rares</li>
+                        <li>Peut réduire le taux d'apprentissage trop rapidement</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Optimiseurs et entraînement<br><span class="plan4">Root Mean Square Propagation (RMSprop)</span></h3>
+                    <hr>
+                    <img src="./images/004/sgd2.webp" width="300px" data-fragment-index="0">
+                    <ul>            
+                        <li>Mise à jour pour chaque paramètre en fonction de la taille de ses gradients précédents</li>       
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Optimiseurs et entraînement<br><span class="plan4">Adaptive Moment Estimation(Adam)</span></h3>
+                    <hr>
+                    <img src="./images/004/adam_compare.gif"  width="300px" >
+                    <ul>            
+                        <li>Probablement le plus polyvalent et le plus largement utilisé</li>
+                        <li>RMSprop + momentum des gradients</li>
+                        <li>Souvent utilisé comme optimiseur de référence</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Optimiseurs et entraînement</h3>
+                    <hr>
+                    <h3><a href="http://localhost:8888/notebooks/pytorch_oop_otimizer.ipynb" target="_blank">Exercice (pytorch_oop_otimizer.ipynb)</a></h3>
+                    
+                </section>
+
+                <section>
+                    <h3>Disparition et explosion des gradients<br><span class="plan4">Disparition du gradient (Vanishing Gradient)</span></h3>
+                    <hr>
+                  
+<iframe style="position:absolute; left:1px" width="477" height="448" src="https://www.youtube.com/embed/roh2ww9wqE4" title="Vanishing Gradient Problem" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ul style="position:absolute; left:500px">
+    <li>Les gradients deviennent de plus en plus petits lors de la rétropropagation.</li>
+<li>Les couches précédentes reçoivent de faibles mises à jour des paramètres.</li>
+<li>Le modèle n'apprend pas.</li>
+</ul>
+                    
+                </section>
+
+                <section>
+                    <h3>Disparition et explosion des gradients<br><span class="plan4">Explosiion du gradient(Explodiing gradient)</span></h3>
+                    <hr>
+                  
+<iframe style="position:absolute; left:1px" width="477" height="448" src="https://www.youtube.com/embed/EKwUdp_bDKA" title="Exploding gradient problem" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<ul style="position:absolute; left:500px">
+<li>Les gradients deviennent de plus en plus grands.</li>
+<li>Les mises à jour des paramètres sont trop grandes.</li>
+<li>L'entraînement diverge.</li>
+ </ul>                   
+                </section>
+
+                <section>
+                    <h3>Disparition et explosion des gradients<br><span class="plan4">Solution</span></h3>
+                    <hr>
+                  <ul>            
+                        <li>Bonne initialisation des poids</li>
+                        <li>Bonnes fonctions d'activation</li>
+                        <li>Normalisation par lots</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Disparition et explosion des gradients<br><span class="plan4">L'initialisation de He</span></h3>
+                    <hr>
+                    <ul>            
+                        <li>L'initialisation de He est efficace pour l'initialisation des poids. Elle initialise chaque poids en utilisant une distribution normale dont l'écart type est ci-dessous .  </li>
+                    </ul>
+                    <img src="./images/004/heinit.png" width="600px" >
+                    <ul>            
+                        <li>Cela permet de réduire le problème du gradient qui disparaît, notamment avec des fonctions d'activation comme ReLU. </li>
+                    </ul>
+                </section>
+
+                
+
+                <section>
+    <h3>Disparition et explosion des gradients<br><span class="plan4">ReLU</span></h3>
+    <hr>
+    <img src="./images/004/relu.png" width="200px" >
+    <ul>
+        <li>f(x) = max(0, x) => problème : Neurones mourants. </li>
+        <li>Leaky ReLU : une fonction qui permet aux valeurs négatives d'avoir une petite pente au lieu de zéro. </li>
+        <li>Cependant, avec l'initialisation de He, on peut éviter le problème des poids trop grands ou trop petits, ce qui aide à résoudre ce problème.</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Disparition et explosion des gradients<br><span class="plan4">ELU</span></h3>
+    <hr>
+    <img src="./images/004/elu.png" width="200px" >
+    <ul>
+        <li>Lorsqu'on a une valeur x inférieure à zéro, l'ELU résout le problème des neurones mourants, mais son coût de calcul est plus élevé que celui de ReLU.</li> 
+        <li>Selon le réseau ou le dataset, ReLU ou Leaky ReLU peuvent être plus appropriés.</li>
+    </ul>
+</section>
+
+<section>
+    <h3>Disparition et explosion des gradients<br><span class="plan4">Normalisation par lots</span></h3>
+    <hr>
+    <ul>
+        <li>Stabilité de l'entraînement : La distribution des données est maintenue de manière homogène à travers les couches, ce qui rend l'entraînement plus stable.</li>
+<li>Accélération de la vitesse d'apprentissage : Étant donné que la normalisation est appliquée, il est possible d'augmenter le taux d'apprentissage et d'optimiser plus rapidement.</li>
+<li>Prévention du surapprentissage : Batch Normalization apprend par mini-batch, ce qui offre un léger effet de régularisation et peut aider à prévenir le surapprentissage.</li>
+    </ul>
+</section>
+
+<section>
+                    <h3>Disparition et explosion des gradients</h3>
+                    <hr>
+                    <h3><a href="http://localhost:8888/notebooks/weightinit_batch.ipynb" target="_blank">Exercice (weightinit_batch.ipynb)</a></h3>
+                    
+                </section>
+
+
+                <section>
+                    <h3>Réseaux neuronaux convolutifs<br><span class="plan4">Convolutional Layer</span></h3>
+                    <hr>
+                    <img src="./images/004/cnn001.png" width="500px" >
+                    <!--ul>
+                        <li>Lorsqu'on a une valeur x inférieure à zéro, l'ELU résout le problème des neurones mourants, mais son coût de calcul est plus élevé que celui de ReLU.</li> 
+                        <li>Selon le réseau ou le dataset, ReLU ou Leaky ReLU peuvent être plus appropriés.</li>
+                    </ul-->
+                </section>
+
+                <section>
+                    <h3>Réseaux neuronaux convolutifs<br><span class="plan4">Convolutional Layer(Filter)</span></h3>
+                    <hr>
+                    <img src="./images/004/cnn001.png" width="500px" >
+                    <img src="./images/004/cnnfilter.png" width="500px" >
+                    <img class="fragment current-visible" src="./images/004/calcul1.png" width="100px" style="position:absolute; top:320px; left:440px" data-fragment-index="1" >
+                    
+                    <!--ul>
+                        <li>Lorsqu'on a une valeur x inférieure à zéro, l'ELU résout le problème des neurones mourants, mais son coût de calcul est plus élevé que celui de ReLU.</li> 
+                        <li>Selon le réseau ou le dataset, ReLU ou Leaky ReLU peuvent être plus appropriés.</li>
+                    </ul-->
+                </section>
+
+                <section>
+                    <h3>Réseaux neuronaux convolutifs<br><span class="plan4">Convolutional Layer(Stride)</span></h3>
+                    <hr>
+                    <img src="./images/004/cnn001.png" width="500px" >
+                    <img src="./images/004/cnnstride.png" width="500px" >
+                    <!--ul>
+                        <li>Lorsqu'on a une valeur x inférieure à zéro, l'ELU résout le problème des neurones mourants, mais son coût de calcul est plus élevé que celui de ReLU.</li> 
+                        <li>Selon le réseau ou le dataset, ReLU ou Leaky ReLU peuvent être plus appropriés.</li>
+                    </ul-->
+                </section>
+
+                <section>
+                    <h3>Réseaux neuronaux convolutifs<br><span class="plan4">Convolutional Layer(Padding)</span></h3>
+                    <hr>
+                    <img src="./images/004/cnn001.png" width="500px" >
+                    <img src="./images/004/cnnpadding.png" width="500px" >
+                    <!--ul>
+                        <li>Lorsqu'on a une valeur x inférieure à zéro, l'ELU résout le problème des neurones mourants, mais son coût de calcul est plus élevé que celui de ReLU.</li> 
+                        <li>Selon le réseau ou le dataset, ReLU ou Leaky ReLU peuvent être plus appropriés.</li>
+                    </ul-->
+                </section>
+
+                
+                <section>
+                    <h3>Réseaux neuronaux convolutifs<br><span class="plan4">Pooling Layer</span></h3>
+                    <hr>
+                    <img src="./images/004/cnn002.png" width="500px" >
+                    <!--ul>
+                        <li>Lorsqu'on a une valeur x inférieure à zéro, l'ELU résout le problème des neurones mourants, mais son coût de calcul est plus élevé que celui de ReLU.</li> 
+                        <li>Selon le réseau ou le dataset, ReLU ou Leaky ReLU peuvent être plus appropriés.</li>
+                    </ul-->
+                </section>
+
+                <section>
+                    <h3>Réseaux neuronaux convolutifs<br><span class="plan4">Pooling Layer(Max pooling)</span></h3>
+                    <hr>
+                    <img src="./images/004/cnn002.png" width="500px" ><br>
+                    <img src="./images/004/cnnmaxpooling.png" width="300px" >
+                    <!--ul>
+                        <li>Lorsqu'on a une valeur x inférieure à zéro, l'ELU résout le problème des neurones mourants, mais son coût de calcul est plus élevé que celui de ReLU.</li> 
+                        <li>Selon le réseau ou le dataset, ReLU ou Leaky ReLU peuvent être plus appropriés.</li>
+                    </ul-->
+                </section>
+
+                <section>
+                    <h3>Réseaux neuronaux convolutifs<br><span class="plan4">Second convolutioanl layer</span></h3>
+                    <hr>
+                    <img src="./images/004/cnn003.png" width="500px" >
+                 
+                    <ul>
+                        <li>On utilise 20 filtres tensoriels de taille 5x5x10 sur le tenseur 12x12x10 obtenu de la couche de pooling précédente. Cela permet d'obtenir 20 résultats, chacun de taille 8x8.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Réseaux neuronaux convolutifs<br><span class="plan4">second pooling layer</span></h3>
+                    <hr>
+                    <img src="./images/004/cnn004.png" width="500px" >
+                    <!--ul>
+                        <li>Lorsqu'on a une valeur x inférieure à zéro, l'ELU résout le problème des neurones mourants, mais son coût de calcul est plus élevé que celui de ReLU.</li> 
+                        <li>Selon le réseau ou le dataset, ReLU ou Leaky ReLU peuvent être plus appropriés.</li>
+                    </ul-->
+                </section>
+
+                <section>
+                    <h3>Réseaux neuronaux convolutifs<br><span class="plan4">Flattern(vectorization)</span></h3>
+                    <hr>
+                    <img src="./images/004/cnn005.png" width="500px" >
+                    <!--ul>
+                        <li>Lorsqu'on a une valeur x inférieure à zéro, l'ELU résout le problème des neurones mourants, mais son coût de calcul est plus élevé que celui de ReLU.</li> 
+                        <li>Selon le réseau ou le dataset, ReLU ou Leaky ReLU peuvent être plus appropriés.</li>
+                    </ul-->
+                </section>
+
+                <section>
+                    <h3>Réseaux neuronaux convolutifs<br><span class="plan4">Fully-Connected Layers(Dense Layers)</span></h3>
+                    <hr>
+                    <img src="./images/004/cnn006.png" width="500px" >
+                    
+                </section>
+
+                <section>
+                    <h3>Réseaux neuronaux convolutifs<br><span class="plan4">Ex: la taille du tenseur de sortie </span></h3>
+                    <hr>
+                    <img src="./images/004/cnncodeex.png" width="500px" >
+                    <p   style="position:absolute; top:260px; left:680px; font-size:15px;color:red;" data-fragment-index="1" >---> output 32 X 32 X 32  </p>
+                    <p style="position:absolute; top:300px; left:600px; font-size:15px;color:red;" data-fragment-index="1">---> 1er maxpool layer  : 16 X 16 X 32  </p>
+                    <p style="position:absolute; top:320px; left:680px; font-size:15px;color:red;" data-fragment-index="1">---> second Convolution layer : 16 X 16 X 64  </p>
+                    <p style="position:absolute; top:360px; left:540px; font-size:15px;color:red;" data-fragment-index="1">---> second maxpool layer : 8 X 8 X 64 </p>
+                    <p style="position:absolute; top:380px; left:460px; font-size:15px;color:red;" data-fragment-index="1">---> 1st deimension vector 8 X 8 X 64 = 4096</p>
+                    <!--ul>
+                        <li>Lorsqu'on a une valeur x inférieure à zéro, l'ELU résout le problème des neurones mourants, mais son coût de calcul est plus élevé que celui de ReLU.</li> 
+                        <li>Selon le réseau ou le dataset, ReLU ou Leaky ReLU peuvent être plus appropriés.</li>
+                    </ul-->
+                </section>
+
+                <section>
+                    <h3>Réseaux neuronaux convolutifs<br><span class="plan4">Ex: la taille du tenseur de sortie </span></h3>
+                    <hr>
+                    <img src="./images/004/cnncodeex.png" width="500px" >
+                    <p   style="position:absolute; top:240px; left:680px; font-size:15px;color:red;" data-fragment-index="1">(entree X H noyau X L noyau +1 ) X sortie= (3X3X3+1)X32 = 28X32 = 896</p>
+                    <p style="position:absolute; top:320px; left:680px; font-size:15px;color:red;" data-fragment-index="1">---> (32X3X3+1)X64 = 289X64 = 18,496 </p>
+                    <p style="position:absolute; top:380px; left:460px; font-size:15px;color:red;" data-fragment-index="1">---> Total des paramètres : 896 + 18,496 = 19,392</p>
+                    <!--ul>
+                        <li>Lorsqu'on a une valeur x inférieure à zéro, l'ELU résout le problème des neurones mourants, mais son coût de calcul est plus élevé que celui de ReLU.</li> 
+                        <li>Selon le réseau ou le dataset, ReLU ou Leaky ReLU peuvent être plus appropriés.</li>
+                    </ul-->
+                </section>
+
+                <section>
+                    <h3>Rntraînement de classificateurs d'images<br><span class="plan4">Exercice</span></h3>
+                    <hr>
+                    <h3><a href="http://localhost:8888/notebooks/cnn_ex.ipynb" target="_blank">Exercice1 (cnn_ex.ipynb)</a></h3>
+                    <h3><a href="http://localhost:8888/notebooks/cnn_with_data_accuracy.ipynb" target="_blank">Exercice2 (cnn_with_data_accuracy.ipynb)</a></h3>
+                    
+                    
+                </section>
+
+
+
+
+
+                <section>
+            <h3>Prochain atelier</h3>
+            <hr>
+            
+            <ul style="font-size:0.7em;">
+                        <li style="color:gray;">1. Introduction to Natural Language Processing in Python</a></li>
+                        <li style="color:gray;">2. Introduction to LLMs in Python</a></li>
+                        <li style="color:gray;">3. Working with Hugging Face</a></li>
+                        <li style="color:gray;">4. Intermediate Deep Learning with PyTorch (1)</li>
+                        <li style="font-weight:bold;">5. Intermediate Deep Learning with PyTorch (2)</li>
+                        <li>6. Deep Learning for Text with PyTorch</li>
+                        <li>7. Building Chatbots in Python</li>
+                        <li>8. Working with Llama 3</li>
+                        <li>9. Transformer Models with PyTorch</li>
+                        <li>10. Developing LLM Applications with LangChain</li>
+                        <li>11. Retrieval Augmented Generation (RAG) with LangChain</li>
+                        <li>12. Distributed AI Model Training in Python</li>
+                        <li>13. Beyond LLMs: Test Time Training, Differential transformer, Titans</li>
+                    </ul>
+        </section>
+
+
+                <section>
+                    <img src="./images/fin.jpg" width="800px;" >
+                </section>
+
+
+                </div>
+            </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+        
+        <!-- Cargamos JQuery -->
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <!-- Opciones de configuración -->
+        <script src="js/configuration.js"></script>
+        <!-- Centered page with flexbox CSS3 new properties, as proposed by millermedeiros in issue 563
+        https://github.com/hakimel/reveal.js/issues/563 -->
+        <script src="js/align_vertical.js"></script>
+        <!-- Cargamos la barra superior con el título y el logotipo -->
+        <script src="js/topbar.js"></script>
+
+	</body>
+</html>
