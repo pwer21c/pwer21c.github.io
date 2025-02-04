@@ -147,7 +147,7 @@
                     <hr>
                     <ul>            
                         <li>Objectif : L'optimiseur ajuste les poids (weights) du modèle pour minimiser la fonction de perte (loss function).</li>
-                        <li>Fonction : L'optimiseur utilise principalement l'algorithme de descente de gradient (Gradient Descent) pour mettre à jour les poids. Il peut aussi ajuster des hyperparamètres comme le taux d'apprentissage, le momentum et le taux d'apprentissage adaptatif.</li>
+                        <li>Fonction : L'optimiseur utilise principalement l'algorithme de <a href="http://localhost:8888/notebooks/gradient_descent.ipynb" target="_blank">descente de gradient (Gradient Descent)</a> pour mettre à jour les poids. Il peut aussi ajuster des hyperparamètres comme le taux d'apprentissage, le momentum et le taux d'apprentissage adaptatif.</li>
                     </ul>
                     <img class="fragment current-visible" src="./images/004/gd.jpg" width="400px" style="position:absolute; top:200px; left:240px" data-fragment-index="1" >
                 </section>
@@ -155,7 +155,7 @@
                 <section>
                     <h3>Optimiseurs et entraînement<br><span class="plan4">Stochastic Gradient Descent (SGD)</span></h3>
                     <hr>
-                    <img src="./images/004/sgd.png" width="500px" data-fragment-index="0">
+                    <a href="http://localhost:8888/notebooks/gd_vs_sgd.ipynb" target="_blank"><img src="./images/004/sgd.png" width="500px" data-fragment-index="0"></a>
                     <br>
                     <ul>            
                         <li>La mise à jour dépend du taux d'apprentissage.</li>
@@ -167,7 +167,7 @@
                 <section>
                     <h3>Optimiseurs et entraînement<br><span class="plan4">Adaptive Gradient (Adagrad)</span></h3>
                     <hr>
-                    <img src="./images/004/adagrad.gif" width="350px">
+                    <a href="http://localhost:8888/notebooks/adagrad.ipynb" target="_blank"><img src="./images/004/adagrad.gif" width="350px"></a>
                     <br>
                     <ul>            
                         <li>Adapte le taux d'apprentissage pour chaque paramètre</li>
@@ -281,6 +281,7 @@
 <li>Accélération de la vitesse d'apprentissage : Étant donné que la normalisation est appliquée, il est possible d'augmenter le taux d'apprentissage et d'optimiser plus rapidement.</li>
 <li>Prévention du surapprentissage : Batch Normalization apprend par mini-batch, ce qui offre un léger effet de régularisation et peut aider à prévenir le surapprentissage.</li>
     </ul>
+    <img class="fragment current-visible" src="./images/004/l_batch.png" width="600px" style="position:absolute; top:220px; left:240px" data-fragment-index="1" >
 </section>
 
 <section>
