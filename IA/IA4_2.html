@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>5. Intermediate Deep Learning with PyTorch (2)</title>
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="BANG sanghun">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<!-- Custom modifications of sky theme -->
+        <link rel="stylesheet" href="css/theme/sky_custom.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+                <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+                <script>
+                        if ( window.location.search.match( /print-pdf/gi ) ) {
+                            document.write( '<link rel="stylesheet" href="css/print/pdf.css" type="text/css">' );
+                            document.write( '<link rel="stylesheet" href="css/print/pdf_custom.css" type="text/css">' );
+                        }
+                </script>		
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<script>
+                    // Título que se muestra en la barra superior
+                    var titulo = "5. Intermediate Deep Learning with PyTorch (2)";
+		</script>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+	</head>
+
+	<body>
+            <div class="reveal">
+                <div class="slides">
+
+ 
+                <section  style="top: -550px; display: block;">  <!-- O page -->
+                    <p style="font-size:0.7em;margin-bottom:20px;">
+                        UNIVERSITE PARIS VIII - VINCENNES-SAINT-DENIS<br>
+DIRECTION DES SYSTEMES D'INFORMATION ET DU NUMERIQUE (DSIN)<br>
+                    </p>
+                        <br>
+                        <h4 style="color:red;font-size:1.2em;">Atelier IA</h4>
+                        <h4 style="color:red;">5. Intermediate Deep Learning with PyTorch (2)</h4>
+                        <br>
+                        <p >sanghun BANG</p>
+                        <div class="autor" >
+                        <p style="font-size:0.8em;"> 
+                            
+                            <b>Le 4 mars 2025</b>
+                        </p>
+                       
+                        
+                        </div>
+                </section>
+
+                <!--  ##################################################################  -->
+                <!--  #######                                ###########################  -->
+                <!--  #######     Les problématiques         ###########################  -->
+                <!--  #######                                ###########################  -->
+                <!--  ##################################################################  -->
+
+                <section>
+    
+    <h2>Sommaire</h2>
+    <hr>
+    <ul > 
+    
+
+
+<li>Recurrent Neural Networks(RNN)</li>
+<li>Long Short-Term Memory (LSTM)</li>
+<li>Gated Recurrent Unit (GRU)</li>
+<li>Prochain atelier</li>
+</ul>
+
+</section>
+
+
+                <section>
+                    <h3>Recurrent Neural Networks (RNN)</h3>
+                    <hr>
+                    <ul>            
+                        <li>Traite des données séquentielles en utilisant la sortie précédente comme en trée pour l'étape suivante</li>
+                        <li>Il combine l'entrée actuelle et l'état prédéente pour générer la sortie.</li>
+                        <li>Adapté aux données séquentielles (Langue naturel, séries temporelles)</li>
+                        <li>Problèmes de gradients lors de l'entraînement sur des séqeunces</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Recurrent Neural Networks (RNN)<br><span class="plan4">Architecture</span></h3>
+                    <hr>
+                    <img src="./images/004/rnn.png" width="400px" >
+                    <img class="fragment " src="./images/004/rnn1.png" style="position:absolute; top: 430px; left: 520px; width: 400px">
+                    <img class="fragment " src="./images/004/rnn_detail.png" style="position:absolute; top: 330px; left: 620px; width: 200px">
+                </section>
+
+                <section>
+                    <h3>Recurrent Neural Networks (RNN)<br><span class="plan4">Exercice</span></h3>  
+                    <hr>                       
+                    <h2><a href="http://localhost:8888/notebooks/rnn_lstm_grm/rnn_xor.ipynb" target="_blank">Exercice (rnn_xor.ipynb)</a></h2>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Long Short-Term Memory (LSTM)</h3>
+                    <hr>
+                    <ul>            
+                        <li>LSTM est un type de RNN conçu pour résoudre le problème de la dépendance à long terme en utilisant un mécanisme de mémoire interne.</li>
+                        <li>Utilise un état de cellule (cell state) et trois portes : porte d'entrée, porte de sortie et porte d'oubli pour gérer l'information.</li>
+                        <li>Gestion de la dépendance à long terme</li>
+                        <li>Structure plus complexe</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Long Short-Term Memory (LSTM)<br><span class="plan4">Architecture</span></h3>
+                    <hr>
+                    <img src="./images/004/lstm.png" width="400px" ></a>
+                </section>
+
+                <section>
+                    <h3>Long Short-Term Memory (LSTM)<br><span class="plan4">Exercice</span></h3>
+                    <hr>                       
+                    <h2><a href="http://localhost:8888/notebooks/rnn_lstm_grm/lstm_mnist.ipynb" target="_blank">Exercice (lstm_mnist.ipynb)</a></h2>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Gated Recurrent Unit(GRU)</h3>
+                    <hr>
+                    <ul>            
+                        <li>Le GRU est une version simplifiée de LSTM, mais avec des performances similaires.</li>
+                        <li>Utilise seulement deux portes : porte de mise à jour (update gate) et porte de réinitialisation (reset gate).</li>
+                        <li>Efficacité : Moins de paramètres que LSTM, ce qui réduit le temps d'entraînement et les besoins en mémoire.</li>
+                        <li>Bonne performance : Offre des performances similaires à celles de LSTM tout en étant plus léger.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Gated Recurrent Unit (GRU)<br><span class="plan4">Architecture</span></h3>
+                    <hr>
+                    <img src="./images/004/gru.png" width="400px" ></a>
+                    
+                </section>
+
+                <section>
+                    <h3>Gated Recurrent Unit(GRU)<br><span class="plan4">Exercice</span></h3>
+                    <hr>                       
+                    <h2><a href="http://localhost:8888/notebooks/rnn_lstm_grm/gru_text_sample1.ipynb" target="_blank">Exercice (gru_text_sample1.ipynb)</a></h2>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Comparaison<br><span class="plan4">RNN,LSTM,GRU</span></h3>
+                    <hr>                       
+                    <h2><a href="http://localhost:8888/notebooks/rnn_lstm_grm/compare_MNIST_rnn_lstm_gru.ipynb" target="_blank">Exercice (compare_MNIST_rnn_lstm_gru.ipynb)</a></h2>
+                    </ul>
+                </section>
+
+
+                <section>
+            <h3>Prochain atelier</h3>
+            <hr>
+           <ul style="font-size:0.7em;">
+                        <li style="color:gray;">1. Introduction to Natural Language Processing in Python</a></li>
+                        <li style="color:gray;">2. Introduction to LLMs in Python</a></li>
+                        <li style="color:gray;">3. Working with Hugging Face</a></li>
+                        <li style="color:gray;">4. Intermediate Deep Learning with PyTorch (1)</li>
+                        <li style="color:gray;">5. Intermediate Deep Learning with PyTorch (2)</li>
+                        <li style="font-weight:bold;">6. Installation/Configuration OpenWebUI, PostgreSQL, Qdrant, Ollama</li>
+                        <li>7. Intégration de n8n dans OpenWebUI</li>
+                        <li>8. Deep Learning for Text with PyTorch</li>
+                        <li>9. Building Chatbots in Python</li>
+                        <li>10. Working with Llama 3</li>
+                        <li>11. Transformer Models with PyTorch</li>
+                        <li>12. Developing LLM Applications with LangChain</li>
+                        <li>13. Retrieval Augmented Generation (RAG) with LangChain</li>
+                        <li>14. Distributed AI Model Training in Python</li>
+                        <li>15. Beyond LLMs: Test Time Training, Differential transformer, Titans</li>
+                    </ul>
+        </section>
+
+
+                <section>
+                    <img src="./images/fin.jpg" width="800px;" >
+                </section>
+
+
+                </div>
+            </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+        
+        <!-- Cargamos JQuery -->
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <!-- Opciones de configuración -->
+        <script src="js/configuration.js"></script>
+        <!-- Centered page with flexbox CSS3 new properties, as proposed by millermedeiros in issue 563
+        https://github.com/hakimel/reveal.js/issues/563 -->
+        <script src="js/align_vertical.js"></script>
+        <!-- Cargamos la barra superior con el título y el logotipo -->
+        <script src="js/topbar.js"></script>
+
+	</body>
+</html>
