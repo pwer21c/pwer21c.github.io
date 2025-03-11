@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>6. Installation/Configuration OpenWebUI,Qdrant, Ollama,n8n</title>
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="BANG sanghun">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<!-- Custom modifications of sky theme -->
+        <link rel="stylesheet" href="css/theme/sky_custom.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+                <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+                <script>
+                        if ( window.location.search.match( /print-pdf/gi ) ) {
+                            document.write( '<link rel="stylesheet" href="css/print/pdf.css" type="text/css">' );
+                            document.write( '<link rel="stylesheet" href="css/print/pdf_custom.css" type="text/css">' );
+                        }
+                </script>		
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<script>
+                    // Título que se muestra en la barra superior
+                    var titulo = "6. Installation/Configuration OpenWebUI,Qdrant, Ollama,n8n";
+		</script>
+        <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+	</head>
+
+	<body>
+            <div class="reveal">
+                <div class="slides">
+
+ 
+                <section  style="top: -550px; display: block;">  <!-- O page -->
+                    <p style="font-size:0.7em;margin-bottom:20px;">
+                        UNIVERSITE PARIS VIII - VINCENNES-SAINT-DENIS<br>
+DIRECTION DES SYSTEMES D'INFORMATION ET DU NUMERIQUE (DSIN)<br>
+                    </p>
+                        <br>
+                        <h4 style="color:red;font-size:1.2em;">Atelier IA</h4>
+                        <h4 style="color:red;">6. Installation/Configuration OpenWebUI,Qdrant, Ollama,n8n</h4>
+                        <br>
+                        <p >sanghun BANG</p>
+                        <div class="autor" >
+                        <p style="font-size:0.8em;"> 
+                            
+                            <b>Le 11 mars 2025</b>
+                        </p>
+                       
+                        
+                        </div>
+                </section>
+
+                <!--  ##################################################################  -->
+                <!--  #######                                ###########################  -->
+                <!--  #######     Les problématiques         ###########################  -->
+                <!--  #######                                ###########################  -->
+                <!--  ##################################################################  -->
+
+                <section>
+                    <h2>Sommaire</h2>
+                    <hr>
+                    <ul > 
+                        <li>Installation OpenWebUI,Qdrant, Ollama,n8n</li>
+                        <li>Ollama</li>
+                        <li>OpenWebUI : Création d'un modèl</li>
+                        <li>OpenWebUI : Créer une base de connaissances</li>
+                        <li>OpenWebUI : Modèle </li>
+                        <li>OpenWebUI : Tools & Functions</li>
+                        <li>Prochain atelier</li>
+                        <li>Références</li>
+                    </ul>
+
+                </section>
+
+                <section>
+                    <h3>Installation OpenWebUI,Qdrant, Ollama,n8n</h3>
+                    <hr>
+                    <pre><code data-trim class="language-shell">
+                    % docker run -d --name open-webui -p 3000:8080  \
+                      ghcr.io/open-webui/open-webui:main
+                    % ou => docker compose up -d 
+                    </code></pre>
+                    <img src="./images/005/docker_compose_up.png" width="400px" ></a>
+                </section>
+
+                <section>
+                    <h3>Installation OpenWebUI,Qdrant, Ollama,n8n <br><span class="plan4">Login</span></h3>
+                    <hr>
+                    <img src="./images/005/openwebui_login.png" width="400px" ></a>
+                    <p><a href="http://localhost:3000" target="_blank">Demo (localhost:3000)</a></p>
+                </section>
+
+                <section>
+                    <h3>Ollama <br><span class="plan4">Gestion de modèles</span></h3>
+                    <hr>
+                    <pre><code data-trim class="language-shell">
+                    % ollama list
+                    % ollama remove model_name
+                    % ollama run model_name
+                    </code></pre>
+                    <img src="./images/005/docker_compose_up.png" width="400px" >
+                </section>
+
+                <section>
+                    <h3>Ollama vs Hugging face </h3>
+                    <hr>
+                    <ul>
+                        <li>Ollama : Se concentre sur l'exécution des modèles en local sur le système de l'utilisateur. Les modèles sont téléchargés et exécutés directement sur la machine sans dépendance à des services cloud externes.</li>
+                        <li>Hugging Face : Propose une solution basée sur le cloud avec des API, permettant d'utiliser des modèles pré-entrainés ainsi que de les entraîner et les évaluer sur des ressources cloud (GPU). Il offre également des options d'hébergement de modèles dans le cloud.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>OpenWebUI : Création d'un modèl</h3>
+                    <hr>
+                    <p><a href="http://localhost:3000" target="_blank">Création d'un modèle</a></p>
+                </section>
+
+                <section>
+                    <h3>OpenWebUI : Créer une base de connaissances</h3>
+                    <hr>
+                    <p><a href="http://localhost:3000" target="_blank">Créer une base de connaissances</a></p>
+                </section>
+
+                <section>
+                    <h3>OpenWebUI : Outils</h3>
+                    <hr>
+                    <ul>            
+                        <li>Étend les capacités de l'IA (LLM).</li>
+                        <li>L'IA utilise des outils pour obtenir des informations et répondre aux entrées de l'utilisateur.</li>
+                        <li>Exemple : prévisions météorologiques en temps réel, etc.</li>   
+                    </ul>
+                    <p><a href="http://localhost:3000" target="_blank">Exercice : Outils</a></p>
+                </section>
+
+                <section>
+                    <h3>OpenWebUI : Fonctions</h3>
+                    <hr>
+                    <ul>            
+                        <li>Étend les fonctionnalités d'OpenWebUI.</li>
+                        <li>Les fonctions gèrent le processus d'OpenWebUI.</li>
+                        <li>Exemple : filtrer les propos inappropriés des entrées utilisateur, permettre l'accès à Vertex AI.</li>
+                    </ul>
+                    <p><a href="http://localhost:3000" target="_blank">Exercice : Fonctions</a></p>
+                </section>
+
+                
+
+                <section>
+                    <h3>Prochain atelier</h3>
+                    <hr>
+                    <ul style="font-size:0.6em;">
+                        <li style="color:gray;">1. Introduction to Natural Language Processing in Python</a></li>
+                        <li style="color:gray;">2. Introduction to LLMs in Python</a></li>
+                        <li style="color:gray;">3. Working with Hugging Face</a></li>
+                        <li style="color:gray;">4. Intermediate Deep Learning with PyTorch (1)</li>
+                        <li style="color:gray;">5. Intermediate Deep Learning with PyTorch (2)</li>
+                        <li style="color:gray;">6. Installation/Configuration OpenWebUI,Qdrant, Ollama,n8n</li>
+                        <li style="font-weight:bold;">7. Intégration de n8n dans OpenWebUI (1)</li>
+                        <li >8. Intégration de n8n dans OpenWebUI (2)</li>
+                        <li>9. Deep Learning for Text with PyTorch</li>
+                        <li>10. Building Chatbots in Python</li>
+                        <li>11. Working with Llama 3</li>
+                        <li>12. Transformer Models with PyTorch</li>
+                        <li>13. Developing LLM Applications with LangChain</li>
+                        <li>14. Retrieval Augmented Generation (RAG) with LangChain</li>
+                        <li>15. Distributed AI Model Training in Python</li>
+                        <li>16. Beyond LLMs: Test Time Training, Differential transformer, Titans</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Références</h3>
+                    <hr>
+                    <ul style="font-size:0.7em;">
+                        <li><a href="https://sbert.net" target="_blank">SentenceTransformers Documentation</a></li>
+                        <li><a href="https://sbert.net/docs/sentence_transformer/pretrained_models.html" target="_blank">SentenceTransformers - Pretrained models</a></li>
+                        <li><a href="https://ollama.com" target="_blank">Ollama.com</a></li>
+                        <li><a href="https://openwebui.com/#open-webui-community" target="_blank">Open WebUI community</a></li>
+                    </ul>
+                </section>
+
+
+                <section>
+                    <img src="./images/fin.jpg" width="800px;" >
+                </section>
+
+
+                </div>
+            </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+        
+        <!-- Cargamos JQuery -->
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <!-- Opciones de configuración -->
+        <script src="js/configuration.js"></script>
+        <!-- Centered page with flexbox CSS3 new properties, as proposed by millermedeiros in issue 563
+        https://github.com/hakimel/reveal.js/issues/563 -->
+        <script src="js/align_vertical.js"></script>
+        <!-- Cargamos la barra superior con el título y el logotipo -->
+        <script src="js/topbar.js"></script>
+
+	</body>
+</html>
